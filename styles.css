@@ -65,7 +65,7 @@ header.site-header{
   content:'';
   position:absolute;
   inset:0;
-  background-image: url('hero.png');
+  background-image: url('/hero.png');
   background-size:cover;
   background-position:center;
   z-index:0;
