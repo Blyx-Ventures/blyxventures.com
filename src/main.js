@@ -8,3 +8,51 @@ document.querySelectorAll('[data-contact]').forEach((link) => {
     trackContactIntent(link.dataset.contact);
   });
 });
+
+// scripts/contact-form.gs deployed as a Google Apps Script Web App.
+const CONTACT_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxNJ5Vf4C3fxlfj13_kV00A0KRA6x45Em0TdnV_oQfvLRhrqXqGHeaqE8ZSjzlxHRqadA/exec';
+
+const contactForm = document.getElementById('contact-form');
+const contactFormStatus = document.getElementById('contact-form-status');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!CONTACT_FORM_ENDPOINT) {
+      setFormStatus('error', "Form isn't connected yet — email us directly at info@blyxventures.com.");
+      return;
+    }
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const payload = Object.fromEntries(new FormData(contactForm).entries());
+
+    submitButton.disabled = true;
+    setFormStatus('pending', 'Sending…');
+
+    try {
+      // Apps Script web apps don't handle CORS preflight, so this is sent as a
+      // simple, unreadable ("no-cors") request — a resolved fetch is the only
+      // success signal available.
+      await fetch(CONTACT_FORM_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload),
+      });
+      contactForm.reset();
+      setFormStatus('success', "Thanks — we'll be in touch soon.");
+      trackContactIntent('contact-form');
+    } catch {
+      setFormStatus('error', "Something went wrong — email us directly at info@blyxventures.com.");
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}
+
+function setFormStatus(state, message) {
+  if (!contactFormStatus) return;
+  contactFormStatus.textContent = message;
+  contactFormStatus.dataset.state = state;
+}
