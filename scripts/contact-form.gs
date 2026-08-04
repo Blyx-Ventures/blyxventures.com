@@ -2,7 +2,7 @@
  * Blyx contact form backend.
  *
  * Setup:
- * 1. Go to script.google.com (signed in as info@blyxventures.com or a Workspace account
+ * 1. Go to script.google.com (signed in as contact@blyxventures.com or a Workspace account
  *    that can send mail as that address), create a new project, paste this file in.
  * 2. Deploy > New deployment > type "Web app".
  *    - Execute as: Me
@@ -10,7 +10,7 @@
  * 3. Copy the resulting /exec URL and set it as CONTACT_FORM_ENDPOINT in src/main.js.
  */
 
-const NOTIFY_EMAIL = 'info@blyxventures.com';
+const NOTIFY_EMAIL = 'contact@blyxventures.com';
 
 function doPost(e) {
   const data = JSON.parse(e.postData.contents);

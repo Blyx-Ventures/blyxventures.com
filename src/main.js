@@ -20,7 +20,7 @@ if (contactForm) {
     event.preventDefault();
 
     if (!CONTACT_FORM_ENDPOINT) {
-      setFormStatus('error', "Form isn't connected yet — email us directly at info@blyxventures.com.");
+      setFormStatus('error', "Form isn't connected yet — email us directly at contact@blyxventures.com.");
       return;
     }
 
@@ -44,7 +44,7 @@ if (contactForm) {
       setFormStatus('success', "Thanks — we'll be in touch soon.");
       trackContactIntent('contact-form');
     } catch {
-      setFormStatus('error', "Something went wrong — email us directly at info@blyxventures.com.");
+      setFormStatus('error', "Something went wrong — email us directly at contact@blyxventures.com.");
     } finally {
       submitButton.disabled = false;
     }
