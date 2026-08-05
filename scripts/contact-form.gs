@@ -59,7 +59,11 @@ function doPost(e) {
   Logger.log('Form response code: %s', response.getResponseCode());
   Logger.log('Form response body: %s', response.getContentText());
 
-  return jsonResponse({ ok: true, formResponseCode: response.getResponseCode() });
+  return jsonResponse({
+    ok: true,
+    formResponseCode: response.getResponseCode(),
+    formResponseBody: response.getContentText().slice(0, 800),
+  });
 }
 
 function jsonResponse(body) {
