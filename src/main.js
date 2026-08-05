@@ -10,7 +10,7 @@ document.querySelectorAll('[data-contact]').forEach((link) => {
 });
 
 // scripts/contact-form.gs deployed as a Google Apps Script Web App.
-const CONTACT_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwc9nBOx_PnyQj889FPsAamdPs4guJOP_r9mI15fPmsM3brKhTl3Kng76U-0z3tlAGrQg/exec';
+const CONTACT_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx_jInLvBZEe3Aphuawule9-xA_FPQaVmCxy_7pNz54srf_47NcgbVGrAAqMOmx7p87qw/exec';
 
 const contactForm = document.getElementById('contact-form');
 const contactFormStatus = document.getElementById('contact-form-status');
