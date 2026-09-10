@@ -19,6 +19,11 @@ if (contactForm) {
   contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
     if (!CONTACT_FORM_ENDPOINT) {
       setFormStatus('error', "Form isn't connected yet — email us directly at contact@blyxventures.com.");
       return;

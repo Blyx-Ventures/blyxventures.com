@@ -19,6 +19,7 @@
 const FORM_RESPONSE_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdXmBS4UtoTdL6Pse6m1Bhm-_1L94vwIxWJW_se9QHrS-moEQ/formResponse';
 
 const FORM_ENTRY_IDS = {
+  projectZip: 'entry.1162493948',
   name: 'entry.1461307863',
   email: 'entry.754023572',
   phone: 'entry.1221293026',
@@ -37,13 +38,15 @@ function doPost(e) {
 
   const name = (data.name || '').trim();
   const email = (data.email || '').trim();
+  const projectZip = (data.projectZip || '').trim();
   const message = (data.message || '').trim();
 
-  if (!name || !email || !message) {
+  if (!name || !email || !message || !/^\d{5}(-\d{4})?$/.test(projectZip)) {
     return jsonResponse({ ok: false, error: 'missing_required_fields' });
   }
 
   const payload = {};
+  payload[FORM_ENTRY_IDS.projectZip] = projectZip;
   payload[FORM_ENTRY_IDS.name] = name;
   payload[FORM_ENTRY_IDS.email] = email;
   payload[FORM_ENTRY_IDS.phone] = data.phone || '';
