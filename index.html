@@ -314,9 +314,14 @@
 
     <section class="contact section" id="contact">
       <div class="container contact-grid">
-        <div>
+        <div class="contact-intro">
           <p class="eyebrow">Start a conversation</p>
-          <h2>Tell us what your space needs to do better.</h2>
+          <h2>Tell us what you want your space to do better.</h2>
+          <p class="contact-lede">A rough description is enough—we’ll ask follow-up questions if needed.</p>
+          <div class="contact-next-step">
+            <h3>What happens next</h3>
+            <p>After you submit the form, we’ll review the details and respond by email with any questions or a recommended next step. When it makes sense, we’ll arrange a call or site assessment.</p>
+          </div>
         </div>
         <div class="contact-panel">
           <form class="contact-form" id="contact-form" novalidate>
@@ -339,23 +344,38 @@
             <div class="form-row form-row-split">
               <div>
                 <label for="cf-property">Property type</label>
-                <select id="cf-property" name="propertyType">
+                <select id="cf-property" name="propertyType" required>
+                  <option value="" selected disabled>Select property type</option>
                   <option value="Residential">Residential</option>
-                  <option value="Light-commercial">Light-commercial</option>
+                  <option value="Light commercial">Light commercial</option>
                 </select>
               </div>
               <div>
-                <label for="cf-service">Service interest</label>
-                <select id="cf-service" name="service">
-                  <option value="Networking">Networking</option>
-                  <option value="Security cameras">Security cameras</option>
-                  <option value="Access control and automated entry">Access control and automated entry</option>
+                <label for="cf-project-size">Approximate project size</label>
+                <select id="cf-project-size" name="projectSize" required>
+                  <option value="" selected disabled>Select project size</option>
+                  <option value="Focused improvement">Focused improvement</option>
+                  <option value="One complete system">One complete system</option>
+                  <option value="Multiple systems">Multiple systems</option>
+                  <option value="Renovation or new construction">Renovation or new construction</option>
                   <option value="Not sure yet">Not sure yet</option>
                 </select>
               </div>
             </div>
+            <fieldset class="form-row form-choice-group" id="cf-areas-group">
+              <legend>Areas of need</legend>
+              <p class="form-help" id="cf-areas-help">Choose all that apply.</p>
+              <div class="form-options">
+                <label class="checkbox-option"><input type="checkbox" name="areasOfNeed" value="Networking" aria-describedby="cf-areas-help cf-areas-error"><span>Networking</span></label>
+                <label class="checkbox-option"><input type="checkbox" name="areasOfNeed" value="Security cameras"><span>Security cameras</span></label>
+                <label class="checkbox-option"><input type="checkbox" name="areasOfNeed" value="Access control"><span>Access control</span></label>
+                <label class="checkbox-option"><input type="checkbox" name="areasOfNeed" value="Automated entry"><span>Automated entry</span></label>
+                <label class="checkbox-option"><input type="checkbox" name="areasOfNeed" value="Not sure yet" data-not-sure><span>Not sure yet</span></label>
+              </div>
+              <p class="form-error" id="cf-areas-error" aria-live="polite"></p>
+            </fieldset>
             <div class="form-row">
-              <label for="cf-message">Tell us about the project</label>
+              <label for="cf-message">What would you like the space to do better?</label>
               <textarea id="cf-message" name="message" rows="4" required></textarea>
             </div>
             <div class="form-row form-honeypot" aria-hidden="true">

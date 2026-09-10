@@ -16,8 +16,28 @@ const contactForm = document.getElementById('contact-form');
 const contactFormStatus = document.getElementById('contact-form-status');
 
 if (contactForm) {
+  const areaInputs = [...contactForm.querySelectorAll('input[name="areasOfNeed"]')];
+  const notSureInput = contactForm.querySelector('[data-not-sure]');
+  const areasError = document.getElementById('cf-areas-error');
+
+  areaInputs.forEach((input) => {
+    input.addEventListener('change', () => {
+      if (input === notSureInput && input.checked) {
+        areaInputs.forEach((areaInput) => {
+          if (areaInput !== notSureInput) areaInput.checked = false;
+        });
+      } else if (input.checked && notSureInput) {
+        notSureInput.checked = false;
+      }
+
+      validateAreasOfNeed(areaInputs, areasError);
+    });
+  });
+
   contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
+
+    validateAreasOfNeed(areaInputs, areasError);
 
     if (!contactForm.checkValidity()) {
       contactForm.reportValidity();
@@ -30,7 +50,9 @@ if (contactForm) {
     }
 
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    const payload = Object.fromEntries(new FormData(contactForm).entries());
+    const formData = new FormData(contactForm);
+    const payload = Object.fromEntries(formData.entries());
+    payload.areasOfNeed = formData.getAll('areasOfNeed');
 
     submitButton.disabled = true;
     setFormStatus('pending', 'Sending…');
@@ -46,6 +68,7 @@ if (contactForm) {
         body: JSON.stringify(payload),
       });
       contactForm.reset();
+      validateAreasOfNeed(areaInputs, areasError, false);
       setFormStatus('success', "Thanks — we'll be in touch soon.");
       trackContactIntent('contact-form');
     } catch {
@@ -54,6 +77,20 @@ if (contactForm) {
       submitButton.disabled = false;
     }
   });
+}
+
+function validateAreasOfNeed(inputs, errorElement, showError = true) {
+  if (!inputs.length) return true;
+
+  const hasSelection = inputs.some((input) => input.checked);
+  const message = hasSelection ? '' : 'Choose at least one area of need.';
+  inputs[0].setCustomValidity(message);
+
+  if (errorElement) {
+    errorElement.textContent = showError ? message : '';
+  }
+
+  return hasSelection;
 }
 
 function setFormStatus(state, message) {
