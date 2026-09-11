@@ -327,32 +327,36 @@
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-row">
               <label for="cf-name">Name</label>
-              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="120" aria-describedby="cf-name-error" required>
+              <p class="form-error" id="cf-name-error"></p>
             </div>
             <div class="form-row">
               <label for="cf-email">Email</label>
-              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="254" aria-describedby="cf-email-error" required>
+              <p class="form-error" id="cf-email-error"></p>
             </div>
             <div class="form-row">
               <label for="cf-phone">Phone <span class="optional">(optional)</span></label>
-              <input id="cf-phone" name="phone" type="tel" autocomplete="tel">
+              <input id="cf-phone" name="phone" type="tel" autocomplete="tel" maxlength="40">
             </div>
             <div class="form-row">
               <label for="cf-project-zip">Project ZIP code</label>
-              <input id="cf-project-zip" name="projectZip" type="text" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" title="Enter a five-digit ZIP code or ZIP+4" required>
+              <input id="cf-project-zip" name="projectZip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="10" pattern="[0-9]{5}(-[0-9]{4})?" aria-describedby="cf-project-zip-error" required>
+              <p class="form-error" id="cf-project-zip-error"></p>
             </div>
             <div class="form-row form-row-split">
               <div>
                 <label for="cf-property">Property type</label>
-                <select id="cf-property" name="propertyType" required>
+                <select id="cf-property" name="propertyType" aria-describedby="cf-property-error" required>
                   <option value="" selected disabled>Select property type</option>
                   <option value="Residential">Residential</option>
                   <option value="Light commercial">Light commercial</option>
                 </select>
+                <p class="form-error" id="cf-property-error"></p>
               </div>
               <div>
                 <label for="cf-project-size">Approximate project size</label>
-                <select id="cf-project-size" name="projectSize" required>
+                <select id="cf-project-size" name="projectSize" aria-describedby="cf-project-size-error" required>
                   <option value="" selected disabled>Select project size</option>
                   <option value="Focused improvement">Focused improvement</option>
                   <option value="One complete system">One complete system</option>
@@ -360,9 +364,10 @@
                   <option value="Renovation or new construction">Renovation or new construction</option>
                   <option value="Not sure yet">Not sure yet</option>
                 </select>
+                <p class="form-error" id="cf-project-size-error"></p>
               </div>
             </div>
-            <fieldset class="form-row form-choice-group" id="cf-areas-group">
+            <fieldset class="form-row form-choice-group" id="cf-areas-group" aria-describedby="cf-areas-help cf-areas-error">
               <legend>Areas of need</legend>
               <p class="form-help" id="cf-areas-help">Choose all that apply.</p>
               <div class="form-options">
@@ -376,7 +381,8 @@
             </fieldset>
             <div class="form-row">
               <label for="cf-message">What would you like the space to do better?</label>
-              <textarea id="cf-message" name="message" rows="4" required></textarea>
+              <textarea id="cf-message" name="message" rows="4" maxlength="3000" aria-describedby="cf-message-error" required></textarea>
+              <p class="form-error" id="cf-message-error"></p>
             </div>
             <div class="form-row form-honeypot" aria-hidden="true">
               <label for="cf-company">Company</label>
