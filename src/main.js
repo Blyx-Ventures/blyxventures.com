@@ -11,14 +11,66 @@ document.querySelectorAll('[data-contact]').forEach((link) => {
 
 // scripts/contact-form.gs deployed as a Google Apps Script Web App.
 const CONTACT_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx_jInLvBZEe3Aphuawule9-xA_FPQaVmCxy_7pNz54srf_47NcgbVGrAAqMOmx7p87qw/exec';
+const STATUS_CALLBACK = '__blyxContactStatus';
+const STATUS_POLL_INTERVAL_MS = 1000;
+const STATUS_POLL_TIMEOUT_MS = 20000;
+const STATUS_REQUEST_TIMEOUT_MS = 5000;
 
 const contactForm = document.getElementById('contact-form');
 const contactFormStatus = document.getElementById('contact-form-status');
+const statusResolvers = new Map();
+
+window[STATUS_CALLBACK] = (result) => {
+  if (!result || typeof result.requestId !== 'string') return;
+  statusResolvers.get(result.requestId)?.(result.status);
+};
 
 if (contactForm) {
+  const submitButton = contactForm.querySelector('button[type="submit"]');
   const areaInputs = [...contactForm.querySelectorAll('input[name="areasOfNeed"]')];
   const notSureInput = contactForm.querySelector('[data-not-sure]');
+  const areasGroup = document.getElementById('cf-areas-group');
   const areasError = document.getElementById('cf-areas-error');
+  const controls = [
+    field('cf-name', 'cf-name-error', {
+      valueMissing: 'Enter your name.',
+      blank: 'Enter your name.',
+      tooLong: 'Keep your name under 120 characters.',
+    }),
+    field('cf-email', 'cf-email-error', {
+      valueMissing: 'Enter your email address.',
+      typeMismatch: 'Enter a valid email address.',
+      tooLong: 'Keep your email address under 254 characters.',
+    }),
+    field('cf-project-zip', 'cf-project-zip-error', {
+      valueMissing: 'Enter the project ZIP code.',
+      patternMismatch: 'Enter a five-digit ZIP code or ZIP+4.',
+      tooLong: 'Enter a five-digit ZIP code or ZIP+4.',
+    }),
+    field('cf-property', 'cf-property-error', {
+      valueMissing: 'Select a property type.',
+    }),
+    field('cf-project-size', 'cf-project-size-error', {
+      valueMissing: 'Select an approximate project size.',
+    }),
+    field('cf-message', 'cf-message-error', {
+      valueMissing: 'Describe what you would like the space to do better.',
+      blank: 'Describe what you would like the space to do better.',
+      tooLong: 'Keep the description under 3,000 characters.',
+    }),
+  ];
+  let hasAttemptedSubmit = false;
+  let pendingRequestId = null;
+
+  controls.forEach(({ control, error, messages }) => {
+    const updateValidation = () => {
+      if (hasAttemptedSubmit || control.getAttribute('aria-invalid') === 'true') {
+        validateControl(control, error, messages, true);
+      }
+    };
+    control.addEventListener('input', updateValidation);
+    control.addEventListener('change', updateValidation);
+  });
 
   areaInputs.forEach((input) => {
     input.addEventListener('change', () => {
@@ -30,67 +82,177 @@ if (contactForm) {
         notSureInput.checked = false;
       }
 
-      validateAreasOfNeed(areaInputs, areasError);
+      if (hasAttemptedSubmit || areasGroup?.getAttribute('aria-invalid') === 'true') {
+        validateAreasOfNeed(areaInputs, areasGroup, areasError, true);
+      }
     });
   });
 
   contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (submitButton.disabled) return;
 
-    validateAreasOfNeed(areaInputs, areasError);
-
-    if (!contactForm.checkValidity()) {
-      contactForm.reportValidity();
+    hasAttemptedSubmit = true;
+    const firstInvalid = validateForm(controls, areaInputs, areasGroup, areasError);
+    if (firstInvalid) {
+      firstInvalid.focus();
       return;
     }
 
     if (!CONTACT_FORM_ENDPOINT) {
-      setFormStatus('error', "Form isn't connected yet — email us directly at contact@blyxventures.com.");
+      setFailureStatus();
       return;
     }
 
-    const submitButton = contactForm.querySelector('button[type="submit"]');
     const formData = new FormData(contactForm);
+    const requestId = pendingRequestId || createRequestId();
     const payload = Object.fromEntries(formData.entries());
     payload.areasOfNeed = formData.getAll('areasOfNeed');
+    payload.requestId = requestId;
+    pendingRequestId = requestId;
 
     submitButton.disabled = true;
     setFormStatus('pending', 'Sending…');
 
     try {
-      // Apps Script web apps don't handle CORS preflight, so this is sent as a
-      // simple, unreadable ("no-cors") request — a resolved fetch is the only
-      // success signal available.
-      await fetch(CONTACT_FORM_ENDPOINT, {
+      const statusPromise = waitForSubmissionStatus(requestId);
+      fetch(CONTACT_FORM_ENDPOINT, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
-      });
+      }).catch(() => {});
+
+      const deliveryStatus = await statusPromise;
+      if (deliveryStatus !== 'accepted') {
+        if (deliveryStatus === 'failed') pendingRequestId = null;
+        setFailureStatus();
+        return;
+      }
+
+      pendingRequestId = null;
+      hasAttemptedSubmit = false;
       contactForm.reset();
-      validateAreasOfNeed(areaInputs, areasError, false);
+      clearValidation(controls, areasGroup, areasError);
       setFormStatus('success', "Thanks — we'll be in touch soon.");
       trackContactIntent('contact-form');
-    } catch {
-      setFormStatus('error', "Something went wrong — email us directly at contact@blyxventures.com.");
     } finally {
       submitButton.disabled = false;
     }
   });
 }
 
-function validateAreasOfNeed(inputs, errorElement, showError = true) {
-  if (!inputs.length) return true;
+function field(controlId, errorId, messages) {
+  return {
+    control: document.getElementById(controlId),
+    error: document.getElementById(errorId),
+    messages,
+  };
+}
 
+function validateForm(controls, areaInputs, areasGroup, areasError) {
+  let firstInvalid = null;
+
+  controls.forEach(({ control, error, messages }) => {
+    if (!validateControl(control, error, messages, true) && !firstInvalid) {
+      firstInvalid = control;
+    }
+  });
+
+  if (!validateAreasOfNeed(areaInputs, areasGroup, areasError, true) && !firstInvalid) {
+    firstInvalid = areaInputs[0];
+  }
+
+  return firstInvalid;
+}
+
+function validateControl(control, errorElement, messages, showError) {
+  const message = validationMessage(control, messages);
+  control.toggleAttribute('aria-invalid', Boolean(message));
+  errorElement.textContent = showError ? message : '';
+  return !message;
+}
+
+function validationMessage(control, messages) {
+  if (control.validity.valueMissing) return messages.valueMissing || 'Complete this field.';
+  if (control.required && !control.value.trim()) return messages.blank || messages.valueMissing || 'Complete this field.';
+  if (control.validity.typeMismatch) return messages.typeMismatch || 'Enter a valid value.';
+  if (control.validity.patternMismatch) return messages.patternMismatch || 'Enter a valid value.';
+  if (control.validity.tooLong) return messages.tooLong || 'This entry is too long.';
+  return '';
+}
+
+function validateAreasOfNeed(inputs, group, errorElement, showError) {
   const hasSelection = inputs.some((input) => input.checked);
   const message = hasSelection ? '' : 'Choose at least one area of need.';
   inputs[0].setCustomValidity(message);
+  group?.toggleAttribute('aria-invalid', !hasSelection);
+  errorElement.textContent = showError ? message : '';
+  return hasSelection;
+}
 
-  if (errorElement) {
-    errorElement.textContent = showError ? message : '';
+function clearValidation(controls, areasGroup, areasError) {
+  controls.forEach(({ control, error }) => {
+    control.removeAttribute('aria-invalid');
+    error.textContent = '';
+  });
+  areasGroup?.removeAttribute('aria-invalid');
+  areasError.textContent = '';
+}
+
+function createRequestId() {
+  if (typeof crypto.randomUUID === 'function') return crypto.randomUUID();
+
+  const bytes = crypto.getRandomValues(new Uint8Array(16));
+  bytes[6] = (bytes[6] & 0x0f) | 0x40;
+  bytes[8] = (bytes[8] & 0x3f) | 0x80;
+  const hex = [...bytes].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+}
+
+async function waitForSubmissionStatus(requestId) {
+  const deadline = Date.now() + STATUS_POLL_TIMEOUT_MS;
+
+  while (Date.now() < deadline) {
+    const status = await readSubmissionStatus(requestId);
+    if (status === 'accepted' || status === 'failed') return status;
+    await delay(STATUS_POLL_INTERVAL_MS);
   }
 
-  return hasSelection;
+  return 'unknown';
+}
+
+function readSubmissionStatus(requestId) {
+  return new Promise((resolve) => {
+    const script = document.createElement('script');
+    const finish = (status) => {
+      clearTimeout(timeoutId);
+      statusResolvers.delete(requestId);
+      script.remove();
+      resolve(status);
+    };
+    const timeoutId = setTimeout(() => finish('unknown'), STATUS_REQUEST_TIMEOUT_MS);
+
+    statusResolvers.set(requestId, finish);
+    script.onerror = () => finish('unknown');
+    script.src = `${CONTACT_FORM_ENDPOINT}?action=status&requestId=${encodeURIComponent(requestId)}&_=${Date.now()}`;
+    document.head.append(script);
+  });
+}
+
+function delay(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+
+function setFailureStatus() {
+  if (!contactFormStatus) return;
+  contactFormStatus.textContent = 'We couldn’t confirm your submission. Your information is still here—please try again or email ';
+  const emailLink = document.createElement('a');
+  emailLink.href = 'mailto:contact@blyxventures.com?subject=Project%20inquiry%20for%20Blyx';
+  emailLink.textContent = 'contact@blyxventures.com';
+  emailLink.addEventListener('click', () => trackContactIntent('project-email'));
+  contactFormStatus.append(emailLink, '.');
+  contactFormStatus.dataset.state = 'error';
 }
 
 function setFormStatus(state, message) {
