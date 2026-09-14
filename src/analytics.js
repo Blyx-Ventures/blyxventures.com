@@ -15,10 +15,13 @@ export function initializeAnalytics() {
   document.head.append(script);
 }
 
-export function trackContactIntent(method) {
+export function trackContactIntent(method, landingPage = '') {
   if (typeof window.gtag !== 'function') return;
 
-  window.gtag('event', 'generate_lead', {
+  const eventData = {
     contact_method: method,
-  });
+  };
+
+  if (landingPage) eventData.landing_page = landingPage;
+  window.gtag('event', 'generate_lead', eventData);
 }
