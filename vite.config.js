@@ -11,6 +11,7 @@ export default defineConfig({
         networking: resolve(import.meta.dirname, 'networking/index.html'),
         surveillance: resolve(import.meta.dirname, 'surveillance/index.html'),
         accessControl: resolve(import.meta.dirname, 'access-control/index.html'),
+        prototype: resolve(import.meta.dirname, 'prototype/index.html'),
       },
     },
   },
