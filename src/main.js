@@ -1,11 +1,20 @@
 import './styles/site.css';
 import { initializeAnalytics, trackContactIntent } from './analytics.js';
 
+const APPROVED_AREAS = new Set(['Networking', 'Security cameras', 'Access control', 'Automated entry']);
+const APPROVED_SOURCES = new Set(['networking', 'surveillance', 'access-control']);
+const SOURCE_BY_PATH = {
+  '/networking/': 'networking',
+  '/surveillance/': 'surveillance',
+  '/access-control/': 'access-control',
+};
+const inquiryContext = readInquiryContext();
+
 initializeAnalytics();
 
 document.querySelectorAll('[data-contact]').forEach((link) => {
   link.addEventListener('click', () => {
-    trackContactIntent(link.dataset.contact);
+    trackContactIntent(link.dataset.contact, inquiryContext.source);
   });
 });
 
@@ -61,6 +70,8 @@ if (contactForm) {
   ];
   let hasAttemptedSubmit = false;
   let pendingRequestId = null;
+
+  applyInquiryAreas(areaInputs, notSureInput, inquiryContext.areas);
 
   controls.forEach(({ control, error, messages }) => {
     const updateValidation = () => {
@@ -135,7 +146,7 @@ if (contactForm) {
       contactForm.reset();
       clearValidation(controls, areasGroup, areasError);
       setFormStatus('success', "Thanks — we'll be in touch soon.");
-      trackContactIntent('contact-form');
+      trackContactIntent('contact-form', inquiryContext.source);
     } finally {
       submitButton.disabled = false;
     }
@@ -250,9 +261,31 @@ function setFailureStatus() {
   const emailLink = document.createElement('a');
   emailLink.href = 'mailto:contact@blyxventures.com?subject=Project%20inquiry%20for%20Blyx';
   emailLink.textContent = 'contact@blyxventures.com';
-  emailLink.addEventListener('click', () => trackContactIntent('project-email'));
+  emailLink.addEventListener('click', () => trackContactIntent('project-email', inquiryContext.source));
   contactFormStatus.append(emailLink, '.');
   contactFormStatus.dataset.state = 'error';
+}
+
+function readInquiryContext() {
+  const url = new URL(window.location.href);
+  const requestedSource = url.searchParams.get('source') || '';
+  const source = APPROVED_SOURCES.has(requestedSource) ? requestedSource : (SOURCE_BY_PATH[url.pathname] || '');
+  const areas = [...new Set(url.searchParams.getAll('area').filter((area) => APPROVED_AREAS.has(area)))];
+
+  if (areas.length || APPROVED_SOURCES.has(requestedSource)) {
+    history.replaceState({}, '', `${url.pathname}${url.hash || '#contact'}`);
+  }
+
+  return { source, areas };
+}
+
+function applyInquiryAreas(areaInputs, notSureInput, areas) {
+  if (!areas.length) return;
+
+  areaInputs.forEach((input) => {
+    input.checked = areas.includes(input.value);
+  });
+  if (notSureInput) notSureInput.checked = false;
 }
 
 function setFormStatus(state, message) {
