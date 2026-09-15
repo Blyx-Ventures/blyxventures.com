@@ -49,6 +49,10 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 
 Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks, and component states.
 
+## Visual design system decisions
+
+- [Typography and content hierarchy](./typography.md)
+
 ## Service area and proof
 
 - Service area: Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky. Keep it secondary but clear near contact forms and in the footer. Collect project city or ZIP without blocking outside submissions.
