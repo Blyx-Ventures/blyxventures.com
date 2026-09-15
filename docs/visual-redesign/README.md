@@ -52,6 +52,7 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 ## Visual design system decisions
 
 - [Typography and content hierarchy](./typography.md)
+- [Color, surface, border, and depth system](./color-surfaces.md)
 
 ## Service area and proof
 
