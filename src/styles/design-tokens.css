@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light;
+
+  --font-sans: "Inter Variable", Inter, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --type-display-xl: clamp(3rem, 1.8rem + 5.5vw, 6rem);
+  --type-display-lg: clamp(2.5rem, 1.7rem + 3.6vw, 4.5rem);
+  --type-heading-1: clamp(2.25rem, 1.75rem + 2.2vw, 3.5rem);
+  --type-heading-2: clamp(1.75rem, 1.45rem + 1.35vw, 2.5rem);
+  --type-heading-3: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  --type-body-lg: clamp(1.125rem, 1.075rem + 0.22vw, 1.25rem);
+  --type-body: 1rem;
+  --type-body-sm: 0.875rem;
+  --type-label: 0.75rem;
+  --type-caption: 0.75rem;
+  --type-action: 0.875rem;
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --color-brand-accent: #159d73;
+  --color-brand-strong: #0c7253;
+  --color-text: #17201d;
+  --color-text-muted: #56625d;
+  --color-text-inverse: #f5f3ed;
+  --color-text-inverse-muted: #bcc8c2;
+  --color-text-disabled: #606a65;
+  --color-text-inverse-disabled: #aab6b0;
+  --color-background: #f5f3ed;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #e9e6dd;
+  --color-surface-brand: #ddefe8;
+  --color-surface-inverse: #17201d;
+  --color-surface-inverse-raised: #202b27;
+  --color-surface-disabled: #e5e7e4;
+  --color-surface-inverse-disabled: #2e3a34;
+  --color-border: #c8cec9;
+  --color-border-strong: #858f8a;
+  --color-border-inverse: #3f4c46;
+  --color-border-inverse-strong: #69766f;
+  --color-focus: #0c7253;
+  --color-focus-inverse: #72e0ba;
+  --color-success: #17633f;
+  --color-success-surface: #e2f1e9;
+  --color-success-inverse: #82dbb2;
+  --color-error: #9d3030;
+  --color-error-surface: #fbe8e8;
+  --color-error-inverse: #ffb3b3;
+
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 10rem;
+  --gutter-inline: clamp(1.25rem, 0.35rem + 4vw, 4.5rem);
+  --grid-gap: clamp(1rem, 0.75rem + 1vw, 2rem);
+  --section-block: clamp(5rem, 3.75rem + 5vw, 9rem);
+  --section-block-compact: clamp(3.5rem, 2.75rem + 3vw, 6rem);
+  --content-gap: clamp(2rem, 1.5rem + 2vw, 4rem);
+
+  --width-canvas: 90rem;
+  --width-wide: 80rem;
+  --width-standard: 72rem;
+  --width-narrow: 48rem;
+  --width-reading: 65ch;
+
+  --border-width: 1px;
+  --border-width-focus: 2px;
+  --radius-control: 0.25rem;
+  --radius-surface: 0.5rem;
+  --radius-pill: 999px;
+  --shadow-raised: 0 1px 2px rgb(23 32 29 / 8%),
+    0 12px 32px rgb(23 32 29 / 10%);
+  --shadow-overlay: 0 4px 12px rgb(23 32 29 / 10%),
+    0 24px 64px rgb(23 32 29 / 18%);
+
+  --control-height: 3rem;
+  --control-height-compact: 2.75rem;
+  --field-height: 2.75rem;
+  --header-height: clamp(4.5rem, 4.1rem + 1vw, 5.5rem);
+  --service-panel-min-height: 29rem;
+  --service-panel-media-height: 13rem;
+  --service-panel-copy-overlap: 1rem;
+  --transition-state: 160ms ease;
+
+  --image-fade-narrow: clamp(3rem, 6vw, 6rem);
+  --image-fade-wide: clamp(5rem, 11vw, 11rem);
+}

@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The living visual design guide for the Blyx website."
+    />
+    <title>Blyx visual design guide</title>
+    <link rel="icon" href="/blyx-favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles/design-guide.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#guide-content">Skip to guide content</a>
+
+    <div class="guide-shell">
+      <header class="guide-header">
+        <div class="guide-brand">
+          <img src="/blyx-logo.png" alt="Blyx" width="240" height="86" />
+          <span class="guide-version">Design system · v1.0</span>
+        </div>
+        <div class="guide-intro">
+          <span class="eyebrow">Living reference</span>
+          <h1>Clear systems. Calm homes.</h1>
+          <p>
+            The shared visual language for Blyx pages. Use this guide to choose
+            tokens, assemble common components, and review page compositions
+            without relying on memory.
+          </p>
+        </div>
+      </header>
+
+      <nav class="guide-nav" aria-label="Design guide sections">
+        <ul>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#color">Color</a></li>
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#compositions">Compositions</a></li>
+          <li><a href="#imagery">Imagery</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+      </nav>
+
+      <main class="guide-main" id="guide-content">
+        <section class="guide-section" id="principles">
+          <div class="section-heading">
+            <span class="eyebrow">01 · Principles</span>
+            <h2>Quiet confidence, built from useful detail.</h2>
+            <p>
+              The system prioritizes legible content, real installation proof,
+              and direct paths to action. Restraint is a functional choice: each
+              visual device must clarify hierarchy, relationship, or state.
+            </p>
+          </div>
+          <div class="guide-grid">
+            <article class="guide-card">
+              <h3>Lead with the outcome</h3>
+              <p class="usage">
+                Explain what becomes simpler or more reliable before describing
+                equipment. Keep one dominant message and one primary action per
+                viewport section.
+              </p>
+            </article>
+            <article class="guide-card">
+              <h3>Let structure do the work</h3>
+              <p class="usage">
+                Use type, spacing, grid alignment, and solid fields before adding
+                containers, shadows, or decorative color.
+              </p>
+            </article>
+            <article class="guide-card">
+              <h3>Show credible proof</h3>
+              <p class="usage">
+                Prefer authentic Blyx installation photography with clear device
+                and architectural context. Captions identify useful specifics.
+              </p>
+            </article>
+            <article class="guide-card">
+              <h3>Design every state</h3>
+              <p class="usage">
+                Hover, focus, active, loading, disabled, success, and error states
+                are part of the component—not implementation afterthoughts.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section" id="type">
+          <div class="section-heading">
+            <span class="eyebrow">02 · Typography</span>
+            <h2>One typeface, a deliberate hierarchy.</h2>
+            <p>
+              Use Inter Variable at weights 400, 600, and 700. The fallback stack
+              preserves the hierarchy if the font is unavailable. Display roles
+              are visual treatments; semantic heading order remains intact.
+            </p>
+          </div>
+
+          <article class="specimen">
+            <div class="specimen-header">
+              <h3>Core roles</h3>
+              <span class="specimen-label">Responsive specimen</span>
+            </div>
+            <div class="specimen-body type-list">
+              <div class="type-sample">
+                <span class="token-name">Display XL · homepage promise</span>
+                <p class="display-xl">Technology that feels settled.</p>
+              </div>
+              <div class="type-sample">
+                <span class="token-name">Heading 2 · major section</span>
+                <p class="heading-2">A reliable foundation for the connected home.</p>
+              </div>
+              <div class="type-sample">
+                <span class="token-name">Body large · introduction</span>
+                <p class="body-lg">
+                  Blyx plans and installs the underlying systems so security,
+                  access, and connectivity work together without daily attention.
+                </p>
+              </div>
+              <div class="type-sample">
+                <span class="token-name">Body · sustained reading</span>
+                <p>
+                  Use for paragraphs, lists, and explanations. Keep sustained
+                  reading between 45 and 70 characters per line, with 60–65 as
+                  the preferred range.
+                </p>
+              </div>
+              <div class="type-sample">
+                <span class="token-name">Label and caption</span>
+                <p class="eyebrow">Network infrastructure</p>
+                <p class="caption">
+                  Structured cabling and rack installation in a completed residence.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="guide-grid" style="margin-top: var(--grid-gap)">
+            <article class="guide-card">
+              <h3>Role map</h3>
+              <ul class="rule-list">
+                <li><strong>Display XL:</strong> homepage promise only.</li>
+                <li><strong>Display LG:</strong> service-page hero.</li>
+                <li><strong>Heading 1–3:</strong> page and section hierarchy.</li>
+                <li><strong>Body LG:</strong> hero and section introductions.</li>
+                <li><strong>Body / body small:</strong> reading and support.</li>
+                <li><strong>Label / caption:</strong> short metadata only.</li>
+                <li><strong>Action:</strong> buttons and text links.</li>
+              </ul>
+            </article>
+            <article class="guide-card">
+              <h3>Writing and wrapping</h3>
+              <ul class="rule-list">
+                <li>Use sentence case for navigation and actions.</li>
+                <li>Limit uppercase labels to four words.</li>
+                <li>Do not add manual line breaks by default.</li>
+                <li>Use underlines for links inside body copy.</li>
+                <li>Never reduce body or form text below 16px.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section" id="color">
+          <div class="section-heading">
+            <span class="eyebrow">03 · Color and surfaces</span>
+            <h2>Warm neutrals, deep ink, purposeful green.</h2>
+            <p>
+              Components use semantic tokens rather than page-specific values.
+              Green identifies brand, action, focus, and selected state; it is not
+              a decorative section theme.
+            </p>
+          </div>
+
+          <div class="swatches" aria-label="Core color tokens">
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-background)"></div>
+              <div class="swatch-info"><strong>Background</strong><code>#f5f3ed</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-surface)"></div>
+              <div class="swatch-info"><strong>Surface</strong><code>#ffffff</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-surface-subtle)"></div>
+              <div class="swatch-info"><strong>Subtle</strong><code>#e9e6dd</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-text)"></div>
+              <div class="swatch-info"><strong>Ink / inverse</strong><code>#17201d</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-text-muted)"></div>
+              <div class="swatch-info"><strong>Muted text</strong><code>#56625d</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-brand-accent)"></div>
+              <div class="swatch-info"><strong>Brand accent</strong><code>#159d73</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-brand-strong)"></div>
+              <div class="swatch-info"><strong>Brand strong</strong><code>#0c7253</code></div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="--swatch: var(--color-surface-brand)"></div>
+              <div class="swatch-info"><strong>Brand surface</strong><code>#ddefe8</code></div>
+            </div>
+          </div>
+
+          <div class="surface-row">
+            <div class="surface-demo" style="--demo-bg: var(--color-surface)">
+              <strong>Reading surface</strong>
+              <p>Forms and reading-dense content that need separation.</p>
+            </div>
+            <div
+              class="surface-demo"
+              style="--demo-bg: var(--color-surface-inverse); --demo-text: var(--color-text-inverse); --demo-muted: var(--color-text-inverse-muted)"
+            >
+              <strong>Inverse close</strong>
+              <p>Contact close, footer, or one short proof section.</p>
+            </div>
+          </div>
+
+          <p class="usage">
+            <strong>Rule:</strong> essential text sits on a verified solid field.
+            Status always combines color with language or an icon. Shadows indicate
+            a real overlapping layer; static sections remain flat.
+          </p>
+        </section>
+
+        <section class="guide-section" id="layout">
+          <div class="section-heading">
+            <span class="eyebrow">04 · Spacing and grid</span>
+            <h2>A responsive grid with visible rhythm.</h2>
+            <p>
+              The layout uses four columns below 48rem, six columns from 48rem,
+              and twelve columns from 64rem. At 80rem the same grid remains while
+              fluid gutters and type approach their maximums.
+            </p>
+          </div>
+
+          <div class="component-grid is-uneven">
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Base spacing</h3>
+                <span class="specimen-label">4–160px</span>
+              </div>
+              <div class="specimen-body spacing-scale">
+                <div class="space-token"><code>space-1</code><span class="space-bar" style="--bar-width: .25rem"></span><span>4px</span></div>
+                <div class="space-token"><code>space-2</code><span class="space-bar" style="--bar-width: .5rem"></span><span>8px</span></div>
+                <div class="space-token"><code>space-3</code><span class="space-bar" style="--bar-width: .75rem"></span><span>12px</span></div>
+                <div class="space-token"><code>space-4</code><span class="space-bar" style="--bar-width: 1rem"></span><span>16px</span></div>
+                <div class="space-token"><code>space-5</code><span class="space-bar" style="--bar-width: 1.5rem"></span><span>24px</span></div>
+                <div class="space-token"><code>space-6</code><span class="space-bar" style="--bar-width: 2rem"></span><span>32px</span></div>
+                <div class="space-token"><code>space-7</code><span class="space-bar" style="--bar-width: 3rem"></span><span>48px</span></div>
+                <div class="space-token"><code>space-8</code><span class="space-bar" style="--bar-width: 4rem"></span><span>64px</span></div>
+                <div class="space-token"><code>space-9</code><span class="space-bar" style="--bar-width: 6rem"></span><span>96px</span></div>
+                <div class="space-token"><code>space-10</code><span class="space-bar" style="--bar-width: 8rem"></span><span>128px</span></div>
+                <div class="space-token"><code>space-11</code><span class="space-bar" style="--bar-width: 10rem"></span><span>160px</span></div>
+              </div>
+            </article>
+
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Responsive tracks</h3>
+                <span class="specimen-label">Resize to inspect</span>
+              </div>
+              <div class="specimen-body">
+                <div class="grid-demo" aria-label="Responsive grid columns">
+                  <span>1</span><span>2</span><span>3</span><span>4</span>
+                  <span>5</span><span>6</span><span>7</span><span>8</span>
+                  <span>9</span><span>10</span><span>11</span><span>12</span>
+                </div>
+                <p class="usage">
+                  <strong>Use:</strong> align text, controls, and media to shared
+                  tracks. Create asymmetry with documented spans, not arbitrary
+                  offsets. Content determines section height.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section" id="components">
+          <div class="section-heading">
+            <span class="eyebrow">05 · Components</span>
+            <h2>Familiar controls, complete behavior.</h2>
+            <p>
+              Shared controls use semantic HTML, visible labels, minimum 44px
+              targets, and a consistent two-pixel focus outline with a three-pixel
+              offset. The examples below show production-intent appearance and states.
+            </p>
+          </div>
+
+          <article class="specimen">
+            <div class="specimen-header">
+              <h3>Header and navigation</h3>
+              <span class="specimen-label">Wide state</span>
+            </div>
+            <div class="demo-header">
+              <img src="/blyx-logo.png" alt="Blyx" width="240" height="86" />
+              <nav aria-label="Example primary navigation">
+                <ul>
+                  <li><a href="#components" aria-current="page">Services</a></li>
+                  <li><a href="#components">Projects</a></li>
+                  <li><a href="#components">About</a></li>
+                </ul>
+              </nav>
+              <a class="button button-primary" href="#components">Start a project</a>
+              <button
+                class="button button-secondary menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="guide-mobile-navigation"
+              >
+                <span class="menu-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span>Menu</span>
+              </button>
+            </div>
+            <nav id="guide-mobile-navigation" aria-label="Example mobile navigation" hidden>
+              <a href="/networking/">Networking</a>
+              <a href="/surveillance/">Security cameras</a>
+              <a href="/access-control/">Access &amp; entry</a>
+              <a href="#principles">Approach</a>
+              <a href="#components">Discuss a project</a>
+            </nav>
+            <div class="specimen-body">
+              <p class="usage">
+                <strong>Use:</strong> sticky on a solid background. Wide layouts
+                place brand, navigation, and primary action on shared grid regions.
+                Below 64rem, show one labeled menu control and place links in a
+                separate full-width panel.
+              </p>
+            </div>
+          </article>
+
+          <div class="component-grid" style="margin-top: var(--grid-gap)">
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Buttons and links</h3>
+                <span class="specimen-label">Light field</span>
+              </div>
+              <div class="specimen-body">
+                <div class="button-row">
+                  <a class="button button-primary" href="#components">Primary</a>
+                  <a class="button button-secondary" href="#components">Secondary</a>
+                  <a class="button button-quiet" href="#components">Quiet action</a>
+                  <button class="button is-loading" type="button" aria-busy="true">Sending…</button>
+                  <button class="button" type="button" disabled>Unavailable</button>
+                </div>
+                <div class="link-row" style="margin-top: var(--space-5)">
+                  <a class="text-link" href="#components">Read project details</a>
+                  <span>Inline <a href="#components">body link</a> with context.</span>
+                </div>
+                <p class="usage">
+                  <strong>Use:</strong> one primary action per group. Secondary is
+                  the alternative; quiet is for low-emphasis utility. Preserve the
+                  action label during loading and never use color alone for state.
+                </p>
+              </div>
+            </article>
+
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Inverse controls</h3>
+                <span class="specimen-label">Dark field</span>
+              </div>
+              <div class="inverse-demo">
+                <div class="button-row">
+                  <a class="button button-primary" href="#components">Primary</a>
+                  <a class="button button-secondary" href="#components">Secondary</a>
+                </div>
+                <p class="usage" style="color: var(--color-text-inverse-muted)">
+                  Use inverse text, border, status, and focus tokens throughout a
+                  dark section. Do not mix light-field muted or status colors here.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <article class="specimen" style="margin-top: var(--grid-gap)">
+            <div class="specimen-header">
+              <h3>Form controls and feedback</h3>
+              <span class="specimen-label">Representative states</span>
+            </div>
+            <div class="specimen-body component-grid is-uneven">
+              <form class="form-demo" action="#components">
+                <div class="field">
+                  <label for="guide-name">Name</label>
+                  <input id="guide-name" name="name" autocomplete="name" value="Avery Morgan" />
+                </div>
+                <div class="field">
+                  <label for="guide-service">Project type</label>
+                  <p class="field-help" id="guide-service-help">Choose the closest match. Details can follow.</p>
+                  <select id="guide-service" name="service" aria-describedby="guide-service-help">
+                    <option>Network infrastructure</option>
+                    <option>Surveillance</option>
+                    <option>Access control</option>
+                  </select>
+                </div>
+                <div class="field is-invalid">
+                  <label for="guide-email">Email</label>
+                  <input
+                    id="guide-email"
+                    name="email"
+                    type="email"
+                    value="avery@"
+                    aria-invalid="true"
+                    aria-describedby="guide-email-error"
+                  />
+                  <p class="field-error" id="guide-email-error">Error: enter a complete email address.</p>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox" checked />
+                  <span>Send a copy of this request to my email.</span>
+                </label>
+              </form>
+              <div>
+                <div class="status" style="--status-bg: var(--color-success-surface); --status-color: var(--color-success)">
+                  <strong>Success:</strong> Your project request has been received.
+                </div>
+                <div class="status" style="--status-bg: var(--color-error-surface); --status-color: var(--color-error); margin-top: var(--space-3)">
+                  <strong>Error:</strong> Review the highlighted fields and try again.
+                </div>
+                <p class="usage">
+                  <strong>Use:</strong> visible labels are mandatory. Help text
+                  precedes validation; errors state the problem and the remedy.
+                  Focus moves to the summary after a failed submission and to the
+                  confirmation after success.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen" style="margin-top: var(--grid-gap)">
+            <div class="specimen-header">
+              <h3>Interaction state reference</h3>
+              <span class="specimen-label">Light and inverse fields</span>
+            </div>
+            <div class="specimen-body component-grid">
+              <div class="state-board">
+                <div class="state-group">
+                  <h4>Primary button</h4>
+                  <div class="state-strip">
+                    <div class="state-item"><span class="state-label">Default</span><button class="button button-primary" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Hover</span><button class="button button-primary is-hover" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Focus</span><button class="button button-primary is-focus" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Active</span><button class="button button-primary is-active" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Loading</span><button class="button button-primary is-loading" type="button" aria-busy="true">Sending…</button></div>
+                    <div class="state-item"><span class="state-label">Disabled</span><button class="button button-primary" type="button" disabled>Unavailable</button></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Secondary, menu, and text link</h4>
+                  <div class="state-strip">
+                    <div class="state-item"><span class="state-label">Default</span><button class="button button-secondary" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Hover</span><button class="button button-secondary is-hover" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Focus</span><button class="button button-secondary is-focus" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Active</span><button class="button button-secondary is-active" type="button">Close</button></div>
+                    <div class="state-item"><span class="state-label">Link hover</span><a class="text-link is-hover" href="#components">Project details</a></div>
+                    <div class="state-item"><span class="state-label">Link focus</span><a class="text-link is-focus" href="#components">Project details</a></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Fields</h4>
+                  <div class="state-strip">
+                    <div class="state-item field"><span class="state-label">Default</span><input aria-label="Default field example" placeholder="Your name" /></div>
+                    <div class="state-item field is-hover"><span class="state-label">Hover</span><input aria-label="Hovered field example" placeholder="Your name" /></div>
+                    <div class="state-item field is-focus"><span class="state-label">Focus</span><input aria-label="Focused field example" value="Avery" /></div>
+                    <div class="state-item field is-invalid"><span class="state-label">Invalid</span><input aria-label="Invalid field example" value="avery@" aria-invalid="true" /></div>
+                    <div class="state-item field"><span class="state-label">Disabled</span><input aria-label="Disabled field example" value="Unavailable" disabled /></div>
+                    <div class="state-item field"><span class="state-label">Read-only</span><input aria-label="Read-only field example" value="Louisville, KY" readonly /></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Select and checkbox</h4>
+                  <div class="state-strip">
+                    <div class="state-item field"><span class="state-label">Selected</span><select aria-label="Selected service example"><option>Networking</option></select></div>
+                    <div class="state-item"><span class="state-label">Default</span><label class="checkbox"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Hover</span><label class="checkbox is-hover"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Focus</span><label class="checkbox is-focus"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Selected</span><label class="checkbox is-selected"><input type="checkbox" checked /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Disabled</span><label class="checkbox is-disabled"><input type="checkbox" disabled /><span>Unavailable</span></label></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="inverse-demo state-board">
+                <div class="state-group">
+                  <h4>Primary button</h4>
+                  <div class="state-strip">
+                    <div class="state-item"><span class="state-label">Default</span><button class="button button-primary" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Hover</span><button class="button button-primary is-hover" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Focus</span><button class="button button-primary is-focus" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Active</span><button class="button button-primary is-active" type="button">Send inquiry</button></div>
+                    <div class="state-item"><span class="state-label">Loading</span><button class="button button-primary is-loading" type="button" aria-busy="true">Sending…</button></div>
+                    <div class="state-item"><span class="state-label">Disabled</span><button class="button button-primary" type="button" disabled>Unavailable</button></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Secondary, menu, and text link</h4>
+                  <div class="state-strip">
+                    <div class="state-item"><span class="state-label">Default</span><button class="button button-secondary" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Hover</span><button class="button button-secondary is-hover" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Focus</span><button class="button button-secondary is-focus" type="button">Menu</button></div>
+                    <div class="state-item"><span class="state-label">Active</span><button class="button button-secondary is-active" type="button">Close</button></div>
+                    <div class="state-item"><span class="state-label">Link hover</span><a class="text-link is-hover" href="#components">Project details</a></div>
+                    <div class="state-item"><span class="state-label">Link focus</span><a class="text-link is-focus" href="#components">Project details</a></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Fields</h4>
+                  <div class="state-strip">
+                    <div class="state-item field"><span class="state-label">Default</span><input aria-label="Inverse default field example" placeholder="Your name" /></div>
+                    <div class="state-item field is-hover"><span class="state-label">Hover</span><input aria-label="Inverse hovered field example" placeholder="Your name" /></div>
+                    <div class="state-item field is-focus"><span class="state-label">Focus</span><input aria-label="Inverse focused field example" value="Avery" /></div>
+                    <div class="state-item field is-invalid"><span class="state-label">Invalid</span><input aria-label="Inverse invalid field example" value="avery@" aria-invalid="true" /></div>
+                    <div class="state-item field"><span class="state-label">Disabled</span><input aria-label="Inverse disabled field example" value="Unavailable" disabled /></div>
+                    <div class="state-item field"><span class="state-label">Read-only</span><input aria-label="Inverse read-only field example" value="Louisville, KY" readonly /></div>
+                  </div>
+                </div>
+                <div class="state-group">
+                  <h4>Select, checkbox, and feedback</h4>
+                  <div class="state-strip">
+                    <div class="state-item field"><span class="state-label">Selected</span><select aria-label="Inverse selected service example"><option>Networking</option></select></div>
+                    <div class="state-item"><span class="state-label">Default</span><label class="checkbox"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Hover</span><label class="checkbox is-hover"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Focus</span><label class="checkbox is-focus"><input type="checkbox" /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Selected</span><label class="checkbox is-selected"><input type="checkbox" checked /><span>Networking</span></label></div>
+                    <div class="state-item"><span class="state-label">Disabled</span><label class="checkbox is-disabled"><input type="checkbox" disabled /><span>Unavailable</span></label></div>
+                  </div>
+                  <div class="status" role="status" style="--status-bg: var(--color-surface-inverse-raised); --status-color: var(--color-success-inverse)"><strong>Success:</strong> Your request has been received.</div>
+                  <div class="status" role="alert" style="--status-bg: var(--color-surface-inverse-raised); --status-color: var(--color-error-inverse)"><strong>Error:</strong> Review the highlighted fields.</div>
+                </div>
+              </div>
+            </div>
+            <div class="specimen-body">
+              <p class="usage">
+                <strong>Use:</strong> static state samples make review differences
+                explicit. Production states are triggered by the corresponding
+                native pseudo-class or application state, retain their accessible
+                name, and include programmatic status where required.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="guide-section" id="compositions">
+          <div class="section-heading">
+            <span class="eyebrow">06 · Compositions</span>
+            <h2>Shared patterns, not rigid templates.</h2>
+            <p>
+              Start with these relationships, then omit regions the page does not
+              need. Compact layouts follow meaningful source order and stack every
+              region; wider layouts use grid placement to create asymmetry.
+            </p>
+          </div>
+
+          <article class="specimen">
+            <div class="specimen-header">
+              <h3>Copy-and-media hero</h3>
+              <span class="specimen-label">5 / 7 columns at wide</span>
+            </div>
+            <div class="composition-hero">
+              <div class="composition-copy">
+                <span class="eyebrow">Network infrastructure</span>
+                <h3>A foundation you do not have to think about.</h3>
+                <p>
+                  Purpose-built connectivity, planned around the property and the
+                  systems it needs to support.
+                </p>
+                <a class="button button-primary" href="#compositions">Explore networking</a>
+              </div>
+              <div class="composition-media image-fade">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="/projects/network-surveillance/network-rack-480.webp 480w, /projects/network-surveillance/network-rack-768.webp 768w, /projects/network-surveillance/network-rack-1024.webp 1024w"
+                    sizes="(min-width: 48rem) 58vw, 100vw"
+                  />
+                  <img
+                    src="/projects/network-surveillance/network-rack.jpg"
+                    alt="Organized network rack installed in a residence"
+                    width="1024"
+                    height="768"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="specimen-body">
+              <p class="usage">
+                <strong>Use:</strong> keep copy on its solid field. The image may
+                meet the section edge and fade only through low-information space;
+                the focal equipment remains fully visible.
+              </p>
+            </div>
+          </article>
+
+          <article class="specimen" style="margin-top: var(--grid-gap)">
+            <div class="specimen-header">
+              <h3>Equal service panels</h3>
+              <span class="specimen-label">Three coordinated services</span>
+            </div>
+            <div class="specimen-body">
+              <div class="service-panels">
+                <article class="service-panel">
+                  <div class="service-panel-media">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="/design-guide/service-renders/networking-v3-768.webp 768w, /design-guide/service-renders/networking-v3-1448.webp 1448w"
+                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
+                      />
+                      <img
+                        src="/design-guide/service-renders/networking-v3-768.webp"
+                        alt="Residential cutaway showing a central network rack, concealed cabling, and two ceiling access points"
+                        width="768"
+                        height="576"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="service-panel-body">
+                    <span class="eyebrow">Networking</span>
+                    <h3>Reliable coverage, built into the home.</h3>
+                    <p>Plan connectivity around the property, its construction, and the systems it needs to support.</p>
+                    <a class="text-link" href="/networking/">Explore reliable connectivity</a>
+                  </div>
+                </article>
+
+                <article class="service-panel">
+                  <div class="service-panel-media">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="/design-guide/service-renders/surveillance-v2-768.webp 768w, /design-guide/service-renders/surveillance-v2-1448.webp 1448w"
+                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
+                      />
+                      <img
+                        src="/design-guide/service-renders/surveillance-v2-768.webp"
+                        alt="Residential cutaway showing security-camera placement and fields of view"
+                        width="768"
+                        height="576"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="service-panel-body">
+                    <span class="eyebrow">Surveillance</span>
+                    <h3>Awareness where it matters.</h3>
+                    <p>Place cameras around useful views, appropriate coverage, and the way the property is actually used.</p>
+                    <a class="text-link" href="/surveillance/">Explore smarter surveillance</a>
+                  </div>
+                </article>
+
+                <article class="service-panel">
+                  <div class="service-panel-media">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="/design-guide/service-renders/access-control-v2-768.webp 768w, /design-guide/service-renders/access-control-v2-1448.webp 1448w"
+                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
+                      />
+                      <img
+                        src="/design-guide/service-renders/access-control-v2-768.webp"
+                        alt="Residential entry cutaway showing an access reader, lock, door contact, controller, and concealed connections"
+                        width="768"
+                        height="576"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="service-panel-body">
+                    <span class="eyebrow">Access control</span>
+                    <h3>The right access, at the right doors.</h3>
+                    <p>Control who can enter while keeping credentials, locks, and everyday use straightforward.</p>
+                    <a class="text-link" href="/access-control/">Explore secure access</a>
+                  </div>
+                </article>
+              </div>
+              <p class="usage">
+                <strong>Use:</strong> reserve this equal three-panel composition for
+                the primary service overview. Keep the technical renders coordinated,
+                constrain copy to a shared structure, and stack all three panels below
+                the wide grid state.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="guide-section" id="imagery">
+          <div class="section-heading">
+            <span class="eyebrow">07 · Imagery</span>
+            <h2>Installation detail is the evidence.</h2>
+            <p>
+              Use authentic project photography first. Keep the subject, its
+              architectural anchor, and enough context to understand the work.
+              Text never sits over detailed photography.
+            </p>
+          </div>
+
+          <div class="image-grid">
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Hard crop</h3>
+                <span class="specimen-label">Default treatment</span>
+              </div>
+              <div class="specimen-body">
+                <figure style="margin: 0">
+                  <div class="image-frame">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="/projects/automated-entry/entry-reader-480.webp 480w, /projects/automated-entry/entry-reader-768.webp 768w"
+                        sizes="(min-width: 48rem) 45vw, 100vw"
+                      />
+                      <img
+                        src="/projects/automated-entry/entry-reader.jpg"
+                        alt="Access reader installed beside a residential entry"
+                        width="768"
+                        height="1024"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <figcaption class="caption" style="margin-top: var(--space-3)">
+                    Access reader shown with door and mounting context.
+                  </figcaption>
+                </figure>
+                <p class="usage">
+                  <strong>Use:</strong> the default for proof, gallery, and detail
+                  images. Crop tightly enough to identify the work, never through
+                  the focal device or a proof-bearing detail.
+                </p>
+              </div>
+            </article>
+
+            <article class="guide-card">
+              <h3>Selection checklist</h3>
+              <ul class="rule-list">
+                <li>The focal device or finish is immediately identifiable.</li>
+                <li>One construction edge or material change gives context.</li>
+                <li>The crop removes unrelated room or lifestyle detail.</li>
+                <li>Intrinsic dimensions and responsive sources are present.</li>
+                <li>Alternative text states useful visual information.</li>
+                <li>Soft or undersized assets are flagged before production; upscaling requires explicit approval.</li>
+              </ul>
+              <p class="usage">
+                Avoid generic lifestyle stock, fake interface overlays, dramatic
+                color grading, text over photography, ornamental gradients, and
+                fades that cross the focal subject.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section" id="review">
+          <div class="section-heading">
+            <span class="eyebrow">08 · Page review</span>
+            <h2>A repeatable check before release.</h2>
+            <p>
+              Review a page in this order. Correct structure and clarity before
+              polishing local detail.
+            </p>
+          </div>
+
+          <div class="do-dont">
+            <article class="guide-card">
+              <h3>Page-level checks</h3>
+              <ol class="rule-list">
+                <li>One clear page promise, one semantic h1, logical heading order.</li>
+                <li>Every value maps to a shared token or documented exception.</li>
+                <li>Text measures, grid spans, and section rhythm match their roles.</li>
+                <li>Every action and form state is understandable without color alone.</li>
+                <li>Imagery proves the work, protects the focal subject, and uses only approved enhancements.</li>
+              </ol>
+            </article>
+            <article class="guide-card">
+              <h3>Responsive and access checks</h3>
+              <ol class="rule-list">
+                <li>Inspect at 320, 768, 1024, 1280, and 1440 CSS pixels.</li>
+                <li>Test keyboard order, focus visibility, and menu behavior.</li>
+                <li>Test 200% text zoom and browser font-size preferences.</li>
+                <li>Confirm solid-field contrast for every state.</li>
+                <li>Block the web font and images; content must remain usable.</li>
+              </ol>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="guide-footer">
+        <strong>Blyx visual design system</strong>
+        <p>
+          The token file and approved specifications are the source of truth. When
+          a shared decision changes, update the token, written rule, and relevant
+          example together.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

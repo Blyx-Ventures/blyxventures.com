@@ -33,14 +33,16 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 - Focus on an installed device, installation detail, or outcome. Retain only enough architecture for context; for example, show a camera, eave, and relevant corner rather than the whole house.
 - Use subjects, structural lines, and negative space to frame or lead toward copy.
 - Keep subjects crisp. Blend selected low-information edges through directional gradients, transparency, tonal grading, or off-canvas cropping; avoid uniform cloudy vignettes.
+- Evaluate every selected image at its intended rendered size and crop. When an asset appears soft, pixelated, compressed, or otherwise below high-resolution presentation quality, the implementation agent must recommend upscaling and obtain explicit approval before creating or using an enhanced derivative.
 - Create distinct desktop and mobile crops when needed.
 - Favor controlled natural light, realistic materials, clean surroundings, and restrained contrast.
 - Use polished photography or simplified realistic renders for marketing; use authentic Blyx photography for proof. Never portray generated, rendered, or staged imagery as completed Blyx work.
+- Service-overview panels use a coordinated set of monochromatic technical renders: translucent residential cutaways, partially solid architectural surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof.
 - Avoid default full-bleed backgrounds. Reserve wide environmental images for project stories where the setting matters.
 
 ## Interface and content rules
 
-- Let typography lead; use color and spacing for hierarchy. Avoid dense card grids and unnecessary containers.
+- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The homepage service overview is a named exception: one set of three equal panels with a shared structure, coordinated technical imagery, and one action per service.
 - Make navigation, controls, and forms precise, understated, accessible, and consistent. Forms require clear labels, visible focus, useful validation, and strong contrast.
 - Use motion only for state clarity or subtle polish. Exclude heavy parallax, scroll spectacle, and motion required for comprehension.
 - Use **we** without implying unsupported team size or capacity.
@@ -51,6 +53,7 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 
 ## Visual design system decisions
 
+- [Living visual design guide](./design-guide.md)
 - [Typography and content hierarchy](./typography.md)
 - [Color, surface, border, and depth system](./color-surfaces.md)
 - [Spacing, grid, and responsive layout system](./layout.md)

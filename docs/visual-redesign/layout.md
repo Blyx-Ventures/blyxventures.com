@@ -126,10 +126,33 @@ Column ranges below use one-based grid lines and apply at the wide state. At com
 | Copy and supporting media | Copy 1–7; media 8–13 | Explanatory section with a clear gap between meaning and visual proof. |
 | Project proof | Media 1–6; story 7–13 | Gives authentic project material enough detail while keeping the story readable. DOM order remains story, then media when the compact order must put copy first. |
 | Contact split | Introduction 1–6; form 7–13 | Keeps inquiry context adjacent to the form. Stack before either region becomes narrower than 20rem. |
-| Repeated service row | Index 1–2; title 2–6; summary 7–11; action 12–13 | Replaces dense card grids with aligned, scannable rows. Each row becomes one vertical group on compact screens. |
+| Service panel group | Networking 1–5; surveillance 5–9; access control 9–13 | Three equal-size panels with identical media, copy, and action regions. Use only for the primary service overview; stack the panels below the wide state. |
 | Reading page | Content 3–11 | Policy and long-form content remains no wider than `width-reading`; the outer columns preserve calm whitespace. |
 
 These are starting patterns, not templates that every section must use. A composition may omit a region and allow the remaining content to occupy fewer columns; it must not stretch copy beyond its defined measure simply to fill the grid.
+
+### Service panel group
+
+The service overview contains exactly three equal-size panels in this order: Networking, Surveillance, and Access control. All panels use the same internal grid:
+
+1. A technical-render media region occupying 40–45% of the panel block size
+2. A short service label or title
+3. One outcome-led heading and a concise explanation
+4. One service-page action pinned to the bottom of the content region, with `space-2` internal top padding and a minimum target height of `control-height-compact`
+
+Use the same aspect ratio, compact minimum block size, padding, border, radius, and content tracks across all three panels. Pin every action to the bottom edge so the three actions align. Constrain copy so one panel does not gain height from a longer title or description. Do not resize one panel to feature a preferred service.
+
+Use `service-panel-min-height` at 29rem, `service-panel-media-height` at 13rem, and `service-panel-copy-overlap` at 1rem. At the minimum panel height, the media occupies approximately 45% of the card. Remove the hard rule between media and copy. Fade the image's bottom edge into `surface`, overlap the copy field upward, and make that field fully opaque before the eyebrow begins. Content may increase the panel height when text reflows; never clip copy or reduce the action target to hold the minimum height.
+
+At the wide state, each panel spans four columns and all three share one row. Below 64rem, stack the panels in source order and preserve equal dimensions. Do not use a two-plus-one arrangement, horizontal carousel, or content reordering.
+
+The service actions are:
+
+- Networking: “Explore reliable connectivity”
+- Surveillance: “Explore smarter surveillance”
+- Access control: “Explore secure access”
+
+The card set is a named composition, not permission to convert other content sections into card grids. Use spacing or surface changes for other repeated content unless a separate documented component requires a container.
 
 ## Section rhythm
 
@@ -200,7 +223,7 @@ Apply the following rules:
 
 ## Acceptance checks
 
-- Build representative hero, section-introduction, copy/media, project-proof, service-row, contact, and reading-page compositions using only documented widths, grid lines, gaps, and spacing tokens.
+- Build representative hero, section-introduction, copy/media, project-proof, service-panel, contact, and reading-page compositions using only documented widths, grid lines, gaps, and spacing tokens.
 - Review each composition at 320px, 768px, 1024px, 1280px, and 1440px viewport widths.
 - Repeat the review at 200% text zoom and with the fallback font from the typography specification.
 - Confirm that removing every image leaves the message, service scope, and primary action complete and correctly aligned.
