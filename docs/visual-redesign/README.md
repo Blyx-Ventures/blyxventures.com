@@ -55,6 +55,7 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 - [Color, surface, border, and depth system](./color-surfaces.md)
 - [Spacing, grid, and responsive layout system](./layout.md)
 - [Navigation, controls, and form system](./components.md)
+- [Image composition and edge-fade system](./imagery.md)
 
 ## Service area and proof
 
