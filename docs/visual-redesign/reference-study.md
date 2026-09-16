@@ -6,7 +6,7 @@ _Issue #23 · Visual-direction reference board · September 2026_
 
 ## 🧭 Direction
 
-The references support one direction: **precise residential technology, shown with calm confidence**. Blyx should use copy as the primary carrier of meaning, then place one tightly framed image beside or behind it to reinforce the same idea. The result should feel spacious and exact without becoming sterile, product-led, cinematic, or luxury-coded.
+The references support one direction: **precise technology for homes and light-commercial spaces, shown with calm confidence**. Blyx should use copy as the primary carrier of meaning, then place one tightly framed image beside or behind it to reinforce the same idea. The result should feel spacious and exact without becoming sterile, product-led, cinematic, enterprise-coded, or luxury-coded.
 
 This study is directional, not a component specification. Fonts, color values, spacing scales, masks, and interaction states belong in the Milestone 02 visual design guide.
 
@@ -39,7 +39,7 @@ _Purpose: show how technically complex networking can be introduced through conc
 
 **Borrow for Blyx**
 
-- Lead with the household problem or outcome before technical detail.
+- Lead with the customer problem or outcome before technical detail.
 - Use plain, compact headlines that remain legible over or beside imagery.
 - Keep the primary action obvious and subordinate product explanation to the main promise.
 
@@ -83,8 +83,8 @@ _Purpose: show how architectural lines and controlled natural light can locate t
 **Do not copy**
 
 - Do not rely on aspirational whole-room photography when the technology or workmanship is unreadable.
-- Do not adopt luxury-residence signaling, lifestyle imagery, or a whole-home automation position.
-- Do not make architecture the subject; the installed result and homeowner benefit remain the subject.
+- Do not adopt luxury-residence signaling, generic lifestyle imagery, or a luxury whole-home automation position.
+- Do not make architecture the subject; the installed result and customer benefit remain the subject.
 
 ## 📐 Shared visual grammar
 
@@ -105,10 +105,10 @@ Every visual-direction study should demonstrate the same five conditions:
 1. Copy remains understandable and actionable without the image.
 2. One image reinforces one adjacent idea.
 3. The subject is crisp, tightly cropped, and placed with intentional negative space.
-4. Residential architecture supplies context without becoming luxury scenery.
+4. Residential or light-commercial architecture supplies context without becoming luxury or enterprise scenery.
 5. Motion, if present, adds polish but carries no essential meaning.
 
-Evaluate each study by asking: _Does this make Blyx feel like a dependable residential integrator whose work is planned carefully, installed cleanly, and easy to live with?_ If the answer depends on a visual effect, a product glamour shot, or an expansive property image, the study is outside the direction.
+Evaluate each study by asking: _Does this make Blyx feel like a dependable integrator for homes and light-commercial spaces whose work is planned carefully, installed cleanly, and easy to use?_ If the answer depends on a visual effect, a product glamour shot, or an expansive property image, the study is outside the direction.
 
 ## 🔗 References
 
