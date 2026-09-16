@@ -2,7 +2,7 @@
 
 _Issue #29 · Visual design system · September 2026_
 
-This specification defines how contextual equipment imagery supports copy without becoming a background spectacle or product catalog. Every image contributes one clear piece of residential context, installation evidence, or homeowner outcome.
+This specification defines how contextual equipment imagery supports copy without becoming a background spectacle or product catalog. Every image contributes one clear piece of residential or light-commercial context, installation evidence, or customer outcome.
 
 ## Core rules
 
@@ -189,8 +189,8 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 
 ### Commissioned or licensed photography
 
-- Use for a believable residential situation, installation context, or homeowner outcome that the existing proof cannot provide.
-- Avoid generic smiling-homeowner scenes, conspicuous luxury cues, retail packaging, and commercial-building context.
+- Use for a believable residential or light-commercial situation, installation context, or customer outcome that the existing proof cannot provide.
+- Avoid generic smiling-customer scenes, conspicuous luxury cues, retail packaging, and large-enterprise or industrial-building context.
 - Confirm model, property, and usage releases before production use.
 - Do not caption or position the image as completed Blyx work.
 

@@ -83,7 +83,7 @@ Use one dominant heading per viewport section. Supporting copy must be visibly q
 - Use underlines for inline links. Color alone must not identify a link inside body copy.
 - Use tabular numerals for phone numbers, project indices, measurements, and other values that benefit from alignment.
 - Use real text for all essential content. Logos are the only routine exception to the prohibition on images of text.
-- Write homeowner-facing copy in plain language: outcome first, concrete service detail second. Do not create hierarchy with repeated slogans or ornamental microcopy.
+- Write customer-facing copy in plain language: outcome first, concrete service detail second. Do not create hierarchy with repeated slogans or ornamental microcopy.
 
 ## Responsive and accessibility rules
 
