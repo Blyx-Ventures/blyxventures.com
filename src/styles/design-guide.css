@@ -414,6 +414,39 @@ a {
 
 .menu-button {
   display: none;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.menu-icon {
+  display: grid;
+  width: 1.125rem;
+  gap: 3px;
+}
+
+.menu-icon span {
+  width: 100%;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: currentcolor;
+  transition: opacity var(--transition-state), transform var(--transition-state);
+}
+
+.menu-icon span:nth-child(2) {
+  width: 75%;
+  justify-self: end;
+}
+
+.menu-button[aria-expanded="true"] .menu-icon span:first-child {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.menu-button[aria-expanded="true"] .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button[aria-expanded="true"] .menu-icon span:last-child {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .button-row,
@@ -1047,7 +1080,7 @@ a {
   }
 
   .demo-header > .menu-button {
-    display: inline-grid;
+    display: inline-flex;
   }
 }
 

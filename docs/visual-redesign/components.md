@@ -74,7 +74,7 @@ Set `scroll-padding-top` on the document and `scroll-margin-top` on anchored sec
 
 ## Mobile navigation
 
-Below the wide grid state, replace the inline navigation and header action with one visible “Menu” button. The button includes a text label and optional icon; the icon is decorative. It uses `aria-expanded` and `aria-controls` to identify the navigation panel.
+Below the wide grid state, replace the inline navigation and header action with one visible “Menu” button. Pair the visible text label with a decorative three-line menu icon. Use three restrained two-pixel strokes; the middle stroke may be slightly shorter and end-aligned to add distinction without weakening the familiar symbol. The expanded state changes the label to “Close” and resolves the outer strokes into an X while the middle stroke disappears. The button uses `aria-expanded` and `aria-controls` to identify the navigation panel.
 
 The closed panel uses the native `hidden` state so it and its descendants are absent from the accessibility tree and keyboard order. The open panel:
 
