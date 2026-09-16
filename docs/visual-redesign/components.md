@@ -21,7 +21,7 @@ These component dimensions are named exceptions to the spacing scale. Internal g
 :root {
   --control-height: 3rem;
   --control-height-compact: 2.75rem;
-  --field-height: 3.25rem;
+  --field-height: 2.75rem;
   --header-height: clamp(4.5rem, 4.1rem + 1vw, 5.5rem);
   --transition-state: 160ms ease;
 }
@@ -31,7 +31,7 @@ These component dimensions are named exceptions to the spacing scale. Internal g
 | --- | --- |
 | `control-height` | Standard buttons and standalone action targets |
 | `control-height-compact` | Menu toggle, icon button, or compact header action; never use below 44px |
-| `field-height` | Single-line input and select minimum height |
+| `field-height` | Single-line input and select minimum height (44px) |
 | `header-height` | Shared header block size from compact through wide layouts |
 | `transition-state` | Color, background, border, and short opacity transitions |
 
@@ -143,7 +143,7 @@ Text inputs, email inputs, telephone inputs, ZIP inputs, selects, and textareas 
 
 - `form-control` typography and the inherited text color.
 - At least `field-height` for a single line.
-- `space-3` block and `space-4` inline padding.
+- `space-2` block and `space-4` inline padding.
 - `radius-control` and a 1px strong border.
 - `surface` on light fields or `surface-inverse-raised` on dark fields.
 - `text-muted` or `text-inverse-muted` for optional placeholder examples.
@@ -169,9 +169,9 @@ Labels use `form-label`; help, error, and status copy use `form-help`. Keep `spa
 
 ## Checkbox options
 
-Checkboxes remain native inputs with an accent or custom visual that preserves their semantics. The checkbox itself is at least 1.25rem square, and its label creates a target at least 44px high.
+Checkboxes remain native inputs with an accent or custom visual that preserves their semantics. The checkbox itself is 1.125rem square, and its label creates a target at least 44px high.
 
-Use a single option row with `space-3` padding, `space-3` gap, `radius-control`, and the same surface and border pair as text controls. On checked options, use `surface-brand` with `brand-strong` boundary and `text` on light fields; use `surface-inverse-raised`, `focus-inverse` boundary, and `text-inverse` on dark fields. Include the visible checkmark so color is not the only selected indicator.
+Use a single option row with `space-2` padding, `space-3` gap, `radius-control`, and the same surface and border pair as text controls. On checked options, use `surface-brand` with `brand-strong` boundary and `text` on light fields; use `surface-inverse-raised`, `focus-inverse` boundary, and `text-inverse` on dark fields. Include the visible checkmark so color is not the only selected indicator.
 
 Focus appears around the full option row via `:focus-within`. Invalid choice groups use the appropriate error boundary around the group and a text message after the options. “Not sure yet” remains mutually exclusive with specific service selections, matching the existing contact behavior.
 

@@ -199,6 +199,58 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 - Record source, generation or rendering method, edit history, and intended marketing role.
 - Never combine a synthetic scene with project-proof language, a customer testimonial, or “our work” labeling.
 
+### Technical service visualizations
+
+Use one coordinated set of technical renders for the three homepage service panels. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery.
+
+The shared treatment combines:
+
+- a three-dimensional residential cutaway or architectural detail;
+- partially solid and partially translucent surfaces;
+- visible construction or system linework with a restrained blueprint character;
+- monochromatic warm graphite and off-white values, with an optional small Blyx green technical highlight;
+- soft depth, controlled shadows, and atmospheric recession; and
+- one consistent viewing angle, crop density, line weight, lighting direction, and level of realism across the set.
+
+Do not use pure wireframe line art, office interiors, people, fake user interfaces, decorative data labels, dense annotations, or a different rendering style for each service. Keep the subject legible at the panel's compact rendered size; remove technical detail that becomes visual noise.
+
+The three subjects are:
+
+| Service | Required visual focus | Exclude |
+| --- | --- | --- |
+| Networking | Architecturally plausible residential cutaway with the network rack in a believable central utility or low-voltage room, concealed structured-cabling paths, and clearly legible ceiling access points; translucent architecture reveals system relationships without compromising rooms or circulation | Rack in a foyer, hallway, living area, or other exposed circulation space; stairs or equipment that obstruct an entry path; implausible room layouts; generic cloud symbols, floating consumer routers, server-room or office context |
+| Surveillance | Residential exterior or entry cutaway with purposeful camera placement and approximately 110-degree coverage fields; the entry camera covers the approach and steps without implausible landscaping or circulation barriers | Narrow spotlight cones, intrusive facial targeting, dramatic threat imagery, excessive scanning graphics, walls or planting that interrupt the entry path |
+| Access control | Residential door detail or cutaway with a slim modern keypad or credential reader, electric strike or smart lock, door contact, controller, and clean concealed routes inside translucent walls, frame, and ceiling | Bulky featureless readers, exposed surface-mounted cable, door operators, automatic-opening motion, accessibility automation, or an emphasis on the door physically moving |
+
+The technical render occupies its own media region. Essential text remains on a solid field and does not overlay the illustration. The three outputs use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced.
+
+Record the source references, generation method, prompts, output files, intended role, and approval state in the [service-render provenance notes](./assets/service-renders.md).
+
+## Image-quality review and upscaling approval
+
+Evaluate each proposed website image at its intended rendered dimensions, responsive crop, and highest-density display requirement. Do not judge suitability from source pixel dimensions alone; inspect the visible result for softness, pixelation, compression artifacts, noise, and loss of proof-bearing detail.
+
+When an image looks below high-resolution presentation quality, any AI assistant or implementation agent working on the website must:
+
+1. Flag the quality limitation before the asset is placed in production.
+2. Check whether a higher-resolution original or alternate approved source exists.
+3. Recommend upscaling when it is the best available way to preserve the intended image.
+4. Explain the proposed method, output dimensions, intended placement, and any risk of altered detail.
+5. Obtain explicit approval before performing the upscale, generating a derivative, or replacing the selected website asset.
+
+Approval to use an image does not imply approval to upscale it. Do not silently enhance an asset or treat interpolation as recovered source detail.
+
+After approval:
+
+- Preserve the original file and create a clearly named derivative.
+- Prefer conservative, non-generative enlargement, sharpening, noise reduction, and artifact cleanup for authentic project photography.
+- Do not invent, reconstruct, add, remove, or materially change equipment, cable paths, labels, fasteners, construction conditions, people, or other proof-bearing details.
+- Compare the derivative with the original at the intended display size and at 100% pixel view. Reject results with halos, plastic texture, false edges, distorted text, or fabricated detail.
+- Record the source, method, output dimensions, approval, and intended use with the asset provenance notes.
+- Generate responsive sizes from the approved high-resolution derivative while retaining the original as the archival source.
+
+If a safe upscale cannot meet the intended presentation quality, recommend a smaller rendered size, a tighter art-directed crop, or a replacement image and request approval for that alternative.
+
 ## Desktop and mobile art direction
 
 Create separate crops when one source cannot preserve the subject and context in both layouts. Use `<picture>` so art direction—not only resolution—changes by layout state.
@@ -260,9 +312,11 @@ Create separate crops when one source cannot preserve the subject and context in
 - Review one camera, network rack, cable path, access reader, door operator, and interior composition at wide and compact layout states.
 - Draw the focal-subject, context-anchor, transition-band, and expendable-edge regions on every proposed production crop.
 - Confirm the subject remains fully sharp and opaque at 320px, 768px, 1024px, 1280px, and 1440px viewport widths.
+- Flag any image that appears below high-resolution presentation quality at its intended size; confirm that proposed upscaling or replacement received explicit approval before production use.
 - Disable CSS masks and pseudo-elements; every image must fall back to a coherent hard or framed crop.
 - Remove each image and verify that its section still communicates the promise, scope, and action.
 - Compare every fade edge against its surface token at multiple display brightness levels; reject visible bands, haze, and vignette effects.
 - Verify authentic, commissioned, licensed, rendered, and generated assets have correct provenance and are never presented as one another.
+- Review the three technical service renders together; confirm matching perspective, crop density, tonal range, line weight, lighting, and subject scale, and verify that access control does not depict automated entry.
 - Confirm responsive sources have intrinsic dimensions, accurate `sizes`, appropriate loading priority, and no material layout shift.
 - Check alt text, captions, and visible proof labels with images unavailable and with a screen reader.
