@@ -28,6 +28,7 @@ Use these values directly when implementing the visual design guide. Components 
   --color-text-inverse: #f5f3ed;
   --color-text-inverse-muted: #bcc8c2;
   --color-text-disabled: #606a65;
+  --color-text-inverse-disabled: #aab6b0;
 
   --color-background: #f5f3ed;
   --color-surface: #ffffff;
@@ -36,6 +37,7 @@ Use these values directly when implementing the visual design guide. Components 
   --color-surface-inverse: #17201d;
   --color-surface-inverse-raised: #202b27;
   --color-surface-disabled: #e5e7e4;
+  --color-surface-inverse-disabled: #2e3a34;
 
   --color-border: #c8cec9;
   --color-border-strong: #858f8a;
@@ -47,8 +49,10 @@ Use these values directly when implementing the visual design guide. Components 
 
   --color-success: #17633f;
   --color-success-surface: #e2f1e9;
+  --color-success-inverse: #82dbb2;
   --color-error: #9d3030;
   --color-error-surface: #fbe8e8;
+  --color-error-inverse: #ffb3b3;
 }
 ```
 
@@ -63,17 +67,22 @@ Use these values directly when implementing the visual design guide. Components 
 | `text-inverse` | Primary text on inverse surfaces |
 | `text-inverse-muted` | Supporting copy and metadata on inverse surfaces |
 | `text-disabled` | Text inside an unavailable control; pair with `surface-disabled` and never reduce opacity |
+| `text-inverse-disabled` | Text inside an unavailable control on an inverse field |
 | `background` | Primary page field and default copy region |
 | `surface` | Reading sections, forms, menus, and panels that need separation from the page field |
 | `surface-subtle` | Quiet grouped content and low-emphasis section differentiation |
 | `surface-brand` | Short brand callouts, selected states, or confirmation-adjacent content |
 | `surface-inverse` | Dark section field, primarily for the contact close and footer |
 | `surface-inverse-raised` | Nested panel or control grouping on an inverse field |
+| `surface-disabled` | Unavailable controls on a light field |
+| `surface-inverse-disabled` | Unavailable controls on an inverse field |
 | `border` / `border-inverse` | Decorative separators and boundaries that are not required to identify a control |
 | `border-strong` / `border-inverse-strong` | Control boundaries and meaningful graphical edges requiring 3:1 contrast |
 | `focus` / `focus-inverse` | Keyboard focus indicators on light and dark fields |
 | `success` / `success-surface` | Confirmed completion or valid submission state |
+| `success-inverse` | Success text and icons on inverse fields |
 | `error` / `error-surface` | Invalid input, failed submission, or destructive consequence |
+| `error-inverse` | Error text, icons, and control boundaries on inverse fields |
 
 The green logo asset remains the primary brand mark on light fields. Use an approved monochrome logo on dark or visually complex fields. The orange logo variants are not interface accent colors and do not extend the palette.
 
@@ -105,6 +114,11 @@ Contrast values are rounded to two decimals from unrounded calculations. Normal 
 | `error` | `background` | 6.53:1 | Error icon, heading, and message |
 | `error` | `surface` | 7.24:1 | Error icon, heading, and message |
 | `text-disabled` | `surface-disabled` | 4.51:1 | Disabled control text |
+| `text-inverse-disabled` | `surface-inverse-disabled` | 5.66:1 | Inverse disabled control text |
+| `success-inverse` | `surface-inverse` | 10.09:1 | Inverse success icon and message |
+| `success-inverse` | `surface-inverse-raised` | 8.86:1 | Inverse success icon and message |
+| `error-inverse` | `surface-inverse` | 9.80:1 | Inverse error icon and message |
+| `error-inverse` | `surface-inverse-raised` | 8.60:1 | Inverse error text and control boundary |
 | `border-strong` | `background` | 3.01:1 | Control boundary |
 | `border-strong` | `surface` | 3.34:1 | Control boundary |
 | `border-inverse-strong` | `surface-inverse` | 3.51:1 | Inverse control boundary |
@@ -187,7 +201,7 @@ Images may meet a surface edge or blend into it under the image-composition syst
 
 - Pair success and error foregrounds with their matching surfaces for messages. Use the foreground token alone for an icon or label only on `background` or `surface`, where it also exceeds 4.5:1.
 - State language and an icon accompany status color. Color is never the only indicator of success, error, selection, or required input.
-- Disabled controls use `text-disabled`, `surface-disabled`, and `border`. Do not lower the entire component's opacity, because that makes nested text unpredictable.
+- Disabled controls use `text-disabled`, `surface-disabled`, and `border` on light fields, or their inverse disabled counterparts on dark fields. Do not lower the entire component's opacity, because that makes nested text unpredictable.
 - Hover, active, loading, and selected behavior will reuse these tokens in the shared-controls specification. That work may assign tokens to states but must not add new colors without updating this source.
 
 ## Accessibility and validation
