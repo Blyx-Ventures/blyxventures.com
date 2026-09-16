@@ -66,7 +66,7 @@ Review in this order:
 - Use semantic HTML and native controls as the baseline. Styling does not replace labels, state language, heading order, or accessible names.
 - Keep single-line form controls compact at a 2.75rem minimum height with `space-2` block and `space-4` inline padding. Checkbox marks are 1.125rem inside a clickable row at least 2.75rem high. Preserve 16px control text and the shared Blyx border, radius, and focus treatment.
 - Keep responsive behavior mobile-first. The shared grid changes at 48rem and 64rem; 80rem is a large-canvas refinement.
-- Build the homepage service overview as three equal, compact panels in Networking, Surveillance, and Access control order. Each panel uses the same 40–45% technical-render region, constrained copy structure, and bottom-aligned action; stack all three below 64rem.
+- Build the homepage service overview as three equal, compact panels in Networking, Surveillance, and Access control order. Each panel uses the same 40–45% technical-render region, a surface-matched bottom fade into an overlapping solid copy field, constrained copy structure, and bottom-aligned action; stack all three below 64rem.
 - Keep essential content usable when fonts, images, animation, or JavaScript are unavailable.
 - Preserve original image assets. Upscaled derivatives require explicit approval, a documented method and intended use, and verification that no proof-bearing detail was invented or materially changed.
 - Treat the browser examples as representative combinations, not copy-and-paste page templates.

@@ -114,6 +114,8 @@ Use one horizontal fade where a low-information edge meets the copy field. The f
 
 Use `image-fade-narrow` for compact supporting media and `image-fade-wide` for hero media. When CSS masks are unavailable, the acceptable fallback is the unmasked hard crop. Do not add a broad opacity reduction as a fallback.
 
+For a vertically stacked service panel, the copy-facing seam is the image's bottom edge. Apply one `image-fade-narrow` surface-colored gradient at that edge and allow the solid copy field to overlap the transition by `service-panel-copy-overlap`. The copy field reaches full `surface` opacity before the eyebrow begins. Keep the image element, text, and controls in separate stacking contexts; no letter or focus indicator sits directly on image detail.
+
 ### 3. Limited corner recession
 
 Use when two adjacent low-information edges meet, such as empty wall at the copy-facing side and floor at the bottom. Apply two surface-colored pseudo-element gradients, each confined to its own edge, rather than a radial gradient.
@@ -222,7 +224,7 @@ The three subjects are:
 | Surveillance | Residential exterior or entry cutaway with purposeful camera placement and approximately 110-degree coverage fields; the entry camera covers the approach and steps without implausible landscaping or circulation barriers | Narrow spotlight cones, intrusive facial targeting, dramatic threat imagery, excessive scanning graphics, walls or planting that interrupt the entry path |
 | Access control | Residential door detail or cutaway with a slim modern keypad or credential reader, electric strike or smart lock, door contact, controller, and clean concealed routes inside translucent walls, frame, and ceiling | Bulky featureless readers, exposed surface-mounted cable, door operators, automatic-opening motion, accessibility automation, or an emphasis on the door physically moving |
 
-The technical render occupies its own media region. Essential text remains on a solid field and does not overlay the illustration. The three outputs use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced.
+The technical render occupies its own media region and fades into the copy-facing bottom seam. The solid copy field may overlap that transition, but it reaches full opacity before the eyebrow and all essential text. The three outputs use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced.
 
 Record the source references, generation method, prompts, output files, intended role, and approval state in the [service-render provenance notes](./assets/service-renders.md).
 

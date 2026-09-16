@@ -142,7 +142,7 @@ The service overview contains exactly three equal-size panels in this order: Net
 
 Use the same aspect ratio, compact minimum block size, padding, border, radius, and content tracks across all three panels. Pin every action to the bottom edge so the three actions align. Constrain copy so one panel does not gain height from a longer title or description. Do not resize one panel to feature a preferred service.
 
-Use `service-panel-min-height` at 30rem and `service-panel-media-height` at 13rem. At the minimum panel height, the media occupies approximately 43% of the card. Content may increase the panel height when text reflows; never clip copy or reduce the action target to hold the minimum height.
+Use `service-panel-min-height` at 29rem, `service-panel-media-height` at 13rem, and `service-panel-copy-overlap` at 1rem. At the minimum panel height, the media occupies approximately 45% of the card. Remove the hard rule between media and copy. Fade the image's bottom edge into `surface`, overlap the copy field upward, and make that field fully opaque before the eyebrow begins. Content may increase the panel height when text reflows; never clip copy or reduce the action target to hold the minimum height.
 
 At the wide state, each panel spans four columns and all three share one row. Below 64rem, stack the panels in source order and preserve equal dimensions. Do not use a two-plus-one arrangement, horizontal carousel, or content reordering.
 

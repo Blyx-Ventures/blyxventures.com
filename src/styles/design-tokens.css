@@ -87,8 +87,9 @@
   --control-height-compact: 2.75rem;
   --field-height: 2.75rem;
   --header-height: clamp(4.5rem, 4.1rem + 1vw, 5.5rem);
-  --service-panel-min-height: 30rem;
+  --service-panel-min-height: 29rem;
   --service-panel-media-height: 13rem;
+  --service-panel-copy-overlap: 1rem;
   --transition-state: 160ms ease;
 
   --image-fade-narrow: clamp(3rem, 6vw, 6rem);
