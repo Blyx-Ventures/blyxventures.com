@@ -201,30 +201,49 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 - Record source, generation or rendering method, edit history, and intended marketing role.
 - Never combine a synthetic scene with project-proof language, a customer testimonial, or “our work” labeling.
 
+### Audience gateway imagery
+
+Use one residential and one business architectural composition in the root audience gateway. These images establish context rather than explain a specific service.
+
+- Use warm graphite, off-white, and their tonal values exclusively. Do not use Blyx green, another brand accent, or separate residential and business accent colors.
+- Make the architecture predominantly solid and materially legible. The audience renders must read as noticeably more solid than the service-card renders.
+- Limit translucency, wireframe transitions, and blueprint linework to small supporting regions that imply technical integration without turning the scene into a system diagram.
+- Keep equipment secondary to the recognizable type of space.
+- Compose the residential image for the left panel and the business image for the right panel, with safe areas that protect the audience label, statement, and action cue.
+- Fill the complete linked side with the render. Layer copy over the image rather than reserving a separate copy band, and place it within the planned low-detail safe area.
+- Use a monochrome tonal scrim only when needed for contrast. It must merge with the render and must not introduce a colored overlay or obscure the audience context.
+- Treat the images as decorative within the block-level audience links unless a visual detail adds meaning not already expressed by the link text.
+- Define business image requirements without generating the asset. Use an explicit placeholder until separate approval is recorded.
+- Do not reuse the residential composition for business, combine both audiences into one ambiguous scene, or imply completed Blyx work.
+- Review the two renders in grayscale. They must remain distinct and balanced without relying on hue or accent color.
+
 ### Technical service visualizations
 
-Use one coordinated set of technical renders for the three homepage service panels. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery.
+Use separate coordinated technical-render sets for residential and business service panels. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery. The residential set is represented in the browser guide. Business image production is deferred until its service scope and image brief are approved.
 
 The shared treatment combines:
 
-- a three-dimensional residential cutaway or architectural detail;
+- a three-dimensional residential or light-commercial cutaway or architectural detail;
 - partially solid and partially translucent surfaces;
 - visible construction or system linework with a restrained blueprint character;
 - monochromatic warm graphite and off-white values, with an optional small Blyx green technical highlight;
 - soft depth, controlled shadows, and atmospheric recession; and
 - one consistent viewing angle, crop density, line weight, lighting direction, and level of realism across the set.
 
-Do not use pure wireframe line art, office interiors, people, fake user interfaces, decorative data labels, dense annotations, or a different rendering style for each service. Keep the subject legible at the panel's compact rendered size; remove technical detail that becomes visual noise.
+Do not use pure wireframe line art, people, fake user interfaces, decorative data labels, dense annotations, or a different rendering style for each service. Keep the subject legible at the panel's compact rendered size; remove technical detail that becomes visual noise. Residential renders exclude office interiors. Business renders use credible small-workplace context without implying enterprise scale.
 
-The three subjects are:
+The residential subjects are:
 
 | Service | Required visual focus | Exclude |
 | --- | --- | --- |
 | Networking | Architecturally plausible residential cutaway with the network rack in a believable central utility or low-voltage room, concealed structured-cabling paths, and clearly legible ceiling access points; translucent architecture reveals system relationships without compromising rooms or circulation | Rack in a foyer, hallway, living area, or other exposed circulation space; stairs or equipment that obstruct an entry path; implausible room layouts; generic cloud symbols, floating consumer routers, server-room or office context |
 | Surveillance | Residential exterior or entry cutaway with purposeful camera placement and approximately 110-degree coverage fields; the entry camera covers the approach and steps without implausible landscaping or circulation barriers | Narrow spotlight cones, intrusive facial targeting, dramatic threat imagery, excessive scanning graphics, walls or planting that interrupt the entry path |
-| Access control | Residential door detail or cutaway with a slim modern keypad or credential reader, electric strike or smart lock, door contact, controller, and clean concealed routes inside translucent walls, frame, and ceiling | Bulky featureless readers, exposed surface-mounted cable, door operators, automatic-opening motion, accessibility automation, or an emphasis on the door physically moving |
+| Automated entry & access control | Residential entrance showing a compatible automatic swing-door operator working with a credential reader or activation control, secure locking, and concealed coordination between the systems; the entry outcome remains visually primary | Access-reader-only scenes, exposed surface-mounted cable, implausible door geometry, unsafe egress, generic smart-lock product arrays, or imagery that omits automatic operation |
+| Home automation | Scope-approved home setting that makes the supported systems and their relationship to a daily routine legible without becoming a product array; concealed infrastructure and physical context remain credible | Unapproved device categories, floating app screens, generic smart-home symbols, luxury lifestyle staging, universal-compatibility claims, or scenes that imply completed Blyx work |
 
-The technical render occupies its own media region and fades into the copy-facing bottom seam. The solid copy field may overlap that transition, but it reaches full opacity before the eyebrow and all essential text. The three outputs use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced.
+The technical render occupies its own media region and fades into the copy-facing bottom seam. The solid copy field may overlap that transition, but it reaches full opacity before the eyebrow and all essential text. All outputs in an audience set use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced. Do not produce the residential home-automation render until its service scope and image brief are approved.
+
+Business card variants require distinct subjects for small-workplace networking, surveillance, and access control. Document the intended operational outcome, space type, installed equipment, and exclusions for each card before production. Do not generate these images, reuse residential renders, or present residential proof as business proof until the business image set is separately approved.
 
 Record the source references, generation method, prompts, output files, intended role, and approval state in the [service-render provenance notes](./assets/service-renders.md).
 
@@ -319,6 +338,6 @@ Create separate crops when one source cannot preserve the subject and context in
 - Remove each image and verify that its section still communicates the promise, scope, and action.
 - Compare every fade edge against its surface token at multiple display brightness levels; reject visible bands, haze, and vignette effects.
 - Verify authentic, commissioned, licensed, rendered, and generated assets have correct provenance and are never presented as one another.
-- Review the three technical service renders together; confirm matching perspective, crop density, tonal range, line weight, lighting, and subject scale, and verify that access control does not depict automated entry.
+- Review the approved residential technical service renders together; confirm matching perspective, crop density, tonal range, line weight, lighting, and subject scale, and verify that the automated-entry card depicts both automatic operation and compatible access control.
 - Confirm responsive sources have intrinsic dimensions, accurate `sizes`, appropriate loading priority, and no material layout shift.
 - Check alt text, captions, and visible proof labels with images unavailable and with a screen reader.

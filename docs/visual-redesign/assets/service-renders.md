@@ -2,7 +2,7 @@
 
 _Visual design guide concept assets · September 2026_
 
-These coordinated technical renders demonstrate the approved service-panel direction in the browser visual guide. They are conceptual marketing illustrations, not completed Blyx work or construction documents. Production use requires a separate asset review.
+These coordinated residential technical renders demonstrate the approved service-panel direction in the browser visual guide. They are conceptual marketing illustrations, not completed Blyx work or construction documents. Production use requires a separate asset review. Business card variants require a separate image brief and approval; no business images are generated in this milestone.
 
 ## Style references
 
@@ -31,11 +31,32 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 - **Avoid:** Narrow spotlight cones, facial targeting, threat imagery, excessive scanning graphics, walls or planting that interrupt circulation, and office context.
 - **Guide outputs:** `surveillance-v2-768.webp` and `surveillance-v2-1448.webp`.
 
-### Access control
+### Superseded residential access-control concept
 
 - **Subject prompt:** Residential entry detail with a slim modern keypad or credential reader, electric strike or smart lock, door contact, controller, and disciplined concealed routes visible only through partially translucent walls, frame, and ceiling.
 - **Avoid:** Bulky featureless readers, exterior surface-mounted cable, door operators, automatic-opening motion, accessibility automation, people, and office context.
 - **Guide outputs:** `access-control-v2-768.webp` and `access-control-v2-1448.webp`.
+- **Status:** Retained as provenance for the earlier access-control concept. It does not represent the residential service emphasis and is not the final Automated entry & access control card image.
+
+### Residential automated entry & access control
+
+- **Status:** A revised card image is required but is not approved for generation in this milestone.
+- **Dependency:** Approve a brief showing compatible automatic door operation and access control together, with the entry outcome visually primary.
+- **Guide outputs:** None.
+
+### Residential home automation
+
+- **Status:** Required for the four-panel residential-hub composition but not approved for generation.
+- **Dependency:** Define the supported systems, exclusions, compatibility boundaries, and customer outcome before writing the subject prompt.
+- **Avoid:** Unapproved device categories, floating interfaces, generic smart-home symbols, luxury lifestyle staging, universal-compatibility claims, and any completed-work implication.
+- **Guide outputs:** None.
+
+### Business service-card set
+
+- **Status:** Image requirements may be defined, but asset generation is deferred.
+- **Dependency:** Approve business service boundaries, representative small-workplace subjects, and a separate image brief.
+- **Rule:** Do not reuse or lightly relabel the residential renders as business imagery.
+- **Guide outputs:** None.
 
 ## Output handling
 
