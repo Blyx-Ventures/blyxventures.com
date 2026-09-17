@@ -68,7 +68,6 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 | `/residential/{service}/` | Explain residential needs, scope, boundaries, process, proof, and common questions | Audience-specific hero, situations, planning, boundaries, process, residential proof where relevant, FAQ, contact action, related residential services | Preserve |
 | `/residential/automated-entry/` | Explain residential automated entry with compatible access control | Independent entry, automatic operation, credentials, permissions, remote visitor access, compatibility boundaries, process, proof, FAQ, contact action | Preserve |
 | `/business/{service}/` | Explain light-commercial needs, scope, boundaries, process, proof, and common questions | Audience-specific hero, operational situations, planning, boundaries, process, verified business proof when available, FAQ, contact action, related business services | Preserve |
-| `/networking/`, `/surveillance/`, `/access-control/` | Route an audience-neutral service visitor without forcing the wrong context | Concise shared service boundary plus equal `For homes` and `For business` routes | Reconsider |
 | `/residential/home-automation/` | Explain the verified residential home-automation offering without overstating supported systems or proof | Hero, need states, supported scope, boundaries, process, FAQ, contact action, related services, and imagery requirements after service discovery | Reconsider |
 | `/contact/` | Collect an audience-aware project inquiry | Audience selection first, conditional service and qualification fields, direct contact alternatives, privacy disclosure, delivery states | Preserve |
 | `/privacy.html` | Explain personal-information handling and contact choices | Policy date, collection, use, providers, choices, security, privacy contact | Preserve |
@@ -185,7 +184,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** Every public route has a unique title, description, canonical URL on `https://www.blyxventures.com`, index/follow directive, viewport declaration, and theme color.
 - **Preserve:** The homepage, audience hubs, and audience-specific service routes include matching Open Graph and X card title, description, URL, locale, site name, and image references.
 - **Preserve:** Favicons, Apple touch icon, and the web manifest remain linked.
-- **Preserve:** Titles and descriptions identify the specific audience and service. Audience-neutral gateway metadata describes its routing role without duplicating an audience page.
+- **Preserve:** Titles and descriptions identify the specific audience and service.
 - **Preserve:** The privacy route retains its own title, description, canonical URL, and icons; social-card fields are optional for this utility page.
 
 ### Structured data
@@ -200,7 +199,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 ### Crawling and install metadata
 
 - **Preserve:** `robots.txt` allows crawling and declares the absolute sitemap URL.
-- **Preserve:** `sitemap.xml` contains the homepage, audience hubs, retained gateways, contact and privacy pages, and all published audience-specific service routes with canonical `www` URLs.
+- **Preserve:** `sitemap.xml` contains the homepage, audience hubs, contact and privacy pages, and all published audience-specific service routes with canonical `www` URLs.
 - **Preserve:** The web manifest names Blyx, supplies the 32-pixel and 512-pixel icons, and defines theme and background colors consistent with the implemented design tokens.
 - **Replace:** Prototype and design-guide routes must not be added to the public sitemap.
 
