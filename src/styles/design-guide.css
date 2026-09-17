@@ -867,14 +867,13 @@ a {
 }
 
 .audience-gateway-demo::before {
-  width: 14px;
-  border-inline: 2px solid var(--color-text);
+  width: 16px;
   background: var(--color-surface);
 }
 
 .audience-gateway-demo::after {
-  width: 2px;
-  margin-left: 13px;
+  width: 1px;
+  margin-left: 10px;
   background: var(--color-text);
 }
 
@@ -1281,14 +1280,12 @@ a {
   }
 
   .audience-gateway-demo::before {
-    height: 14px;
-    border-block: 2px solid var(--color-text);
-    border-inline: 0;
+    height: 16px;
   }
 
   .audience-gateway-demo::after {
-    height: 2px;
-    margin-top: 13px;
+    height: 1px;
+    margin-top: 10px;
     margin-left: 0;
   }
 

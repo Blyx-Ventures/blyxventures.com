@@ -98,7 +98,7 @@ The root audience gateway contains two large linked panels. Each side uses one b
 
 The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the slash and image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
 
-The two links use complementary clipped shapes so their images and hit areas meet along one diagonal edge. The slash sits directly over that seam, belongs to the non-interactive wrapper, is excluded from the accessibility tree, uses `pointer-events: none`, and never overlaps the text or focus treatment. The visual divider does not create a dead activation region between the two links. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
+The two links use complementary clipped shapes so their images and hit areas meet along one diagonal edge. A narrow off-white architectural reveal with one graphite keyline sits directly over that seam. It belongs to the non-interactive wrapper, is excluded from the accessibility tree, uses `pointer-events: none`, and never overlaps the text or focus treatment. The visual divider does not create a dead activation region between the two links. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
 
 ## Buttons
 
