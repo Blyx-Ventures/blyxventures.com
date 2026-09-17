@@ -179,7 +179,7 @@ Both contexts use the same brand identity, design tokens, interaction patterns, 
 ## ✅ Approval dependencies
 
 - [x] Residential and business service-page responsibilities and project-story rules are defined in the [reusable page templates](./page-templates.md)
-- [ ] Business imagery requirements are recorded without repurposing residential project proof
+- [x] Business imagery requirements are recorded without repurposing residential project proof in the [page image matrix](./image-matrix.md)
 - [ ] Home-automation residential scope, exclusions, handoff, and support expectations are approved
 - [ ] Business automation-and-controls scope is approved before that route is published or added to navigation
 - [ ] Approved residential testimonial wording and client attribution are available
