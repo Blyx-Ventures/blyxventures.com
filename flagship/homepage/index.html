@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Blyx flagship homepage design</title>
+    <link rel="stylesheet" href="/src/styles/flagship.css" />
+    <script type="module" src="/src/flagship.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="flagship-header" data-header>
+      <a class="flagship-brand" href="#top" aria-label="Blyx home">
+        <img src="/blyx-logo.png" alt="Blyx — Smarter Spaces" width="240" height="86" />
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="flagship-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="/residential/">For homes</a>
+        <a href="/business/">For business</a>
+        <a href="#approach">How we work</a>
+      </nav>
+      <a class="button button-small header-action" href="#contact" data-header-action tabindex="-1">Tell us about your project</a>
+    </header>
+
+    <main id="main">
+      <section class="brand-hero" id="top">
+        <div class="page-shell brand-hero-grid">
+          <div>
+            <p class="eyebrow">Residential + light commercial</p>
+            <h1>Dependable technology, thoughtfully integrated into your space.</h1>
+          </div>
+          <div class="hero-support">
+            <p>We plan, install, and support the connected systems behind homes and small workplaces across Louisville and nearby Kentucky counties.</p>
+            <div class="action-row">
+              <a class="button" href="#contact" data-hero-action>Tell us about your project</a>
+              <a class="text-action" href="tel:+15025000105">Call (502) 500-0105</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience-section" aria-labelledby="audience-title">
+        <div class="page-shell audience-heading">
+          <p class="eyebrow">Choose your space</p>
+          <h2 id="audience-title">One standard of care. Two distinct needs.</h2>
+        </div>
+        <div class="audience-gateway">
+          <a class="audience-card audience-home" href="/residential/">
+            <span class="audience-copy">
+              <span class="eyebrow">For homes</span>
+              <strong>Systems that support daily life without calling attention to themselves.</strong>
+              <span class="audience-action">Explore home services <span aria-hidden="true">→</span></span>
+            </span>
+          </a>
+          <a class="audience-card audience-business" href="/business/">
+            <span class="audience-copy">
+              <span class="eyebrow">For business</span>
+              <strong>Reliable infrastructure for staff, visitors, and day-to-day operations.</strong>
+              <span class="audience-action">Explore business services <span aria-hidden="true">→</span></span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="approach-section" id="approach" aria-labelledby="approach-title">
+        <div class="page-shell">
+          <div class="section-intro">
+            <p class="eyebrow">How we work</p>
+            <h2 id="approach-title">Care you can see at every step.</h2>
+            <p>Whether the project is at home or at work, the process stays clear, careful, and grounded in how the finished system needs to perform.</p>
+          </div>
+          <ol class="commitment-list">
+            <li><span>01</span><div><h3>Clear scope</h3><p>We agree on the work, equipment, placement, and meaningful constraints before installation begins.</p></div></li>
+            <li><span>02</span><div><h3>Clean installation</h3><p>We protect the space and route, mount, and finish the system with care.</p></div></li>
+            <li><span>03</span><div><h3>Tested systems</h3><p>We verify the agreed outcome and correct problems before handoff.</p></div></li>
+            <li><span>04</span><div><h3>Ready to use</h3><p>We clean up, transfer access, and show you how the system works.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="page-shell contact-grid">
+          <div class="contact-intro">
+            <p class="eyebrow">Start a conversation</p>
+            <h2 id="contact-title">A rough description is enough to begin.</h2>
+            <p>We serve homes and light-commercial spaces in Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties. Outside the area? You are still welcome to ask about availability.</p>
+            <p class="assurance">Blyx Ventures LLC is fully insured.</p>
+            <p><a href="mailto:contact@blyxventures.com">contact@blyxventures.com</a><br /><a href="tel:+15025000105">(502) 500-0105</a></p>
+          </div>
+          <form class="flagship-form" data-demo-form novalidate>
+            <fieldset>
+              <legend>What kind of space is this?</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="audience" value="residential" required /> Residential</label>
+                <label><input type="radio" name="audience" value="business" required /> Business</label>
+              </div>
+              <p class="field-error" data-error-for="audience"></p>
+            </fieldset>
+            <div class="field-pair">
+              <label>Name<input name="name" autocomplete="name" required /></label>
+              <label>Email<input name="email" type="email" autocomplete="email" required /></label>
+            </div>
+            <label>Project ZIP<input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" required /></label>
+            <label>What would you like the space to do better?<textarea name="message" rows="5" maxlength="3000" required></textarea></label>
+            <p class="form-note">By sending this form, you agree that Blyx may use these details to respond to your inquiry. See our <a href="/privacy.html">privacy policy</a>.</p>
+            <button class="button" type="submit">Send project details</button>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flagship-footer">
+      <div class="page-shell footer-grid">
+        <p><strong>Blyx Ventures LLC</strong><br />Louisville, Kentucky</p>
+        <nav aria-label="Footer navigation"><a href="/residential/">For homes</a><a href="/business/">For business</a><a href="/privacy.html">Privacy</a></nav>
+        <p><a href="mailto:contact@blyxventures.com">contact@blyxventures.com</a><br /><a href="tel:+15025000105">(502) 500-0105</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
