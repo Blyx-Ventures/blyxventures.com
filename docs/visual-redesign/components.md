@@ -58,13 +58,17 @@ The outline remains visible in hover, active, selected, invalid, and loading sta
 
 The shared header is sticky at the top of the viewport on a solid `background` field. It uses `header-height`, a bottom `border`, the standard content width, and the standard inline gutter. The header does not overlay hero copy or photography.
 
-At the wide grid state, use three regions:
+At the large grid state, use three regions:
 
 - Brand mark at the start, linking to the homepage and labeled “Blyx home.”
 - Primary navigation centered or start-aligned in the available middle region.
-- “Discuss a project” primary action at the end.
+- A reserved action region at the end. It contains “Tell us about your project” only after the matching hero action has scrolled above the header.
 
-Primary navigation gives the three service pillars equal prominence in this order: Networking, Security cameras, and Access & entry. Approach and contact remain available through page content, the project action, and the mobile panel; do not add a services dropdown merely to shorten the header.
+Root primary navigation exposes `For homes`, `For business`, and `How we work`. The two audience links receive equal prominence. Audience hubs may replace `How we work` with concise contextual service links when they fit, but must retain a visible switch to the other audience. Do not place mixed residential and business services in one dropdown.
+
+On the root homepage, the primary inquiry action begins in the hero. Use `IntersectionObserver` to activate the matching reserved header action only after the hero action crosses above the sticky header. Use two stable links rather than reparenting one link between containers. Both share the same label, `/contact/` destination, and analytics identity; only one is interactive at a time. Preserve the hero link as the no-JavaScript path.
+
+Reserve the header action width in both states to prevent navigation movement. The inactive action uses `visibility: hidden`, `pointer-events: none`, and `tabindex="-1"`. When activating it, restore visibility, pointer events, and normal tab order. If the hero action is focused, defer the handoff until focus leaves it. A short opacity transition may clarify the state change, but it is removed under `prefers-reduced-motion`.
 
 Navigation links use the `action` type role, `text` color, and a target height of at least `control-height-compact`. The current page uses `aria-current="page"`, weight 600, and a 2px underline or bottom rule. Hover uses `brand-strong`; focus keeps the shared outline; active uses `text` plus a 1px downward press without removing the current-page indicator.
 
@@ -74,19 +78,27 @@ Set `scroll-padding-top` on the document and `scroll-margin-top` on anchored sec
 
 ## Mobile navigation
 
-Below the wide grid state, replace the inline navigation and header action with one visible “Menu” button. Pair the visible text label with a decorative three-line menu icon. Use three restrained two-pixel strokes; the middle stroke may be slightly shorter and end-aligned to add distinction without weakening the familiar symbol. The expanded state changes the label to “Close” and resolves the outer strokes into an X while the middle stroke disappears. The button uses `aria-expanded` and `aria-controls` to identify the navigation panel.
+Below the large grid state, replace the inline navigation and header action with one visible “Menu” button. Pair the visible text label with a decorative three-line menu icon. Use three restrained two-pixel strokes; the middle stroke may be slightly shorter and end-aligned to add distinction without weakening the familiar symbol. The expanded state changes the label to “Close” and resolves the outer strokes into an X while the middle stroke disappears. The button uses `aria-expanded` and `aria-controls` to identify the navigation panel.
 
 The closed panel uses the native `hidden` state so it and its descendants are absent from the accessibility tree and keyboard order. The open panel:
 
 - Sits immediately below the header on `surface`, separated by `border` and `shadow-raised`.
 - Uses the standard inline gutter and `space-5` block padding.
-- Lists Networking, Security cameras, Access & entry, and Approach as full-width links with a minimum 48px target.
-- Places “Discuss a project” after the links as the primary action.
+- Lists For homes, For business, and How we work as full-width links with a minimum 48px target on the root page. Audience hubs may list their contextual services after the audience switch.
+- Keeps “Tell us about your project” visible beside the compact header or immediately after the navigation links once the hero action has crossed above the header. Use the arrangement that preserves the 44px targets at 320px and 200% text zoom; do not shorten the visible label into an ambiguous phrase.
 - Allows content to determine its height and remains usable at 200% text zoom.
 
 Opening the panel leaves focus on the expanded Menu button; the next Tab moves to the first link. Escape closes the panel and returns focus to the Menu button. Activating a link closes the panel. Closing through a pointer action outside the panel is allowed but is never the only closing method. Do not trap focus because the panel is a disclosure, not a modal dialog.
 
 The panel may appear without animation. If animated, transition only opacity and a short vertical offset for `transition-state`; skip the transition under reduced motion. The expanded button label changes to “Close,” while the accessible name continues to describe the action.
+
+## Audience gateway links
+
+The root audience gateway contains two large linked panels. Each side uses one block-level anchor as its outermost element and complete hit area. Residential links to `/residential/`; business links to `/business/`. Text, decorative imagery, and the visible action cue remain inside the anchor without nested links or buttons.
+
+The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the slash and image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
+
+The two links use complementary clipped shapes so their images and hit areas meet along one diagonal edge. A narrow off-white architectural reveal with one graphite keyline sits directly over that seam. It belongs to the non-interactive wrapper, is excluded from the accessibility tree, uses `pointer-events: none`, and never overlaps the text or focus treatment. The visual divider does not create a dead activation region between the two links. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
 
 ## Buttons
 

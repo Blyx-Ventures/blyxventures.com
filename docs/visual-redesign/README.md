@@ -14,7 +14,7 @@ Every page, image, interaction, and proof point must reinforce or substantiate t
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 
-Treat networking, security cameras, and access control with automated entry as equal established service pillars. Give them comparable homepage and primary-navigation prominence. Home automation is a viable service area; define its supported scope, boundaries, proof requirements, page role, and navigation prominence during page planning before publishing service claims.
+Organize services by audience. The residential hub gives Networking, Security cameras, Automated entry & access control, and Home automation equal card prominence. Automated entry leads the residential message while access control remains part of the combined service. The business hub uses audience-specific variants for its verified services and leads with Access control; Automation and controls appears only after its business scope is approved. Define the supported home-automation scope, boundaries, and proof requirements before publishing detailed service claims.
 
 ## Experience and visual direction
 
@@ -37,12 +37,13 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 - Create distinct desktop and mobile crops when needed.
 - Favor controlled natural light, realistic materials, clean surroundings, and restrained contrast.
 - Use polished photography or simplified realistic renders for marketing; use authentic Blyx photography for proof. Never portray generated, rendered, or staged imagery as completed Blyx work.
-- Service-overview panels use a coordinated set of monochromatic technical renders: translucent residential or light-commercial cutaways, partially solid architectural surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof.
+- Audience-hub service panels use coordinated sets of monochromatic technical renders: translucent architectural cutaways, partially solid surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof. Residential and business sets use distinct subjects; business imagery remains pending until separately approved.
+- Root audience-gateway renders use graphite and off-white only, with no accent color. They use predominantly solid architectural forms and broader environmental context, reserving translucency and technical linework for small supporting details.
 - Avoid default full-bleed backgrounds. Reserve wide environmental images for project stories where the setting matters.
 
 ## Interface and content rules
 
-- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The homepage service overview is a named exception: one set of three equal panels with a shared structure, coordinated technical imagery, and one action per service.
+- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The root homepage uses one split audience gateway in which each complete side links to its audience hub. Audience-hub service overviews are a named exception: each uses equal panels with a shared structure and one action per service. Do not mix both service-card sets on the root homepage.
 - Make navigation, controls, and forms precise, understated, accessible, and consistent. Forms require clear labels, visible focus, useful validation, and strong contrast.
 - Use motion only for state clarity or subtle polish. Exclude heavy parallax, scroll spectacle, and motion required for comprehension.
 - Use **we** without implying unsupported team size or capacity.
@@ -63,11 +64,12 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 ## Page and image planning
 
 - [Content and functional requirements inventory](./content-inventory.md)
+- [Redesigned homepage structure](./homepage-structure.md)
 
 ## Service area and proof
 
 - Service area: Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky. Keep it secondary but clear near contact forms and in the footer. Collect project city or ZIP without blocking outside submissions.
-- Available proof: photography and one testimonial from one completed residential project covering the three established service pillars. Present it as one integrated project; do not imply multiple customers, a larger portfolio, light-commercial work, or home-automation work.
+- Available proof: photography and one testimonial from one completed residential project covering networking, security cameras, and automated entry. Present it as one integrated project; do not imply multiple customers, a larger portfolio, light-commercial work, or home-automation work.
 - Attribute the testimonial with the client's first name and last initial; keep the residence private.
 - Blyx may state that it is fully insured. Do not imply unverified certifications, manufacturer authorizations, claims, or experience.
 

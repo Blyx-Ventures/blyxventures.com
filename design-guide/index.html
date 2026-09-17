@@ -298,18 +298,18 @@
           <article class="specimen">
             <div class="specimen-header">
               <h3>Header and navigation</h3>
-              <span class="specimen-label">Wide state</span>
+              <span class="specimen-label">After hero action scrolls away</span>
             </div>
             <div class="demo-header">
               <img src="/blyx-logo.png" alt="Blyx" width="240" height="86" />
               <nav aria-label="Example primary navigation">
                 <ul>
-                  <li><a href="#components" aria-current="page">Services</a></li>
-                  <li><a href="#components">Projects</a></li>
-                  <li><a href="#components">About</a></li>
+                  <li><a href="/residential/" aria-current="page">For homes</a></li>
+                  <li><a href="/business/">For business</a></li>
+                  <li><a href="#principles">How we work</a></li>
                 </ul>
               </nav>
-              <a class="button button-primary" href="#components">Start a project</a>
+              <a class="button button-primary" href="/contact/">Tell us about your project</a>
               <button
                 class="button button-secondary menu-button"
                 type="button"
@@ -325,18 +325,19 @@
               </button>
             </div>
             <nav id="guide-mobile-navigation" aria-label="Example mobile navigation" hidden>
-              <a href="/networking/">Networking</a>
-              <a href="/surveillance/">Security cameras</a>
-              <a href="/access-control/">Access &amp; entry</a>
-              <a href="#principles">Approach</a>
-              <a href="#components">Discuss a project</a>
+              <a href="/residential/">For homes</a>
+              <a href="/business/">For business</a>
+              <a href="#principles">How we work</a>
+              <a href="/contact/">Tell us about your project</a>
             </nav>
             <div class="specimen-body">
               <p class="usage">
                 <strong>Use:</strong> sticky on a solid background. Wide layouts
                 place brand, navigation, and primary action on shared grid regions.
-                Below 64rem, show one labeled menu control and place links in a
-                separate full-width panel.
+                The inquiry action begins in the hero; this reserved header instance
+                becomes visible only after the hero action crosses above the header.
+                Below 80rem, show one labeled menu control and preserve a usable
+                inquiry action without shortening its visible label.
               </p>
             </div>
           </article>
@@ -402,7 +403,7 @@
                   <select id="guide-service" name="service" aria-describedby="guide-service-help">
                     <option>Network infrastructure</option>
                     <option>Surveillance</option>
-                    <option>Access control</option>
+                    <option>Automated entry &amp; access control</option>
                   </select>
                 </div>
                 <div class="field is-invalid">
@@ -565,6 +566,72 @@
 
           <article class="specimen">
             <div class="specimen-header">
+              <h3>Audience gateway</h3>
+              <span class="specimen-label">Linked split section</span>
+            </div>
+            <div class="audience-gateway-demo">
+              <a class="audience-gateway-side audience-gateway-residential" href="/residential/">
+                <span class="audience-gateway-art" aria-hidden="true">
+                  <picture>
+                    <source
+                      media="(max-width: 47.99rem)"
+                      srcset="/design-guide/audience-renders/residential-mobile.jpg"
+                    />
+                    <img
+                      src="/design-guide/audience-renders/residential-desktop.jpg"
+                      alt=""
+                      width="1402"
+                      height="1122"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </span>
+                <span class="audience-gateway-copy">
+                  <span class="eyebrow">For homes</span>
+                  <strong>Technology that settles naturally into daily life.</strong>
+                  <span class="text-link">Explore home services</span>
+                </span>
+              </a>
+              <a class="audience-gateway-side audience-gateway-business" href="/business/">
+                <span class="audience-gateway-art" aria-hidden="true">
+                  <picture>
+                    <source
+                      media="(max-width: 47.99rem)"
+                      srcset="/design-guide/audience-renders/business-mobile.jpg"
+                    />
+                    <img
+                      src="/design-guide/audience-renders/business-desktop.jpg"
+                      alt=""
+                      width="1402"
+                      height="1122"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </span>
+                <span class="audience-gateway-copy">
+                  <span class="eyebrow">For business</span>
+                  <strong>Dependable systems built around your operation.</strong>
+                  <span class="text-link">Explore business services</span>
+                </span>
+              </a>
+            </div>
+            <div class="specimen-body">
+              <p class="usage">
+                <strong>Use:</strong> each complete side is one link. The oversized
+                separator follows the shared slanted edge as a narrow off-white
+                architectural reveal with one graphite keyline. It extends beyond the
+                section without blocking either link. Audience images fill each side
+                beneath the copy and use solid pale modeling with precise graphite
+                linework and no accent color. Placement-specific sources preserve the
+                composition when the panels stack on compact screens.
+              </p>
+            </div>
+          </article>
+
+          <article class="specimen" style="margin-top: var(--grid-gap)">
+            <div class="specimen-header">
               <h3>Copy-and-media hero</h3>
               <span class="specimen-label">5 / 7 columns at wide</span>
             </div>
@@ -606,8 +673,8 @@
 
           <article class="specimen" style="margin-top: var(--grid-gap)">
             <div class="specimen-header">
-              <h3>Equal service panels</h3>
-              <span class="specimen-label">Three coordinated services</span>
+              <h3>Residential service panels</h3>
+              <span class="specimen-label">Four coordinated cards</span>
             </div>
             <div class="specimen-body">
               <div class="service-panels">
@@ -617,7 +684,7 @@
                       <source
                         type="image/webp"
                         srcset="/design-guide/service-renders/networking-v3-768.webp 768w, /design-guide/service-renders/networking-v3-1448.webp 1448w"
-                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
+                        sizes="(min-width: 80rem) 22vw, (min-width: 48rem) 45vw, calc(100vw - 2.5rem)"
                       />
                       <img
                         src="/design-guide/service-renders/networking-v3-768.webp"
@@ -632,7 +699,7 @@
                     <span class="eyebrow">Networking</span>
                     <h3>Reliable coverage, built into the home.</h3>
                     <p>Plan connectivity around the property, its construction, and the systems it needs to support.</p>
-                    <a class="text-link" href="/networking/">Explore reliable connectivity</a>
+                    <a class="text-link" href="/residential/networking/">Explore reliable connectivity</a>
                   </div>
                 </article>
 
@@ -642,7 +709,7 @@
                       <source
                         type="image/webp"
                         srcset="/design-guide/service-renders/surveillance-v2-768.webp 768w, /design-guide/service-renders/surveillance-v2-1448.webp 1448w"
-                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
+                        sizes="(min-width: 80rem) 22vw, (min-width: 48rem) 45vw, calc(100vw - 2.5rem)"
                       />
                       <img
                         src="/design-guide/service-renders/surveillance-v2-768.webp"
@@ -657,40 +724,51 @@
                     <span class="eyebrow">Surveillance</span>
                     <h3>Awareness where it matters.</h3>
                     <p>Place cameras around useful views, appropriate coverage, and the way the property is actually used.</p>
-                    <a class="text-link" href="/surveillance/">Explore smarter surveillance</a>
+                    <a class="text-link" href="/residential/surveillance/">Explore smarter surveillance</a>
                   </div>
                 </article>
 
                 <article class="service-panel">
-                  <div class="service-panel-media">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="/design-guide/service-renders/access-control-v2-768.webp 768w, /design-guide/service-renders/access-control-v2-1448.webp 1448w"
-                        sizes="(min-width: 64rem) 27vw, calc(100vw - 2.5rem)"
-                      />
-                      <img
-                        src="/design-guide/service-renders/access-control-v2-768.webp"
-                        alt="Residential entry cutaway showing an access reader, lock, door contact, controller, and concealed connections"
-                        width="768"
-                        height="576"
-                        loading="lazy"
-                      />
-                    </picture>
+                  <div
+                    class="service-panel-media service-panel-media-pending"
+                    role="img"
+                    aria-label="Automated entry and access control technical render pending an approved image brief"
+                  >
+                    <span>Automated-entry render required</span>
                   </div>
                   <div class="service-panel-body">
-                    <span class="eyebrow">Access control</span>
-                    <h3>The right access, at the right doors.</h3>
-                    <p>Control who can enter while keeping credentials, locks, and everyday use straightforward.</p>
-                    <a class="text-link" href="/access-control/">Explore secure access</a>
+                    <span class="eyebrow">Automated entry &amp; access control</span>
+                    <h3>Easier entry, with secure control.</h3>
+                    <p>Coordinate automatic door operation with compatible credentials, permissions, and remote visitor access.</p>
+                    <a class="text-link" href="/residential/automated-entry/">Explore easier, secure entry</a>
+                  </div>
+                </article>
+
+                <article class="service-panel">
+                  <div
+                    class="service-panel-media service-panel-media-pending"
+                    role="img"
+                    aria-label="Home automation technical render pending an approved service scope"
+                  >
+                    <span>Scope-backed render required</span>
+                  </div>
+                  <div class="service-panel-body">
+                    <span class="eyebrow">Home automation</span>
+                    <h3>Everyday control, thoughtfully coordinated.</h3>
+                    <p>Connect supported home systems around the routines and outcomes defined for the project.</p>
+                    <a class="text-link" href="/residential/home-automation/">Explore home automation</a>
                   </div>
                 </article>
               </div>
               <p class="usage">
-                <strong>Use:</strong> reserve this equal three-panel composition for
-                the primary service overview. Keep the technical renders coordinated,
-                constrain copy to a shared structure, and stack all three panels below
-                the wide grid state.
+                <strong>Use:</strong> reserve this equal four-panel composition for
+                the residential hub service overview. Keep the technical renders coordinated,
+                constrain copy to a shared structure, use two columns from 48rem and
+                four from 80rem, and stack the panels below 48rem. The home-automation
+                placeholder is not a production asset; replace it only after service
+                scope and image direction are approved. Business cards reuse the component
+                structure with business-specific copy and destinations; their images remain
+                unproduced until separately approved.
               </p>
             </div>
           </article>
