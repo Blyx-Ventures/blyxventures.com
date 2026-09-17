@@ -44,9 +44,6 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 │   ├── access-control/
 │   └── automation-controls/  [publish only after scope approval]
 │
-├── networking/
-├── surveillance/
-├── access-control/
 ├── contact/
 └── privacy/
 ```
@@ -67,12 +64,11 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 - Keep each hub's cards equal within that hub. The two hubs do not need the same number of cards.
 - Do not place the complete residential and business card sets on the root homepage. The root audience choices lead to the relevant card set.
 
-### Service gateways
+### Service routes
 
-- Preserve `/networking/`, `/surveillance/`, and `/access-control/` as concise audience-neutral gateways so existing links do not force visitors into the wrong context.
-- Each gateway explains the shared service boundary briefly, then links to its residential and business pages.
-- Do not duplicate either audience page on the gateway or canonicalize one audience to the other.
-- Review gateway usefulness after the audience pages have real traffic; retire one only through a deliberate redirect plan.
+- Publish service content only within its audience context under `/residential/` or `/business/`.
+- Link every service card, related-service link, search result, and contextual navigation item directly to the corresponding audience-specific route.
+- Do not publish audience-neutral service pages or service gateways.
 
 ### Contact routing
 
@@ -147,7 +143,7 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 | Residential service card | Explore [residential outcome] | Audience-specific residential service page | Uses household language and carries residential context |
 | Business service card | Explore [business outcome] | Audience-specific business service page | Uses operational language and carries business context |
 
-Audience-specific service pages use precise actions such as `Discuss a home networking project` or `Discuss a business networking project`. Service gateways use `For homes` and `For business` because their job is routing, not conversion.
+Audience-specific service pages use precise actions such as `Discuss a home networking project` or `Discuss a business networking project`.
 
 Avoid generic labels such as `Get started`, `Learn more`, `See solutions`, or repeated `Discuss a project` buttons. An action label identifies either the audience destination, the specific project context, or the form submission outcome.
 
@@ -175,14 +171,14 @@ Both contexts use the same brand identity, design tokens, interaction patterns, 
 
 - Give every published audience hub and audience-specific service page a self-referencing canonical URL.
 - Treat residential and business pages as distinct content; never canonicalize one audience version to the other.
-- Include hubs, audience-specific service pages, retained service gateways, `/contact/`, and `/privacy/` in the sitemap.
+- Include hubs, audience-specific service pages, `/contact/`, and `/privacy/` in the sitemap.
 - Exclude parameterized contact URLs from the sitemap and canonicalize them to `/contact/`.
 - Use breadcrumbs on audience-specific service pages to preserve the selected context.
 - Keep page titles, descriptions, structured data, and social metadata audience-specific.
 
 ## ✅ Approval dependencies
 
-- [ ] Residential and business hub outlines are defined in the reusable page-template issue
+- [x] Residential and business service-page responsibilities and project-story rules are defined in the [reusable page templates](./page-templates.md)
 - [ ] Business imagery requirements are recorded without repurposing residential project proof
 - [ ] Home-automation residential scope, exclusions, handoff, and support expectations are approved
 - [ ] Business automation-and-controls scope is approved before that route is published or added to navigation
