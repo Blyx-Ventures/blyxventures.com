@@ -206,14 +206,15 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 Use one residential and one business architectural composition in the root audience gateway. These images establish context rather than explain a specific service.
 
 - Use warm graphite, off-white, and their tonal values exclusively. Do not use Blyx green, another brand accent, or separate residential and business accent colors.
-- Make the architecture predominantly solid and materially legible. The audience renders must read as noticeably more solid than the service-card renders.
-- Limit translucency, wireframe transitions, and blueprint linework to small supporting regions that imply technical integration without turning the scene into a system diagram.
-- Keep equipment secondary to the recognizable type of space.
+- Use familiar, materially legible environments with ordinary proportions and attainable finishes. Avoid luxury-showroom styling and conspicuous architectural spectacle.
+- Render the environments as solid pale architectural models with precise graphite contours and restrained drawing detail. Preserve the direct environmental viewpoint rather than converting the scene into a plan, axonometric, aerial, or cutaway view.
+- Keep every remaining surface consistently opaque. Do not add ghosted structure, x-ray effects, transparency gradients, or wireframe-to-solid transitions.
+- Do not depict service equipment or installations. The environment alone identifies the audience.
 - Compose the residential image for the left panel and the business image for the right panel, with safe areas that protect the audience label, statement, and action cue.
 - Fill the complete linked side with the render. Layer copy over the image rather than reserving a separate copy band, and place it within the planned low-detail safe area.
 - Use a monochrome tonal scrim only when needed for contrast. It must merge with the render and must not introduce a colored overlay or obscure the audience context.
 - Treat the images as decorative within the block-level audience links unless a visual detail adds meaning not already expressed by the link text.
-- Define business image requirements without generating the asset. Use an explicit placeholder until separate approval is recorded.
+- Provide separate desktop and compact sources for both audiences. The residential pair depicts a familiar home; the business pair depicts a modest local office.
 - Do not reuse the residential composition for business, combine both audiences into one ambiguous scene, or imply completed Blyx work.
 - Review the two renders in grayscale. They must remain distinct and balanced without relying on hue or accent color.
 
