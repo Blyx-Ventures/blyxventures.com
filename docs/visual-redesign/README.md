@@ -66,6 +66,7 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 - [Content and functional requirements inventory](./content-inventory.md)
 - [Redesigned homepage structure](./homepage-structure.md)
 - [Reusable service and case-study page templates](./page-templates.md)
+- [Page image matrix and production backlog](./image-matrix.md)
 
 ## Service area and proof
 
