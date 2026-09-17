@@ -64,6 +64,8 @@ At the large grid state, use three regions:
 - Primary navigation centered or start-aligned in the available middle region.
 - A reserved action region at the end. It contains “Tell us about your project” only after the matching hero action has scrolled above the header.
 
+Use content fit—not the general page grid alone—to choose the inline-navigation threshold. The complete root navigation and full inquiry label require at least `75rem`; below that width, use the disclosure navigation. Audience-specific headers may remain inline at a narrower width only when every label and 44px target fits without compression or horizontal overflow.
+
 Root primary navigation exposes `For homes`, `For business`, and `How we work`. The two audience links receive equal prominence. Audience hubs may replace `How we work` with concise contextual service links when they fit, but must retain a visible switch to the other audience. Do not place mixed residential and business services in one dropdown.
 
 On the root homepage, the primary inquiry action begins in the hero. Use `IntersectionObserver` to activate the matching reserved header action only after the hero action crosses above the sticky header. Use two stable links rather than reparenting one link between containers. Both share the same label, `/contact/` destination, and analytics identity; only one is interactive at a time. Preserve the hero link as the no-JavaScript path.
