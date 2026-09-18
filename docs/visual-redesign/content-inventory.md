@@ -35,7 +35,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** A skip link targets the main content on every route.
 - **Preserve:** The logo links to the homepage and has an accessible home label.
-- **Preserve:** Root primary navigation gives `For homes` and `For business` equal prominence and includes `How we work`. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
+- **Preserve:** Root primary navigation gives `Residential` and `Business` equal prominence and includes `How we work`. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
 - **Preserve:** Audience hubs keep a visible audience switch and expose only the services verified for that audience.
 - **Preserve:** The footer names both audience paths, shared contact methods, Louisville, insured status, the privacy route, and Blyx Ventures LLC.
 - **Preserve:** Audience-specific service pages identify the active audience and service and cross-link only to relevant services.
@@ -86,7 +86,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** Residential and business choices occupy a dedicated split section immediately after the hero, with equal visual weight, distinct messages and authentic context, and direct links to their audience hubs.
 - **Preserve:** Each complete side is one block-level link. Residential routes to `/residential/`; business routes to `/business/`. Neither side contains a nested link or button.
-- **Preserve:** Each audience render fills its complete linked side and the copy sits above it in a contrast-protected safe area. Complementary slanted edges make the images and link hit areas meet along one diagonal boundary. A narrow off-white architectural reveal with one graphite keyline follows that boundary and extends beyond the section's visual bounds without blocking either link or producing horizontal overflow. Compact layouts stack the links with matching slanted edges and continue the same reveal treatment.
+- **Preserve:** Each audience render fills its complete linked side and the copy sits above it in a contrast-protected safe area. Complementary slanted edges leave one narrow diagonal gap between the images and link hit areas. The gap exposes the background behind the component; it is not a colored overlay, keyline, or shadow. Compact layouts stack the links with matching slanted edges and continue the same background gap.
 - **Preserve:** Audience imagery uses warm graphite and off-white only, without green or another accent color. Solid pale surfaces, precise graphite contours, and restrained architectural drawing detail define the shared treatment; do not introduce transparency, cutaways, or mixed-opacity wireframes. The residential panel depicts a familiar, well-kept home exterior; the business panel depicts a modest local-office interior. Both use separate desktop and compact compositions, avoid service-specific equipment, and feel approachable rather than aspirational or luxurious.
 - **Replace:** A mixed-audience service-card grid on the root homepage.
 

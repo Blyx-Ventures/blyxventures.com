@@ -236,6 +236,10 @@ a {
   border-bottom: var(--border-width) solid var(--color-border);
 }
 
+.audience-gateway-specimen .specimen-header {
+  border-bottom: 0;
+}
+
 .specimen-label {
   color: var(--color-text-muted);
 }
@@ -849,32 +853,8 @@ a {
   position: relative;
   display: grid;
   overflow: clip visible;
-  background: var(--color-surface);
+  background: transparent;
   isolation: isolate;
-}
-
-.audience-gateway-demo::before,
-.audience-gateway-demo::after {
-  position: absolute;
-  z-index: 2;
-  top: calc(var(--space-6) * -1);
-  bottom: calc(var(--space-6) * -1);
-  left: 50%;
-  content: "";
-  pointer-events: none;
-  transform: rotate(12deg);
-  transform-origin: center;
-}
-
-.audience-gateway-demo::before {
-  width: 16px;
-  background: var(--color-surface);
-}
-
-.audience-gateway-demo::after {
-  width: 1px;
-  margin-left: 10px;
-  background: var(--color-text);
 }
 
 .audience-gateway-side {
@@ -897,13 +877,13 @@ a {
 
 .audience-gateway-residential {
   width: calc(100% + var(--space-7));
-  clip-path: polygon(0 0, 100% 0, calc(100% - (var(--space-7) * 2)) 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, calc(100% - (var(--space-7) * 2) - 4px) 100%, 0 100%);
 }
 
 .audience-gateway-business {
   width: calc(100% + var(--space-7));
   margin-left: calc(var(--space-7) * -1);
-  clip-path: polygon(calc(var(--space-7) * 2) 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(calc((var(--space-7) * 2) + 4px) 0, 100% 0, 100% 100%, 4px 100%);
 }
 
 .audience-gateway-art {
@@ -944,7 +924,7 @@ a {
 .audience-gateway-copy strong {
   max-width: 21ch;
   font-size: var(--type-heading-3);
-  line-height: var(--leading-heading);
+  line-height: 1.2;
 }
 
 .audience-gateway-copy .text-link {
@@ -1227,30 +1207,10 @@ a {
     overflow: visible;
   }
 
-  .audience-gateway-demo::before,
-  .audience-gateway-demo::after {
-    top: 50%;
-    right: calc(var(--space-5) * -1);
-    bottom: auto;
-    left: calc(var(--space-5) * -1);
-    width: auto;
-    transform: rotate(-4deg);
-  }
-
-  .audience-gateway-demo::before {
-    height: 16px;
-  }
-
-  .audience-gateway-demo::after {
-    height: 1px;
-    margin-top: 10px;
-    margin-left: 0;
-  }
-
   .audience-gateway-residential {
     width: 100%;
     min-height: 32rem;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--space-6)), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--space-6) - 4px), 0 calc(100% - 4px));
   }
 
   .audience-gateway-business {
@@ -1258,7 +1218,7 @@ a {
     min-height: 32rem;
     margin-top: calc(var(--space-6) * -1);
     margin-left: 0;
-    clip-path: polygon(0 var(--space-6), 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 calc(var(--space-6) + 4px), 100% 4px, 100% 100%, 0 100%);
   }
 
   .audience-gateway-residential .audience-gateway-copy,

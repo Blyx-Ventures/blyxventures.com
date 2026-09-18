@@ -64,7 +64,7 @@ At the large grid state, use three regions:
 - Primary navigation centered or start-aligned in the available middle region.
 - A reserved action region at the end. It contains “Tell us about your project” only after the matching hero action has scrolled above the header.
 
-Root primary navigation exposes `For homes`, `For business`, and `How we work`. The two audience links receive equal prominence. Audience hubs may replace `How we work` with concise contextual service links when they fit, but must retain a visible switch to the other audience. Do not place mixed residential and business services in one dropdown.
+Root primary navigation exposes `Residential`, `Business`, and `How we work`. The two audience links receive equal prominence. Audience hubs may replace `How we work` with concise contextual service links when they fit, but must retain a visible switch to the other audience. Do not place mixed residential and business services in one dropdown.
 
 On the root homepage, the primary inquiry action begins in the hero. Use `IntersectionObserver` to activate the matching reserved header action only after the hero action crosses above the sticky header. Use two stable links rather than reparenting one link between containers. Both share the same label, `/contact/` destination, and analytics identity; only one is interactive at a time. Preserve the hero link as the no-JavaScript path.
 
@@ -84,7 +84,7 @@ The closed panel uses the native `hidden` state so it and its descendants are ab
 
 - Sits immediately below the header on `surface`, separated by `border` and `shadow-raised`.
 - Uses the standard inline gutter and `space-5` block padding.
-- Lists For homes, For business, and How we work as full-width links with a minimum 48px target on the root page. Audience hubs may list their contextual services after the audience switch.
+- Lists Residential, Business, and How we work as full-width links with a minimum 48px target on the root page. Audience hubs may list their contextual services after the audience switch.
 - Keeps “Tell us about your project” visible beside the compact header or immediately after the navigation links once the hero action has crossed above the header. Use the arrangement that preserves the 44px targets at 320px and 200% text zoom; do not shorten the visible label into an ambiguous phrase.
 - Allows content to determine its height and remains usable at 200% text zoom.
 
@@ -96,9 +96,9 @@ The panel may appear without animation. If animated, transition only opacity and
 
 The root audience gateway contains two large linked panels. Each side uses one block-level anchor as its outermost element and complete hit area. Residential links to `/residential/`; business links to `/business/`. Text, decorative imagery, and the visible action cue remain inside the anchor without nested links or buttons.
 
-The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the slash and image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
+The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
 
-The two links use complementary clipped shapes so their images and hit areas meet along one diagonal edge. A narrow off-white architectural reveal with one graphite keyline sits directly over that seam. It belongs to the non-interactive wrapper, is excluded from the accessibility tree, uses `pointer-events: none`, and never overlaps the text or focus treatment. The visual divider does not create a dead activation region between the two links. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
+The two links use complementary clipped shapes separated by one narrow diagonal gap. Build the gap into the clip paths so it exposes the background behind the component; do not draw a colored overlay, keyline, pseudo-element, or shadow over the seam. The gap is intentionally non-interactive and never overlaps the text or focus treatment. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
 
 ## Buttons
 
