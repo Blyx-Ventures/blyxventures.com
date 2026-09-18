@@ -18,7 +18,7 @@ Generated with the built-in image-generation tool. The approved revision uses th
 | `public/images/surveillance/sv-h01-desktop-957-v5.jpg` | Wide-layout media field | 957×957 | Square crop from source coordinates `x=686, y=0`; JPEG quality 88 |
 | `public/images/surveillance/sv-h01-compact-960-v5.jpg` | Compact stacked media | 960×768 | Source crop `x=447, y=0, width=1196, height=957`, then resized to 960×768; JPEG quality 88 |
 
-Earlier source and derivative revisions are retained as superseded provenance and are not referenced by the flagship design.
+Rejected source and derivative revisions are not retained in the repository. The approved `v5` source and its two responsive derivatives are the complete asset set.
 
 The desktop crop keeps the camera, mount, cable entry, eave, masonry return, and low-information copy-facing edge. Apply the design-system `image-fade-start` mask in CSS only where the media meets the `background` copy field. The fade ends before the eave junction and never crosses the camera or mount. The unmasked crop is the fallback.
 
