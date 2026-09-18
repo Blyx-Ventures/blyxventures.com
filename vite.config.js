@@ -13,8 +13,6 @@ export default defineConfig({
         accessControl: resolve(import.meta.dirname, 'access-control/index.html'),
         designGuide: resolve(import.meta.dirname, 'design-guide/index.html'),
         prototype: resolve(import.meta.dirname, 'prototype/index.html'),
-        flagshipHomepage: resolve(import.meta.dirname, 'flagship/homepage/index.html'),
-        flagshipResidentialSurveillance: resolve(import.meta.dirname, 'flagship/residential-surveillance/index.html'),
       },
     },
   },

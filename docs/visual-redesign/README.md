@@ -68,12 +68,6 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 - [Reusable service and case-study page templates](./page-templates.md)
 - [Page image matrix and production backlog](./image-matrix.md)
 
-## Flagship design validation
-
-- [Homepage and residential surveillance designs](./flagship-designs.md)
-- [Surveillance hero provenance and crop decisions](./assets/surveillance-hero.md)
-- [Network rack provenance and crop decisions](./assets/network-rack.md)
-
 ## Service area and proof
 
 - Service area: Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky. Keep it secondary but clear near contact forms and in the footer. Collect project city or ZIP without blocking outside submissions.
