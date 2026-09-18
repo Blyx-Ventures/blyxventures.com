@@ -33,6 +33,7 @@ The asset ID remains stable across the page matrix, production backlog, filename
 | `BS-S01` | Small-office entrance or shared area with purposeful camera placement and credible viewing context | Technical service render | Not produced | Deferred pending business image-brief approval |
 | `BS-A01` | Small-office staff entrance with credential reader, secure locking, and safe egress context | Technical service render | Not produced | Deferred pending business image-brief approval |
 | `SV-H01` | Exterior residential camera mounted at an eave or wall corner with construction context and clear viewing direction | Marketing hero image | Source and responsive derivatives exist | Validated in first production batch; see [`assets/surveillance-hero.md`](./assets/surveillance-hero.md) |
+| `NW-H01` | Organized residential network rack connected to a home office, living space, and ceiling access point | Marketing hero image | Source and responsive derivatives exist | Approved for residential networking; see [`assets/network-rack.md`](./assets/network-rack.md) |
 | `PR-N01` | Organized network rack from the integrated residential project | Authentic project photograph | Source JPEG and responsive derivatives exist | Validated in first production batch; see [`assets/network-rack.md`](./assets/network-rack.md) |
 | `PR-N02` | Deliberate attic cabling from the integrated residential project | Authentic project photograph | Source JPEG and responsive derivatives exist | Validate existing derivatives |
 | `PR-E01` | Installed automatic door operator from the integrated residential project | Authentic project photograph | Source JPEG and responsive derivatives exist | Validate existing derivatives |
@@ -57,7 +58,8 @@ This matrix assigns each asset to a page section and one communication purpose. 
 | `/business/` | Networking service card | `BS-N01` | Small-office network foundation | Connect business networking to uptime, staff use, and organized infrastructure |
 | `/business/` | Surveillance service card | `BS-S01` | Small-office camera context | Connect surveillance to useful operational views and controlled access |
 | `/business/` | Access-control service card | `BS-A01` | Small-office staff entrance | Connect access control to permissions, staff entry, and safe egress |
-| `/residential/networking/` | Hero or primary supporting media | `PR-N01` | Organized network rack | Show the quality and order of a completed network foundation |
+| `/residential/networking/` | Hero or primary supporting media | `NW-H01` | Residential network rack supporting a home office and living space | Explain the service through organized infrastructure and the spaces it supports |
+| `/residential/networking/` | Integrated project proof | `PR-N01` | Organized network rack | Show the quality and order of a completed network foundation |
 | `/residential/networking/` | Planning and proof | `PR-N02` | Attic cable routing | Show deliberate routing within real residential construction |
 | `/residential/surveillance/` | Hero | `SV-H01` | Installed camera in residential context | Explain placement and viewing direction without exposing a customer's property or camera view |
 | `/residential/surveillance/` | Integrated project proof | `PR-N01` | Organized network rack | Support the verified recording and network-foundation story without implying the rack is a camera image |
@@ -93,6 +95,7 @@ This matrix assigns each asset to a page section and one communication purpose. 
 | `BS-S01` | Landscape `4:3` base with card and hero-safe variants | Card copy below; hero copy on a separate solid field | `surface`; modest office entrance or shared area | Supply a tighter card crop and a compact hero crop; retain the camera and one operational sight line |
 | `BS-A01` | Landscape `4:3` base with card and hero-safe variants | Card copy below; hero copy on a separate solid field | `surface`; staff entrance with ordinary commercial finishes | Supply a tighter card crop and a compact hero crop; retain reader, doorway, and egress relationship |
 | `SV-H01` | Wide `4:5` through `1:1`; complete camera and mount with one construction edge | Copy on a separate solid field facing the low-information edge | `background`; believable residential eave or wall corner with restrained architecture | Supply a `5:4` or `4:3` crop centered on the camera, mount, and one construction edge; remove the wide seam fade |
+| `NW-H01` | Wide `3:2`; complete rack on the right with low-information copy space on the left | Copy on a separate solid field facing the low-information edge | `background`; finished residential utility area connected visually to a home office and living space | Use the dedicated `5:4` crop; preserve the complete rack, doorway, structured cable entry, and access point |
 | `PR-N01` | Framed `4:3` or subject-led portrait; organized termination remains readable | Adjacent proof copy; caption below the image | Authentic project context; no fade over cables, labels, or equipment | Supply a tighter framed crop that retains one rack edge and readable organization |
 | `PR-N02` | Framed `3:2` or `4:3`; isolate the cleanest meaningful cable route | Adjacent proof copy; caption below the image | Authentic attic construction; dense details remain fully opaque | Use a tighter `4:3` crop that removes unrelated attic volume without hiding routing context |
 | `PR-E01` | Framed `4:3` or `4:5`; operator, header, and door relationship remain intact | Adjacent hero or proof copy; visible project label and caption | Authentic residential doorway; no synthetic cleanup or fade over equipment | Use a portrait or `5:4` crop retaining the operator and upper door relationship |
@@ -109,18 +112,19 @@ Reuse means one approved source may receive role-specific crops. It never permit
 | Reusable authentic proof | `PR-N01`, `PR-N02`, `PR-E01`, `PR-E02`, `PR-E03`, `PR-E04` | Residential hub proof, relevant residential service proof, and the integrated project story | Every use identifies the same private residential project; business and home-automation use is prohibited |
 | Reusable service illustration | `RS-N01`, `RS-S01`, `RS-E01`, `RS-H01`, `BS-N01`, `BS-S01`, `BS-A01` | The matching audience-hub card and matching audience-specific service page when the base composition supports both crops | Do not cross audiences or relabel one service as another |
 | Page-specific audience context | `GW-R01`, `GW-B01` | Root audience gateway only | Do not reuse as service art, proof, or generic page backgrounds |
-| Page-specific hero | `SV-H01` | Residential surveillance hero and approved social derivative | Do not present as authentic Blyx work or business imagery |
+| Page-specific hero | `SV-H01`, `NW-H01` | Matching residential service hero and approved social derivative | Do not present as authentic Blyx work or business imagery |
 
 ## 📦 Prioritized production backlog
 
 ### Batch 1 — System validation
 
-Produce only these two assets before scaling the system:
+Produce these three assets before scaling the system:
 
 | Priority | Asset ID | Work | Validation purpose | Exit condition |
 | ---: | --- | --- | --- | --- |
 | 1 | `SV-H01` | Produce the residential surveillance hero with wide and compact art direction | Test a purpose-built marketing image, subject scale, architectural context, copy-facing transition, and disclosure | Camera, mount, and context remain clear across target widths; no crop or fade crosses the focal subject |
-| 2 | `PR-N01` | Select the highest-quality original and produce the final wide and compact supporting derivatives | Test authentic-proof cropping, detail preservation, captioning, performance, and non-generative quality treatment | Rack organization remains readable; no detail is invented; derivatives pass intended-size and 100% review |
+| 2 | `NW-H01` | Produce the residential networking marketing image and responsive crops | Test separation between service marketing and authentic proof while retaining credible installation detail | Rack, residential context, and access point remain clear; the image is never presented as completed work |
+| 3 | `PR-N01` | Retain the highest-quality original and its responsive full-frame derivatives | Test authentic-proof detail preservation, captioning, performance, and non-generative treatment | Rack organization remains readable; no detail is invented; derivatives pass intended-size and 100% review |
 
 Do not begin the next batch until both assets are tested in their intended responsive compositions and reviewed together against the image-system acceptance checks.
 
@@ -167,7 +171,7 @@ The following sections remain typographic or form-led. They do not receive decor
 - [ ] Authentic proof remains attached to one integrated private residential project.
 - [ ] Marketing imagery is never labeled, captioned, or positioned as completed Blyx work.
 - [ ] Residential and business assets are visually and semantically distinct without separate brand systems.
-- [ ] The first production batch contains only `SV-H01` and `PR-N01`.
+- [ ] The first production batch contains only `SV-H01`, `NW-H01`, and `PR-N01`.
 - [ ] Business production remains deferred until the separate image brief is approved.
 - [ ] Home-automation production remains blocked until the service scope and subject brief are approved.
 - [ ] Every final asset passes responsive, quality, privacy, accessibility, provenance, and performance review.
