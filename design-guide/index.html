@@ -572,8 +572,8 @@
             </div>
             <div class="audience-gateway-demo">
               <a class="audience-gateway-side audience-gateway-residential" href="/residential/">
-                <span class="audience-gateway-art" aria-hidden="true">
-                  <picture>
+                <span class="audience-gateway-art image-crop" aria-hidden="true">
+                  <picture class="responsive-image">
                     <source
                       media="(max-width: 47.99rem)"
                       srcset="/design-guide/audience-renders/residential-mobile.jpg"
@@ -595,8 +595,8 @@
                 </span>
               </a>
               <a class="audience-gateway-side audience-gateway-business" href="/business/">
-                <span class="audience-gateway-art" aria-hidden="true">
-                  <picture>
+                <span class="audience-gateway-art image-crop" aria-hidden="true">
+                  <picture class="responsive-image">
                     <source
                       media="(max-width: 47.99rem)"
                       srcset="/design-guide/audience-renders/business-mobile.jpg"
@@ -646,8 +646,8 @@
                 </p>
                 <a class="button button-primary" href="#compositions">Explore networking</a>
               </div>
-              <div class="composition-media image-fade">
-                <picture>
+              <div class="composition-media image-crop image-fade-start image-surface-background">
+                <picture class="responsive-image">
                   <source
                     type="image/webp"
                     srcset="/projects/network-surveillance/network-rack-480.webp 480w, /projects/network-surveillance/network-rack-768.webp 768w, /projects/network-surveillance/network-rack-1024.webp 1024w"
@@ -680,8 +680,8 @@
             <div class="specimen-body">
               <div class="service-panels">
                 <article class="service-panel">
-                  <div class="service-panel-media">
-                    <picture>
+                  <div class="service-panel-media image-crop image-panel-fade image-surface-default">
+                    <picture class="responsive-image">
                       <source
                         type="image/webp"
                         srcset="/design-guide/service-renders/networking-v3-768.webp 768w, /design-guide/service-renders/networking-v3-1448.webp 1448w"
@@ -696,7 +696,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="service-panel-body">
+                  <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Networking</span>
                     <h3>Reliable coverage, built into the home.</h3>
                     <p>Plan connectivity around the property, its construction, and the systems it needs to support.</p>
@@ -705,8 +705,8 @@
                 </article>
 
                 <article class="service-panel">
-                  <div class="service-panel-media">
-                    <picture>
+                  <div class="service-panel-media image-crop image-panel-fade image-surface-default">
+                    <picture class="responsive-image">
                       <source
                         type="image/webp"
                         srcset="/design-guide/service-renders/surveillance-v2-768.webp 768w, /design-guide/service-renders/surveillance-v2-1448.webp 1448w"
@@ -721,7 +721,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="service-panel-body">
+                  <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Surveillance</span>
                     <h3>Awareness where it matters.</h3>
                     <p>Place cameras around useful views, appropriate coverage, and the way the property is actually used.</p>
@@ -731,13 +731,13 @@
 
                 <article class="service-panel">
                   <div
-                    class="service-panel-media service-panel-media-pending"
+                    class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default"
                     role="img"
                     aria-label="Automated entry and access control technical render pending an approved image brief"
                   >
                     <span>Automated-entry render required</span>
                   </div>
-                  <div class="service-panel-body">
+                  <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Automated entry &amp; access control</span>
                     <h3>Easier entry, with secure control.</h3>
                     <p>Coordinate automatic door operation with compatible credentials, permissions, and remote visitor access.</p>
@@ -747,13 +747,13 @@
 
                 <article class="service-panel">
                   <div
-                    class="service-panel-media service-panel-media-pending"
+                    class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default"
                     role="img"
                     aria-label="Home automation technical render pending an approved service scope"
                   >
                     <span>Scope-backed render required</span>
                   </div>
-                  <div class="service-panel-body">
+                  <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Home automation</span>
                     <h3>Everyday control, thoughtfully coordinated.</h3>
                     <p>Connect supported home systems around the routines and outcomes defined for the project.</p>
@@ -794,8 +794,8 @@
               </div>
               <div class="specimen-body">
                 <figure style="margin: 0">
-                  <div class="image-frame">
-                    <picture>
+                  <div class="image-frame image-crop image-surface-default">
+                    <picture class="responsive-image">
                       <source
                         type="image/webp"
                         srcset="/projects/automated-entry/entry-reader-480.webp 480w, /projects/automated-entry/entry-reader-768.webp 768w"
@@ -837,6 +837,72 @@
                 color grading, text over photography, ornamental gradients, and
                 fades that cross the focal subject.
               </p>
+            </article>
+
+            <article class="specimen">
+              <div class="specimen-header">
+                <h3>Copy-facing seam fade</h3>
+                <span class="specimen-label">Light + inverse fields</span>
+              </div>
+              <div class="specimen-body">
+                <div class="fade-surface-grid" aria-hidden="true">
+                  <div class="fade-surface-sample fade-surface-sample-light">
+                    <span>Surface</span>
+                    <div class="image-frame image-crop image-fade-start image-surface-default">
+                      <picture class="responsive-image">
+                        <source
+                          type="image/webp"
+                          srcset="/design-guide/service-renders/networking-v3-768.webp 768w, /design-guide/service-renders/networking-v3-1448.webp 1448w"
+                          sizes="(min-width: 48rem) 36vw, calc(100vw - 5rem)"
+                        />
+                        <img
+                          src="/design-guide/service-renders/networking-v3-768.webp"
+                          alt=""
+                          width="768"
+                          height="576"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="fade-surface-sample fade-surface-sample-inverse">
+                    <span>Inverse surface</span>
+                    <div class="image-frame image-crop image-fade-start image-surface-inverse">
+                      <picture class="responsive-image">
+                        <source
+                          type="image/webp"
+                          srcset="/design-guide/service-renders/networking-v3-768.webp 768w, /design-guide/service-renders/networking-v3-1448.webp 1448w"
+                          sizes="(min-width: 48rem) 36vw, calc(100vw - 5rem)"
+                        />
+                        <img
+                          src="/design-guide/service-renders/networking-v3-768.webp"
+                          alt=""
+                          width="768"
+                          height="576"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <p class="usage">
+                  <strong>Use:</strong> bind the fade to the field beneath the image.
+                  Below 48rem—or without mask support—the complete hard crop remains.
+                </p>
+              </div>
+            </article>
+
+            <article class="guide-card">
+              <h3>Responsive implementation</h3>
+              <ul class="rule-list">
+                <li>Use media-specific <code>&lt;source&gt;</code> elements when compact and wide compositions require different crops.</li>
+                <li>Use width descriptors and an accurate <code>sizes</code> value when only resolution changes.</li>
+                <li>Keep intrinsic width and height on the fallback image to reserve layout space.</li>
+                <li>Set compact and wide focal positions per asset; do not accept centered cropping by default.</li>
+                <li>Keep captions and controls outside every mask and overlay stacking context.</li>
+              </ul>
             </article>
           </div>
         </section>
