@@ -1,4 +1,5 @@
 @import url("./foundation.css");
+@import url("./media.css");
 
 *,
 *::before,
@@ -975,14 +976,7 @@ a {
   min-height: 24rem;
 }
 
-.composition-media img,
-.image-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.composition-media img {
+.composition-media > .responsive-image {
   position: absolute;
   inset: 0;
 }
@@ -1012,16 +1006,6 @@ a {
   background: var(--color-surface-subtle);
 }
 
-.service-panel-media::after {
-  position: absolute;
-  z-index: 1;
-  inset: auto 0 0;
-  height: var(--image-fade-narrow);
-  background: linear-gradient(to bottom, transparent, var(--color-surface));
-  content: "";
-  pointer-events: none;
-}
-
 .service-panel-media picture {
   display: block;
   min-height: 0;
@@ -1038,28 +1022,12 @@ a {
   text-align: center;
 }
 
-.service-panel-media img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .service-panel-body {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: calc(-1 * var(--service-panel-copy-overlap));
   padding: var(--space-4) var(--space-5) var(--space-5);
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    var(--color-surface) var(--space-4),
-    var(--color-surface)
-  );
 }
 
 .service-panel h3 {
@@ -1084,32 +1052,36 @@ a {
   padding-top: var(--space-2);
 }
 
-.image-frame {
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
-  border-radius: var(--radius-surface);
-}
-
-.image-frame img {
-  display: block;
-}
-
-.image-fade {
-  position: relative;
-  background: var(--color-background);
-}
-
-.image-fade::after {
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: var(--image-fade-wide);
-  background: linear-gradient(to right, var(--color-background), transparent);
-  content: "";
-}
-
 .do-dont {
   display: grid;
   gap: var(--grid-gap);
+}
+
+.fade-surface-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.fade-surface-sample {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.fade-surface-sample > span {
+  font-size: var(--type-caption);
+  font-weight: var(--weight-semibold);
+  line-height: 1.5;
+}
+
+.fade-surface-sample-light {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.fade-surface-sample-inverse {
+  background: var(--color-surface-inverse);
+  color: var(--color-text-inverse);
 }
 
 .rule-list {
@@ -1230,12 +1202,6 @@ a {
     min-height: 18rem;
   }
 
-  .image-fade::after {
-    inset: 0 0 auto;
-    width: auto;
-    height: var(--image-fade-narrow);
-    background: linear-gradient(to bottom, var(--color-background), transparent);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
