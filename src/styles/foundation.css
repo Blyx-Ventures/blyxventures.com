@@ -1,0 +1,253 @@
+@import url("./design-tokens.css");
+
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("/fonts/inter-variable-latin.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Inter Variable";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("/fonts/inter-variable-latin-italic.woff2") format("woff2-variations");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 100%;
+  font-synthesis: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--type-body);
+  font-weight: var(--weight-regular);
+  line-height: 1.6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+strong {
+  font-weight: var(--weight-semibold);
+}
+
+p,
+li,
+dd,
+figcaption {
+  overflow-wrap: anywhere;
+}
+
+.display-xl,
+.display-lg,
+.heading-1,
+.heading-2,
+.heading-3 {
+  margin-block: 0;
+  font-weight: var(--weight-semibold);
+  text-wrap: balance;
+}
+
+.display-xl {
+  max-width: 11ch;
+  font-size: var(--type-display-xl);
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+}
+
+.display-lg {
+  max-width: 14ch;
+  font-size: var(--type-display-lg);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.heading-1 {
+  max-width: 18ch;
+  font-size: var(--type-heading-1);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.heading-2 {
+  max-width: 24ch;
+  font-size: var(--type-heading-2);
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.heading-3 {
+  max-width: 30ch;
+  font-size: var(--type-heading-3);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.body-lg,
+.body,
+.body-sm,
+.caption,
+.form-help {
+  text-wrap: pretty;
+}
+
+.body-lg {
+  max-width: 60ch;
+  font-size: var(--type-body-lg);
+  line-height: 1.55;
+}
+
+.body {
+  max-width: var(--width-reading);
+  font-size: var(--type-body);
+  line-height: 1.6;
+}
+
+.body-sm {
+  max-width: 60ch;
+  font-size: var(--type-body-sm);
+  line-height: 1.5;
+}
+
+.label {
+  max-width: 32ch;
+  font-size: var(--type-label);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
+.label-uppercase {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.caption {
+  max-width: 60ch;
+  font-size: var(--type-caption);
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+.form-label {
+  max-width: 40ch;
+  font-size: var(--type-body-sm);
+  font-weight: var(--weight-semibold);
+  line-height: 1.4;
+}
+
+.form-control {
+  font-size: var(--type-body);
+  font-weight: var(--weight-regular);
+  line-height: 1.5;
+}
+
+.form-help {
+  max-width: 60ch;
+  font-size: var(--type-body-sm);
+  line-height: 1.45;
+}
+
+.action {
+  font-size: var(--type-action);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.container,
+.container-wide,
+.container-narrow,
+.container-canvas {
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--gutter-inline) + var(--gutter-inline));
+  margin-inline: auto;
+  padding-inline: var(--gutter-inline);
+}
+
+.container {
+  --container-width: var(--width-standard);
+}
+
+.container-wide {
+  --container-width: var(--width-wide);
+}
+
+.container-narrow {
+  --container-width: var(--width-narrow);
+}
+
+.container-canvas {
+  --container-width: var(--width-canvas);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+.grid > * {
+  min-width: 0;
+}
+
+.section {
+  padding-block: var(--section-block);
+}
+
+.section-compact {
+  padding-block: var(--section-block-compact);
+}
+
+.flow > * {
+  margin-block: 0;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-4));
+}
+
+@media (min-width: 48rem) {
+  .grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
