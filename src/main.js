@@ -1,4 +1,5 @@
 import './styles/site.css';
+import './styles/components.css';
 import { initializeAnalytics, trackContactIntent } from './analytics.js';
 
 const APPROVED_AREAS = new Set(['Networking', 'Security cameras', 'Access control', 'Automated entry']);
@@ -11,6 +12,8 @@ const SOURCE_BY_PATH = {
 const inquiryContext = readInquiryContext();
 
 initializeAnalytics();
+initializeNavigation();
+initializeHeaderActions();
 
 document.querySelectorAll('[data-contact]').forEach((link) => {
   link.addEventListener('click', () => {
@@ -36,6 +39,7 @@ window[STATUS_CALLBACK] = (result) => {
 
 if (contactForm) {
   const submitButton = contactForm.querySelector('button[type="submit"]');
+  const submitButtonLabel = submitButton.textContent;
   const areaInputs = [...contactForm.querySelectorAll('input[name="areasOfNeed"]')];
   const notSureInput = contactForm.querySelector('[data-not-sure]');
   const areasGroup = document.getElementById('cf-areas-group');
@@ -122,7 +126,7 @@ if (contactForm) {
     payload.requestId = requestId;
     pendingRequestId = requestId;
 
-    submitButton.disabled = true;
+    setSubmitBusy(submitButton, true, submitButtonLabel);
     setFormStatus('pending', 'Sending…');
 
     try {
@@ -148,9 +152,114 @@ if (contactForm) {
       setFormStatus('success', "Thanks — we'll be in touch soon.");
       trackContactIntent('contact-form', inquiryContext.source);
     } finally {
-      submitButton.disabled = false;
+      setSubmitBusy(submitButton, false, submitButtonLabel);
     }
   });
+}
+
+function initializeNavigation() {
+  const header = document.querySelector('.site-header');
+  const button = header?.querySelector('.menu-button');
+  const panel = button ? document.getElementById(button.getAttribute('aria-controls')) : null;
+  const label = button?.querySelector('[data-menu-label]');
+  if (!header || !button || !panel || !label) return;
+
+  const close = (restoreFocus = false) => {
+    button.setAttribute('aria-expanded', 'false');
+    label.textContent = 'Menu';
+    panel.hidden = true;
+    if (restoreFocus) button.focus();
+  };
+
+  button.addEventListener('click', () => {
+    const opening = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(opening));
+    label.textContent = opening ? 'Close' : 'Menu';
+    panel.hidden = !opening;
+  });
+
+  panel.addEventListener('click', (event) => {
+    if (event.target.closest('a')) close();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
+      close(true);
+    }
+  });
+
+  document.addEventListener('pointerdown', (event) => {
+    if (button.getAttribute('aria-expanded') === 'true' && !header.contains(event.target)) close();
+  });
+
+  window.matchMedia('(min-width: 80rem)').addEventListener('change', (event) => {
+    if (event.matches) close();
+  });
+}
+
+function initializeHeaderActions() {
+  const source = document.querySelector('[data-header-action-source]');
+  const actions = [...document.querySelectorAll('[data-header-action]')];
+  if (!actions.length) return;
+
+  const setActive = (active) => {
+    actions.forEach((action) => {
+      action.classList.toggle('is-active', active);
+      action.setAttribute('aria-hidden', String(!active));
+      action.tabIndex = active ? 0 : -1;
+    });
+  };
+
+  if (!source) {
+    setActive(true);
+    return;
+  }
+
+  let shouldActivate = false;
+  const applyState = () => {
+    if (shouldActivate && document.activeElement === source) {
+      source.addEventListener('blur', applyState, { once: true });
+      return;
+    }
+    setActive(shouldActivate);
+  };
+
+  const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+
+  if (!('IntersectionObserver' in window)) {
+    const updateFromScroll = () => {
+      shouldActivate = source.getBoundingClientRect().bottom <= headerHeight;
+      applyState();
+    };
+    window.addEventListener('scroll', updateFromScroll, { passive: true });
+    document.addEventListener('scroll', updateFromScroll, { passive: true, capture: true });
+    updateFromScroll();
+    return;
+  }
+
+  const observer = new IntersectionObserver(([entry]) => {
+    shouldActivate = !entry.isIntersecting && entry.boundingClientRect.bottom <= entry.rootBounds.top;
+    applyState();
+  }, { rootMargin: `${headerHeight * -1}px 0px 0px` });
+
+  observer.observe(source);
+}
+
+function setSubmitBusy(button, busy, idleLabel) {
+  if (busy) {
+    button.style.minWidth = `${button.getBoundingClientRect().width}px`;
+    button.textContent = 'Sending…';
+    button.classList.add('is-loading');
+    button.setAttribute('aria-busy', 'true');
+    button.disabled = true;
+    return;
+  }
+
+  button.textContent = idleLabel;
+  button.classList.remove('is-loading');
+  button.removeAttribute('aria-busy');
+  button.disabled = false;
+  button.style.removeProperty('min-width');
 }
 
 function field(controlId, errorId, messages) {
@@ -257,13 +366,22 @@ function delay(milliseconds) {
 
 function setFailureStatus() {
   if (!contactFormStatus) return;
-  contactFormStatus.textContent = 'We couldn’t confirm your submission. Your information is still here—please try again or email ';
+  contactFormStatus.textContent = 'We couldn’t confirm your submission. Your information is still here. ';
+  const retryButton = document.createElement('button');
+  retryButton.className = 'button button-quiet status-retry';
+  retryButton.type = 'button';
+  retryButton.textContent = 'Try again';
+  retryButton.addEventListener('click', () => contactForm.requestSubmit());
   const emailLink = document.createElement('a');
   emailLink.href = 'mailto:contact@blyxventures.com?subject=Project%20inquiry%20for%20Blyx';
   emailLink.textContent = 'contact@blyxventures.com';
   emailLink.addEventListener('click', () => trackContactIntent('project-email', inquiryContext.source));
-  contactFormStatus.append(emailLink, '.');
+  contactFormStatus.append(retryButton, 'Or email ', emailLink, '.');
   contactFormStatus.dataset.state = 'error';
+  contactFormStatus.setAttribute('role', 'alert');
+  contactFormStatus.setAttribute('aria-live', 'assertive');
+  contactFormStatus.tabIndex = -1;
+  contactFormStatus.focus();
 }
 
 function readInquiryContext() {
@@ -292,4 +410,7 @@ function setFormStatus(state, message) {
   if (!contactFormStatus) return;
   contactFormStatus.textContent = message;
   contactFormStatus.dataset.state = state;
+  contactFormStatus.setAttribute('role', 'status');
+  contactFormStatus.setAttribute('aria-live', 'polite');
+  contactFormStatus.removeAttribute('tabindex');
 }
