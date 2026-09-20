@@ -27,7 +27,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The company voice uses “we” without implying unverified team size, capacity, credentials, authorizations, or experience.
 - **Preserve:** Pricing remains consultative; the site explains fit and inquiry steps without packages or starting prices.
 - **Preserve:** Blyx may state that it is fully insured.
-- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: dependable technology, thoughtfully integrated into the customer’s space.
+- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: dependable technology, designed around the customer’s space.
 - **Replace:** Generic “smart space” positioning where it obscures specific customer outcomes or treats the services as products.
 - **Replace:** Enterprise-scale, high-volume, or otherwise unsupported commercial positioning.
 
@@ -37,17 +37,15 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The logo links to the homepage and has an accessible home label.
 - **Preserve:** Root primary navigation gives `Residential` and `Business` equal prominence and includes `How we work`. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
 - **Preserve:** Audience hubs keep a visible audience switch and expose only the services verified for that audience.
-- **Preserve:** The footer names both audience paths, shared contact methods, Louisville, insured status, the privacy route, and Blyx Ventures LLC.
+- **Preserve:** The footer names both audience paths, shared contact methods, insured status, the privacy route, and Blyx Ventures LLC.
 - **Preserve:** Audience-specific service pages identify the active audience and service and cross-link only to relevant services.
 - **Reconsider:** Section-anchor navigation may be adapted to the final responsive page structures.
 
-### Service area
+### Inquiry availability
 
-- **Preserve:** Blyx serves Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties in Kentucky.
-- **Preserve:** The service area remains secondary but visible near the contact path and in the footer.
-- **Preserve:** A project outside the named area may still be submitted for consideration.
-- **Preserve:** The form collects project location as a city or ZIP code without rejecting an inquiry based on service-area membership.
-- **Preserve:** Light-commercial inquiries use the same named service area unless Blyx records a separate verified boundary.
+- **Preserve:** Public site copy and metadata do not publish a geographic service boundary.
+- **Preserve:** Visitors may submit residential or business inquiries regardless of location.
+- **Preserve:** The form may collect a project ZIP for planning, but the value never gates submission by service-area membership.
 
 ### Claims and boundaries
 
@@ -78,6 +76,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 #### Hero
 
+- **Preserve:** Begin with the central promise without an eyebrow or audience label above it.
 - **Preserve:** Quiet phone access and a direct `Tell us about your project` hero action that hands off to the header after scrolling.
 - **Reconsider:** Headline and supporting copy around the central promise for homes and light-commercial spaces.
 - **Preserve:** Concise residential and light-commercial positioning when the surrounding service claims remain accurate and specific.
@@ -122,7 +121,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 #### Contact
 
 - **Preserve:** Introductory guidance says a rough description is enough and explains that Blyx responds by email, may ask follow-up questions, and may arrange a call or site assessment.
-- **Preserve:** Basic project-fit guidance, the complete service area, outside-area inquiry permission, and fully insured status appear as concise support beside the form rather than as a separate homepage section.
+- **Preserve:** Basic project-fit guidance and fully insured status appear as concise support beside the form rather than as a separate homepage section.
 - **Preserve:** Contact paths include the form, `contact@blyxventures.com`, and `(502) 500-0105`.
 - **Preserve:** The form collects name, email, optional phone, project city or ZIP, project size, areas of need, and a project description.
 - **Preserve:** Residential areas of need are Networking, Security cameras, Automated entry & access control, Home automation, and Not sure yet. Business areas of need include Access control as its own operational service. “Not sure yet” is mutually exclusive.
@@ -189,9 +188,8 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 ### Structured data
 
-- **Preserve:** The homepage defines Blyx Ventures LLC as a Louisville-based `ProfessionalService` with the public URL, logo, image, email, phone number, service area, locality, and verified residential and business offerings.
-- **Preserve:** Service area entries name Jefferson, Bullitt, Oldham, Shelby, and Spencer counties in Kentucky.
-- **Preserve:** Each audience-specific service route defines one `Service` entity with a stable page-specific ID, audience-specific name, service type, URL, description, provider reference, and Louisville-area service region.
+- **Preserve:** The homepage defines Blyx Ventures LLC as a `ProfessionalService` with the public URL, logo, image, email, phone number, and verified residential and business offerings.
+- **Preserve:** Each audience-specific service route defines one `Service` entity with a stable page-specific ID, audience-specific name, service type, URL, description, and provider reference.
 - **Preserve:** Residential and light-commercial service types and descriptions remain distinct and accurate to their defined scopes.
 - **Preserve:** Add home automation to `makesOffer` and create service-level structured data when its public description and supported scope are approved.
 - **Reconsider:** `priceRange` remains only if it accurately communicates Blyx’s consultative positioning without functioning as a price claim.
@@ -208,8 +206,8 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** `https://www.blyxventures.com` remains the canonical origin until an apex-domain configuration is verified and a deliberate canonical-host decision is recorded.
 - **Preserve:** Launch readiness verifies the apex-domain behavior instead of assuming that `blyxventures.com` redirects correctly.
 - **Preserve:** Google Search Console and Bing Webmaster Tools receive the production sitemap after ownership verification.
-- **Preserve:** Any Google Business Profile uses the legal business name, public phone number, canonical website, hidden street address, accurate service area, and verified residential and light-commercial categories.
-- **Preserve:** Business listings use consistent business name, phone number, canonical URL, and service-area facts.
+- **Preserve:** Any Google Business Profile uses the legal business name, public phone number, canonical website, and verified residential and light-commercial categories.
+- **Preserve:** Business listings use a consistent business name, phone number, and canonical URL.
 - **Preserve:** Structured-data `sameAs` entries remain empty unless corresponding public profiles are verified.
 
 ## 📊 Analytics and contact behaviors

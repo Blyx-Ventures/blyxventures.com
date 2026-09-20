@@ -19,12 +19,12 @@ The root homepage does not ask one service section to address incompatible resid
 
 | Order | Section | Purpose | Primary message | Primary action | Proof requirement | Visual role |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Dependable technology, thoughtfully integrated into your space | Tell us about your project | No portfolio or scale claim | Shared brand composition led by typography rather than audience-specific imagery |
-| 2 | Audience gateway | Make the residential or business context the next page decision | Purpose-built service experiences for homes and businesses | Explore home services; Explore business services | Each path states only verified audience scope | Two linked image fields separated by a narrow background gap: residential left, business right |
+| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Dependable technology, designed around your space | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
+| 2 | Audience gateway | Make the residential or business context the next page decision | Residential and Business paths | Explore home services; Explore business services | Each path states only verified audience scope | Two linked image fields separated by a narrow background gap: residential left, business right; no section introduction above the selector |
 | 3 | Shared approach | Explain what remains consistent across every project | Clear scope, clean installation, tested systems, and ready-to-use handoff | No section CTA | Concrete process commitments; no numerical experience or capacity claims | Primarily typographic; no decorative imagery |
-| 4 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx serves homes and light-commercial spaces in the named Louisville-area counties and welcomes outside-area inquiries | Send project details | Named service area, fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
+| 4 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
 
-The global header exposes `Residential`, `Business`, and `How we work`. `Tell us about your project` begins in the hero and appears in its reserved header position only after the hero action scrolls above the header. The footer repeats the two audience paths, shared contact methods, Louisville-based service context, fully insured status, legal name, and privacy link.
+The global header exposes `Residential`, `Business`, and `How we work`. `Tell us about your project` begins in the hero and appears in its reserved header position only after the hero action scrolls above the header. The footer repeats the two audience paths, shared contact methods, fully insured status, legal name, and privacy link.
 
 ## 🔗 Audience and URL architecture
 
@@ -82,14 +82,19 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 ### Brand hero
 
 - Use the central promise as the only dominant headline.
+- Begin with the central promise. Do not place an eyebrow or audience label above it.
+- Set “your space” in `brand-strong`; keep the rest of the central promise in the primary text color.
 - Place `Tell us about your project` in the hero as the direct inquiry action. Do not repeat it inside either audience gateway link.
 - Retain direct phone access as a quiet utility action.
 - State residential and light-commercial availability without listing every service or duplicating the audience gateway.
 - Do not place audience-specific imagery or service cards in the hero.
+- Use `HR-N01` as the only hero-support image. Keep the generated rack audience-neutral, subordinate to the copy, visually separate from proof, and positioned on the right with a calm copy field on the left.
+- At wide viewports, enlarge `HR-N01` uniformly without changing its perspective, position both left-side rack corners clearly inside the composition, and clip the right-side continuation at the hero boundary. Keep the complete rack visible in the stacked compact layout.
 - Keep the hero concise enough that the audience gateway remains apparent as the next decision.
 
 ### Audience gateway
 
+- Present the linked audience selector without a separate eyebrow, section title, or explanatory paragraph.
 - Render two equal block-level links: the residential side links to `/residential/` and the business side links to `/business/`.
 - Use one anchor as the outermost interactive element for each side. Do not place a nested button, link, or independently interactive image inside either anchor.
 - Give each side a visible audience label, one short outcome-led statement, and a text cue: `Explore home services` or `Explore business services`. Layer this copy over the image in a deliberately quiet, contrast-protected region.
@@ -120,9 +125,8 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 ### Contact
 
 - Ask the visitor to select Residential or Business before service-specific fields.
-- Place concise project-fit and service-area guidance beside the form rather than in a separate section.
-- Name both residential and light-commercial work and state the complete service area once.
-- State that outside-area inquiries are welcome without promising availability.
+- Place concise project-fit guidance beside the form rather than in a separate section.
+- Name both residential and light-commercial work without publishing a geographic service boundary.
 - Include fully insured status as factual reassurance rather than a badge or certification treatment.
 - Leave audience- and service-specific limitations to their destination pages.
 - Preserve direct email and telephone alternatives.

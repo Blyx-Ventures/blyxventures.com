@@ -4,13 +4,12 @@ Use this brief for redesign intent and constraints. Record detailed design decis
 
 ## Positioning
 
-**Central promise:** Dependable technology, thoughtfully integrated into your space.
+**Central promise:** Dependable technology, designed around your space.
 
 Every page, image, interaction, and proof point must reinforce or substantiate this promise:
 
 - **Dependable:** appropriate design, reliable systems, careful installation, testing, and usable handoff.
-- **Thoughtfully integrated:** coherent planning, clean installation, required compatibility, and simple daily use.
-- **Into your space:** decisions follow the people, property, routines, operations, and need—not a product catalog.
+- **Designed around your space:** decisions follow the people, property, routines, operations, and need—not a product catalog. Coherent planning, clean installation, required compatibility, and simple daily use substantiate that design.
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 
@@ -68,9 +67,9 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 - [Reusable service and case-study page templates](./page-templates.md)
 - [Page image matrix and production backlog](./image-matrix.md)
 
-## Service area and proof
+## Inquiry availability and proof
 
-- Service area: Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky. Keep it secondary but clear near contact forms and in the footer. Collect project city or ZIP without blocking outside submissions.
+- Accept inquiries without publishing a geographic service boundary. A project ZIP may be collected for project planning, but it never determines whether a visitor can submit an inquiry.
 - Available proof: photography and one testimonial from one completed residential project covering networking, security cameras, and automated entry. Present it as one integrated project; do not imply multiple customers, a larger portfolio, light-commercial work, or home-automation work.
 - Attribute the testimonial with the client's first name and last initial; keep the residence private.
 - Blyx may state that it is fully insured. Do not imply unverified certifications, manufacturer authorizations, claims, or experience.

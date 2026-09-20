@@ -1,5 +1,6 @@
 import './styles/site.css';
 import './styles/components.css';
+import './styles/home.css';
 import { initializeAnalytics, trackContactIntent } from './analytics.js';
 
 const APPROVED_AREAS = new Set(['Networking', 'Security cameras', 'Access control', 'Automated entry']);
@@ -45,6 +46,9 @@ if (contactForm) {
   const areasGroup = document.getElementById('cf-areas-group');
   const areasError = document.getElementById('cf-areas-error');
   const controls = [
+    field('cf-property', 'cf-property-error', {
+      valueMissing: 'Select Residential or Business.',
+    }),
     field('cf-name', 'cf-name-error', {
       valueMissing: 'Enter your name.',
       blank: 'Enter your name.',
@@ -59,9 +63,6 @@ if (contactForm) {
       valueMissing: 'Enter the project ZIP code.',
       patternMismatch: 'Enter a five-digit ZIP code or ZIP+4.',
       tooLong: 'Enter a five-digit ZIP code or ZIP+4.',
-    }),
-    field('cf-property', 'cf-property-error', {
-      valueMissing: 'Select a property type.',
     }),
     field('cf-project-size', 'cf-project-size-error', {
       valueMissing: 'Select an approximate project size.',

@@ -23,6 +23,7 @@ The asset ID remains stable across the page matrix, production backlog, filename
 
 | Asset ID | Subject | Asset class | Availability | Production state |
 | --- | --- | --- | --- | --- |
+| `HR-N01` | Audience-neutral compact network rack in a restrained technical-render treatment | Generated hero-support render | Production transparent PNG exists | Approved for root hero trial; validate final responsive composition |
 | `GW-R01` | Familiar residential exterior | Audience context render | Existing desktop and compact sources | Approved direction; validate in final gateway composition |
 | `GW-B01` | Modest local-office interior | Audience context render | Existing desktop and compact sources | Approved direction; validate in final gateway composition |
 | `RS-N01` | Residential network cutaway with central rack, concealed cabling, and ceiling access points | Technical service render | Existing design-guide sources | Validate for production use |
@@ -46,6 +47,7 @@ This matrix assigns each asset to a page section and one communication purpose. 
 
 | Page | Section | Asset ID | Subject | Communication purpose |
 | --- | --- | --- | --- | --- |
+| `/` | Brand hero | `HR-N01` | Organized compact network rack | Reinforce dependable, carefully planned infrastructure without assigning the root promise to one audience or presenting project proof |
 | `/` | Audience gateway, residential side | `GW-R01` | Familiar home exterior | Identify the residential path through environment alone |
 | `/` | Audience gateway, business side | `GW-B01` | Modest local-office interior | Identify the business path through environment alone |
 | `/residential/` | Networking service card | `RS-N01` | Residential network system relationships | Preview planned wired and wireless infrastructure without presenting project proof |
@@ -83,6 +85,7 @@ This matrix assigns each asset to a page section and one communication purpose. 
 
 | Asset ID | Crop | Copy position | Background and context | Compact requirement |
 | --- | --- | --- | --- | --- |
+| `HR-N01` | Tight portrait source with the complete rack isolated on transparency | Solid copy field on the left; media fills the hero vertically on the right and never contains essential text | Transparent generated warm-graphite technical render, audience-neutral and never labeled as project proof | Preserve the complete rack at a legible height; stack below copy when the two-column relationship cannot remain clear |
 | `GW-R01` | Wide panel with a protected slanted right edge | Overlay in a low-detail upper-left safe area | Full-bleed warm graphite and off-white home exterior; no service equipment | Use the dedicated compact source; preserve the home silhouette, copy safe area, and matching slanted edge |
 | `GW-B01` | Wide panel with a protected slanted left edge | Overlay in a low-detail upper-right safe area | Full-bleed warm graphite and off-white modest office; no service equipment | Use the dedicated compact source; preserve recognizable office context, copy safe area, and matching slanted edge |
 | `RS-N01` | Landscape `4:3`; rack and access points remain legible | Solid copy field below the media with a shallow bottom seam | `surface`; residential cutaway with restrained technical detail | Use an art-directed `4:3` crop that keeps the rack and at least one access point readable |
