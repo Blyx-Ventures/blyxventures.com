@@ -6,12 +6,11 @@ _Milestone 03 information architecture for the Blyx homepage and audience paths_
 
 ## 🎯 Homepage job and story
 
-The root homepage establishes one Blyx brand, then directs visitors into the residential or business experience before presenting detailed services. It moves from proposition to inquiry in four sections:
+The root homepage establishes one Blyx brand, then directs visitors into the residential or business experience before presenting detailed services. It moves from proposition to inquiry in three sections:
 
 1. Understand the shared Blyx promise and access the direct inquiry path.
 2. Choose the residential or business experience.
-3. Understand the standards shared by every Blyx project.
-4. Confirm basic fit and start an audience-aware inquiry.
+3. Confirm basic fit and start an audience-aware inquiry.
 
 The root homepage does not ask one service section to address incompatible residential and commercial needs. Audience hubs own the service language, imagery, proof, and qualification details.
 
@@ -21,10 +20,9 @@ The root homepage does not ask one service section to address incompatible resid
 | ---: | --- | --- | --- | --- | --- | --- |
 | 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Dependable technology that keeps up with you | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
 | 2 | Audience gateway | Make the residential or business context the next page decision | Residential and Business paths | Explore home services; Explore business services | Each path states only verified audience scope | Two image fields with bottom CTA links, separated by a narrow background gap: residential left, business right; no section introduction above the selector |
-| 3 | Shared approach | Explain what remains consistent across every project | Clear scope, clean installation, tested systems, and ready-to-use handoff | No section CTA | Concrete process commitments; no numerical experience or capacity claims | Primarily typographic; no decorative imagery |
-| 4 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
+| 3 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
 
-The global header exposes `Residential`, `Business`, and `How we work`. `Tell us about your project` begins in the hero and appears in its reserved header position only after the hero action scrolls above the header. The footer repeats the two audience paths, shared contact methods, fully insured status, legal name, and privacy link.
+The global header exposes `Residential` and `Business`. `Tell us about your project` begins in the hero and appears in its reserved header position only after the hero action scrolls above the header. The footer repeats the two audience paths, shared contact methods, fully insured status, legal name, and privacy link.
 
 ## 🔗 Audience and URL architecture
 
@@ -117,12 +115,6 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 - Do not add `Discuss a project`, `See services`, `Learn more`, or another generic action inside the audience gateway.
 - Do not lead with company history, products, technical features, or an audience-neutral service-card grid.
 
-### Shared approach
-
-- Use one concise introduction followed by the four commitments.
-- Explain observable behavior: scope confirmation, property protection, neat installation, testing, correction before handoff, cleanup, access transfer where applicable, and user guidance.
-- Keep the section typographic. Numbering, rules, or spacing may establish sequence without cards or decorative illustrations.
-
 ### Contact
 
 - Ask the visitor to select Residential or Business before service-specific fields.
@@ -141,7 +133,6 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 | Hero, then global header | Tell us about your project | `/contact/` | Begins in the hero; a matching header action appears only after the hero action scrolls above the header; the form asks Residential or Business first |
 | Residential gateway CTA | Explore home services | `/residential/` | Only the bottom CTA is linked; never styled as secondary to business |
 | Business gateway CTA | Explore business services | `/business/` | Only the bottom CTA is linked; never styled as secondary to residential |
-| Shared approach | None | — | Let the process build confidence without interrupting the page with another button |
 | Contact | Send project details | Form submission | The only conversion action in the final section |
 | Residential hub | Discuss a home project | `/contact/?audience=residential` | Carries residential context into the form |
 | Business hub | Discuss a business project | `/contact/?audience=business` | Carries business context into the form |

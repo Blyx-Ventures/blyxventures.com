@@ -156,7 +156,7 @@ Review all three business assets as one set for consistent perspective, crop den
 
 The following sections remain typographic or form-led. They do not receive decorative images:
 
-- Root brand hero, shared approach, and contact section
+- Root brand hero and contact section
 - Audience-hub fit and inquiry sections
 - Service need states, fit and boundaries, process, FAQ, inquiry, and related-service text
 - Contact and privacy pages

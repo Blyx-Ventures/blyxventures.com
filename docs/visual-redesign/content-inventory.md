@@ -35,7 +35,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** A skip link targets the main content on every route.
 - **Preserve:** The logo links to the homepage and has an accessible home label.
-- **Preserve:** Root primary navigation gives `Residential` and `Business` equal prominence and includes `How we work`. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
+- **Preserve:** Root primary navigation gives `Residential` and `Business` equal prominence. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
 - **Preserve:** Audience hubs keep a visible audience switch and expose only the services verified for that audience.
 - **Preserve:** The footer names both audience paths, shared contact methods, insured status, the privacy route, and Blyx Ventures LLC.
 - **Preserve:** Audience-specific service pages identify the active audience and service and cross-link only to relevant services.
@@ -60,7 +60,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 | Route | Purpose | Required content | Disposition |
 | --- | --- | --- | --- |
-| `/` | Establish the shared promise, route by audience, explain the shared approach and fit, and capture inquiries | Brand hero, split audience gateway, shared approach, audience-aware contact and fit section, footer | Reconsider |
+| `/` | Establish the shared promise, route by audience, and capture inquiries | Brand hero, split audience gateway, audience-aware contact section, footer | Reconsider |
 | `/residential/` | Introduce the residential experience and its services | Residential hero, four equal service cards, integrated residential project proof, residential fit, contextual contact action | Preserve |
 | `/business/` | Introduce the light-commercial experience and its verified services | Business hero, business-specific service-card variants, business fit, proof only when verified, contextual contact action | Preserve |
 | `/residential/{service}/` | Explain residential needs, scope, boundaries, process, proof, and common questions | Audience-specific hero, situations, planning, boundaries, process, residential proof where relevant, FAQ, contact action, related residential services | Preserve |
@@ -100,12 +100,6 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The business hub uses variants of the same component for Networking, Surveillance, and Access control. Its copy, service boundaries, destinations, and imagery requirements are business-specific.
 - **Preserve:** Business imagery remains unproduced until its service boundaries and separate image brief are approved; residential renders and proof are not substitutes.
 - **Reconsider:** Long-form service copy should be shortened for the cards without losing the audience-specific facts above.
-
-#### Approach
-
-- **Preserve:** The four commitments are clear scope, clean installation, tested system, and ready-to-use handoff.
-- **Preserve:** Scope changes are confirmed, the property is protected, equipment and cabling are installed neatly and securely, problems are corrected before handoff, the site is cleaned, and the customer receives usable system information.
-- **Reconsider:** The section should communicate the commitments without a dense or repetitive process treatment.
 
 #### Project proof and testimonial
 
