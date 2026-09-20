@@ -19,8 +19,8 @@ The root homepage does not ask one service section to address incompatible resid
 
 | Order | Section | Purpose | Primary message | Primary action | Proof requirement | Visual role |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Dependable technology, designed around your space | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
-| 2 | Audience gateway | Make the residential or business context the next page decision | Residential and Business paths | Explore home services; Explore business services | Each path states only verified audience scope | Two linked image fields separated by a narrow background gap: residential left, business right; no section introduction above the selector |
+| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Dependable technology that keeps up with you | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
+| 2 | Audience gateway | Make the residential or business context the next page decision | Residential and Business paths | Explore home services; Explore business services | Each path states only verified audience scope | Two image fields with bottom CTA links, separated by a narrow background gap: residential left, business right; no section introduction above the selector |
 | 3 | Shared approach | Explain what remains consistent across every project | Clear scope, clean installation, tested systems, and ready-to-use handoff | No section CTA | Concrete process commitments; no numerical experience or capacity claims | Primarily typographic; no decorative imagery |
 | 4 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
 
@@ -83,8 +83,9 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 
 - Use the central promise as the only dominant headline.
 - Begin with the central promise. Do not place an eyebrow or audience label above it.
-- Set “your space” in `brand-strong`; keep the rest of the central promise in the primary text color.
-- Place `Tell us about your project` in the hero as the direct inquiry action. Do not repeat it inside either audience gateway link.
+- Set “with you” in `brand-strong`; keep the rest of the central promise in the primary text color.
+- Use this supporting copy: “Be it reliable networking, security cameras, access control, automated entry, or home automation, we help you design and implement a system that supports your day-to-day needs.”
+- Place `Tell us about your project` in the hero as the direct inquiry action. Do not repeat it in either audience gateway CTA.
 - Retain direct phone access as a quiet utility action.
 - State residential and light-commercial availability without listing every service or duplicating the audience gateway.
 - Do not place audience-specific imagery or service cards in the hero.
@@ -94,17 +95,17 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 
 ### Audience gateway
 
-- Present the linked audience selector without a separate eyebrow, section title, or explanatory paragraph.
-- Render two equal block-level links: the residential side links to `/residential/` and the business side links to `/business/`.
-- Use one anchor as the outermost interactive element for each side. Do not place a nested button, link, or independently interactive image inside either anchor.
-- Give each side a visible audience label, one short outcome-led statement, and a text cue: `Explore home services` or `Explore business services`. Layer this copy over the image in a deliberately quiet, contrast-protected region.
-- Apply hover, focus, and active states to the complete side. The keyboard focus outline follows the linked panel boundary and remains visible across its image and copy regions.
+- Present the audience selector without a separate eyebrow, section title, or explanatory paragraph.
+- Render two equal non-interactive panels. Place `Explore home services` as a text link to `/residential/` and `Explore business services` as a text link to `/business/`.
+- Keep each image, audience label, and statement outside the link hit area. Do not use a stretched-link overlay or make the complete panel interactive.
+- Give each side a visible audience label, one short outcome-led statement, and a text cue: `Explore home services` or `Explore business services`. Place the text cue 24 pixels below the statement. Layer this copy over the image in a deliberately quiet, contrast-protected region.
+- Apply hover, focus, and active states only to the CTA link. The keyboard focus treatment remains visible within the copy region.
 - Place residential on the left and business on the right at wide widths. Give both sides equal area and equal interaction weight.
-- Fill each linked side with its audience render; do not divide the image and copy into separate vertical regions. The copy sits above the full-bleed image.
-- Shape the adjacent edge of both linked sides to the same diagonal. Leave one narrow gap between the residential and business clip paths so the background behind the component is visible; neither image remains rectangular at the shared boundary.
+- Fill each panel with its audience render; do not divide the image and copy into separate vertical regions. The copy sits above the full-bleed image.
+- Shape the adjacent edge of both panels to the same diagonal. Leave one narrow gap between the residential and business clip paths so the background behind the component is visible; neither image remains rectangular at the shared boundary.
 - Do not add a colored overlay, graphite line, parallel stroke, drop shadow, or accent color to the gap. The separation comes only from the space between the two clipped images.
-- Keep the gap within the section without creating horizontal page overflow. Do not clip the focus outline of either linked side.
-- At compact widths, stack residential before business. Give the residential panel a slanted bottom edge and the business panel the matching slanted top edge, then continue the same background gap across that boundary. Preserve both full-panel links and their complete labels.
+- Keep the gap within the section without creating horizontal page overflow. Do not clip either CTA focus treatment.
+- At compact widths, stack residential before business. Give the residential panel a slanted bottom edge and the business panel the matching slanted top edge, then continue the same background gap across that boundary. Preserve both CTA links and their complete labels.
 - Use solid graphite-and-off-white architectural illustrations with precise contour lines, simplified material detail, and restrained tonal shadows. Preserve direct environmental camera views; do not introduce cutaways, aerial or axonometric views, transparency, ghosted structure, or mixed-opacity wireframes. Favor familiar materials, ordinary proportions, and attainable spaces over luxury architectural styling. Do not depict service-specific equipment.
 - Do not use green, brand-accent, or audience-specific accent colors in either render. Distinguish the two audiences through architecture, subject matter, tonal balance, and composition only.
 - Use residential context on the home side and genuine small-workplace context on the business side. Do not reuse, crop, or relabel one audience image for the other.
@@ -138,8 +139,8 @@ Use customer-facing `business` language in paths and navigation. Treat `light co
 | Location | CTA | Destination | Rule |
 | --- | --- | --- | --- |
 | Hero, then global header | Tell us about your project | `/contact/` | Begins in the hero; a matching header action appears only after the hero action scrolls above the header; the form asks Residential or Business first |
-| Residential gateway side | Explore home services | `/residential/` | The entire residential side is the link; never styled as secondary to business |
-| Business gateway side | Explore business services | `/business/` | The entire business side is the link; never styled as secondary to residential |
+| Residential gateway CTA | Explore home services | `/residential/` | Only the bottom CTA is linked; never styled as secondary to business |
+| Business gateway CTA | Explore business services | `/business/` | Only the bottom CTA is linked; never styled as secondary to residential |
 | Shared approach | None | — | Let the process build confidence without interrupting the page with another button |
 | Contact | Send project details | Form submission | The only conversion action in the final section |
 | Residential hub | Discuss a home project | `/contact/?audience=residential` | Carries residential context into the form |

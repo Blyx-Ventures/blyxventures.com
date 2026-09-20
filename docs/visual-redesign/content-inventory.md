@@ -27,7 +27,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The company voice uses “we” without implying unverified team size, capacity, credentials, authorizations, or experience.
 - **Preserve:** Pricing remains consultative; the site explains fit and inquiry steps without packages or starting prices.
 - **Preserve:** Blyx may state that it is fully insured.
-- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: dependable technology, designed around the customer’s space.
+- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: dependable technology that keeps up with the customer.
 - **Replace:** Generic “smart space” positioning where it obscures specific customer outcomes or treats the services as products.
 - **Replace:** Enterprise-scale, high-volume, or otherwise unsupported commercial positioning.
 
@@ -78,14 +78,14 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** Begin with the central promise without an eyebrow or audience label above it.
 - **Preserve:** Quiet phone access and a direct `Tell us about your project` hero action that hands off to the header after scrolling.
-- **Reconsider:** Headline and supporting copy around the central promise for homes and light-commercial spaces.
+- **Preserve:** The central promise is followed by one sentence that names networking, security cameras, access control, automated entry, and home automation while explaining that Blyx helps design and implement a system around day-to-day needs.
 - **Preserve:** Concise residential and light-commercial positioning when the surrounding service claims remain accurate and specific.
 
 #### Audience routing
 
 - **Preserve:** Residential and business choices occupy a dedicated split section immediately after the hero, with equal visual weight, distinct messages and authentic context, and direct links to their audience hubs.
-- **Preserve:** Each complete side is one block-level link. Residential routes to `/residential/`; business routes to `/business/`. Neither side contains a nested link or button.
-- **Preserve:** Each audience render fills its complete linked side and the copy sits above it in a contrast-protected safe area. Complementary slanted edges leave one narrow diagonal gap between the images and link hit areas. The gap exposes the background behind the component; it is not a colored overlay, keyline, or shadow. Compact layouts stack the links with matching slanted edges and continue the same background gap.
+- **Preserve:** Each side is a non-interactive panel with one bottom CTA link. `Explore home services` routes to `/residential/`; `Explore business services` routes to `/business/`. The image, audience label, and statement remain outside the link hit area.
+- **Preserve:** Each audience render fills its complete panel and the copy sits above it in a contrast-protected safe area. Complementary slanted edges leave one narrow diagonal gap between the images. The gap exposes the background behind the component; it is not a colored overlay, keyline, or shadow. Compact layouts stack the panels with matching slanted edges and continue the same background gap.
 - **Preserve:** Audience imagery uses warm graphite and off-white only, without green or another accent color. Solid pale surfaces, precise graphite contours, and restrained architectural drawing detail define the shared treatment; do not introduce transparency, cutaways, or mixed-opacity wireframes. The residential panel depicts a familiar, well-kept home exterior; the business panel depicts a modest local-office interior. Both use separate desktop and compact compositions, avoid service-specific equipment, and feel approachable rather than aspirational or luxurious.
 - **Replace:** A mixed-audience service-card grid on the root homepage.
 

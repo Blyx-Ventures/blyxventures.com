@@ -126,7 +126,7 @@ Column ranges below use one-based grid lines and apply at the wide state. At com
 | Copy and supporting media | Copy 1–7; media 8–13 | Explanatory section with a clear gap between meaning and visual proof. |
 | Project proof | Media 1–6; story 7–13 | Gives authentic project material enough detail while keeping the story readable. DOM order remains story, then media when the compact order must put copy first. |
 | Contact split | Introduction 1–6; form 7–13 | Keeps inquiry context adjacent to the form. Stack before either region becomes narrower than 20rem. |
-| Audience gateway | Residential 1–7; business 7–13 | Two equally weighted block-level links with distinct copy and imagery. A narrow diagonal gap between the clipped panels exposes the background behind the component. Stack residential before business at compact widths. |
+| Audience gateway | Residential 1–7; business 7–13 | Two equally weighted panels with distinct copy and imagery. Each panel contains one bottom CTA link. A narrow diagonal gap between the clipped panels exposes the background behind the component. Stack residential before business at compact widths. |
 | Service panel group | Wide: two panels per row at six columns each. Large: distribute three or four equal panels across 12 columns. | Equal-size panels with identical media, copy, and action regions within one audience hub; stack the panels at compact widths. |
 | Reading page | Content 3–11 | Policy and long-form content remains no wider than `width-reading`; the outer columns preserve calm whitespace. |
 
@@ -134,11 +134,11 @@ These are starting patterns, not templates that every section must use. A compos
 
 ### Audience gateway
 
-Each half is one anchor occupying its complete grid region. Keep text and imagery inside that anchor; do not use an absolutely positioned stretched-link overlay or nest another interactive control. Give the anchor a visible focus outline around the full panel boundary.
+Each half is a non-interactive panel occupying its complete grid region. Keep text and imagery outside the link hit area. Place one CTA link 24 pixels below each statement, with a visible focus treatment around the CTA only. Do not use an absolutely positioned stretched-link overlay.
 
-At wide widths, the two anchors share one block size and follow a common diagonal. Clip the residential and business sides to complementary shapes with one narrow gap between them. Each audience image fills its complete anchor, with copy layered over a quiet, contrast-protected region. The gap exposes the background behind the component; do not simulate it with a colored overlay, keyline, pseudo-element, shadow, or accent color.
+At wide widths, the two panels share one block size and follow a common diagonal. Clip the residential and business sides to complementary shapes with one narrow gap between them. Each audience image fills its complete panel, with copy layered over a quiet, contrast-protected region. The gap exposes the background behind the component; do not simulate it with a colored overlay, keyline, pseudo-element, shadow, or accent color.
 
-At compact widths, stack the anchors in residential-then-business source order. Use complementary slanted bottom and top edges with the same background gap between them. Do not preserve a steep desktop diagonal by clipping text or focus treatment.
+At compact widths, stack the panels in residential-then-business source order. Use complementary slanted bottom and top edges with the same background gap between them. Do not preserve a steep desktop diagonal by clipping text or CTA focus treatment.
 
 ### Service panel group
 

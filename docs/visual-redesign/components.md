@@ -92,13 +92,13 @@ Opening the panel leaves focus on the expanded Menu button; the next Tab moves t
 
 The panel may appear without animation. If animated, transition only opacity and a short vertical offset for `transition-state`; skip the transition under reduced motion. The expanded button label changes to “Close,” while the accessible name continues to describe the action.
 
-## Audience gateway links
+## Audience gateway
 
-The root audience gateway contains two large linked panels. Each side uses one block-level anchor as its outermost element and complete hit area. Residential links to `/residential/`; business links to `/business/`. Text, decorative imagery, and the visible action cue remain inside the anchor without nested links or buttons.
+The root audience gateway contains two large, non-interactive audience panels. Each side contains one text link placed 24 pixels below its statement. `Explore home services` links to `/residential/`; `Explore business services` links to `/business/`. The image, audience label, and statement are not part of the link hit area.
 
-The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
+The default state preserves clear panel boundaries and readable text without relying on hover. Hover, focus, and active states apply only to the text link. Focus uses the shared two-pixel link treatment and remains visible above the image layers.
 
-The two links use complementary clipped shapes separated by one narrow diagonal gap. Build the gap into the clip paths so it exposes the background behind the component; do not draw a colored overlay, keyline, pseudo-element, or shadow over the seam. The gap is intentionally non-interactive and never overlaps the text or focus treatment. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
+The two panels use complementary clipped shapes separated by one narrow diagonal gap. Build the gap into the clip paths so it exposes the background behind the component; do not draw a colored overlay, keyline, pseudo-element, or shadow over the seam. The gap is non-interactive and never overlaps the copy or CTA focus treatment.
 
 ## Buttons
 

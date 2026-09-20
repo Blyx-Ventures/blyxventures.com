@@ -4,12 +4,12 @@ Use this brief for redesign intent and constraints. Record detailed design decis
 
 ## Positioning
 
-**Central promise:** Dependable technology, designed around your space.
+**Central promise:** Dependable technology that keeps up with you.
 
 Every page, image, interaction, and proof point must reinforce or substantiate this promise:
 
 - **Dependable:** appropriate design, reliable systems, careful installation, testing, and usable handoff.
-- **Designed around your space:** decisions follow the people, property, routines, operations, and need—not a product catalog. Coherent planning, clean installation, required compatibility, and simple daily use substantiate that design.
+- **Keeps up with you:** planning, installation, and support follow the people, property, routines, operations, and needs—not a product catalog. Coherent planning, clean installation, required compatibility, and simple daily use substantiate that adaptability.
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 
@@ -42,7 +42,7 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 
 ## Interface and content rules
 
-- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The root homepage uses one split audience gateway in which each complete side links to its audience hub. Audience-hub service overviews are a named exception: each uses equal panels with a shared structure and one action per service. Do not mix both service-card sets on the root homepage.
+- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The root homepage uses one split audience gateway in which each panel has one bottom CTA link to its audience hub. Audience-hub service overviews are a named exception: each uses equal panels with a shared structure and one action per service. Do not mix both service-card sets on the root homepage.
 - Make navigation, controls, and forms precise, understated, accessible, and consistent. Forms require clear labels, visible focus, useful validation, and strong contrast.
 - Use motion only for state clarity or subtle polish. Exclude heavy parallax, scroll spectacle, and motion required for comprehension.
 - Use **we** without implying unsupported team size or capacity.
