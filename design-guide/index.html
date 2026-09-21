@@ -305,8 +305,7 @@
               <img src="/blyx-logo.png" alt="Blyx" width="240" height="86" />
               <nav aria-label="Example primary navigation">
                 <ul>
-                  <li><a href="/residential/" aria-current="page">Residential</a></li>
-                  <li><a href="/business/">Business</a></li>
+                  <li><a href="/#services" aria-current="page">Services</a></li>
                 </ul>
               </nav>
               <a class="button button-primary" href="/contact/">Tell us about your project</a>
@@ -325,8 +324,7 @@
               </button>
             </div>
             <nav id="guide-mobile-navigation" aria-label="Example mobile navigation" hidden>
-              <a href="/residential/">Residential</a>
-              <a href="/business/">Business</a>
+              <a href="/#services">Services</a>
               <a href="/contact/">Tell us about your project</a>
             </nav>
             <div class="specimen-body">
@@ -563,74 +561,7 @@
             </p>
           </div>
 
-          <article class="specimen audience-gateway-specimen">
-            <div class="specimen-header">
-              <h3>Audience gateway</h3>
-              <span class="specimen-label">Split audience selector</span>
-            </div>
-            <div class="audience-gateway-demo">
-              <div class="audience-gateway-side audience-gateway-residential">
-                <span class="audience-gateway-art image-crop" aria-hidden="true">
-                  <picture class="responsive-image">
-                    <source
-                      media="(max-width: 47.99rem)"
-                      srcset="/design-guide/audience-renders/residential-mobile.jpg"
-                    />
-                    <img
-                      src="/design-guide/audience-renders/residential-desktop.jpg"
-                      alt=""
-                      width="1402"
-                      height="1122"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </picture>
-                </span>
-                <span class="audience-gateway-copy">
-                  <span class="eyebrow">Residential</span>
-                  <strong>Technology that supports your lifestyle.</strong>
-                  <a class="text-link" href="/residential/">Explore home services</a>
-                </span>
-              </div>
-              <div class="audience-gateway-side audience-gateway-business">
-                <span class="audience-gateway-art image-crop" aria-hidden="true">
-                  <picture class="responsive-image">
-                    <source
-                      media="(max-width: 47.99rem)"
-                      srcset="/design-guide/audience-renders/business-mobile.jpg"
-                    />
-                    <img
-                      src="/design-guide/audience-renders/business-desktop.jpg"
-                      alt=""
-                      width="1402"
-                      height="1122"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </picture>
-                </span>
-                <span class="audience-gateway-copy">
-                  <span class="eyebrow">Business</span>
-                  <strong>Technology that empowers your operation.</strong>
-                  <a class="text-link" href="/business/">Explore business services</a>
-                </span>
-              </div>
-            </div>
-            <div class="specimen-body">
-              <p class="usage">
-                <strong>Use:</strong> each side presents one audience path, and only
-                its bottom action is linked. The separator is a narrow geometric gap
-                along the shared slanted edge.
-                The gap exposes the background behind the component; it is not a
-                colored overlay or line. Audience images fill each side
-                beneath the copy and use solid pale modeling with precise graphite
-                linework and no accent color. Placement-specific sources preserve the
-                composition when the panels stack on compact screens.
-              </p>
-            </div>
-          </article>
-
-          <article class="specimen" style="margin-top: var(--grid-gap)">
+          <article class="specimen">
             <div class="specimen-header">
               <h3>Copy-and-media hero</h3>
               <span class="specimen-label">5 / 7 columns at wide</span>
@@ -673,11 +604,52 @@
 
           <article class="specimen" style="margin-top: var(--grid-gap)">
             <div class="specimen-header">
-              <h3>Residential service panels</h3>
-              <span class="specimen-label">Four coordinated cards</span>
+              <h3>Homepage service panels</h3>
+              <span class="specimen-label">Business first · Residential second</span>
             </div>
             <div class="specimen-body">
-              <div class="service-panels">
+              <section class="service-panel-group" aria-label="Business services">
+                <div class="service-panels service-panels-three">
+                  <article class="service-panel">
+                    <div class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default" role="img" aria-label="Business networking image not yet produced">
+                      <span>Business image pending</span>
+                    </div>
+                    <div class="service-panel-body image-panel-copy image-surface-default">
+                      <span class="eyebrow">Networking</span>
+                      <h5>Connectivity that keeps work moving.</h5>
+                      <p>Plan wired and wireless infrastructure around staff, devices, guest access, and the systems the operation depends on.</p>
+                      <a class="text-link" href="/networking/">Explore business networking</a>
+                    </div>
+                  </article>
+
+                  <article class="service-panel">
+                    <div class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default" role="img" aria-label="Business security-camera image not yet produced">
+                      <span>Business image pending</span>
+                    </div>
+                    <div class="service-panel-body image-panel-copy image-surface-default">
+                      <span class="eyebrow">Security cameras</span>
+                      <h5>Useful visibility across the operation.</h5>
+                      <p>Plan camera coverage, recording, permissions, and remote access around the places and activity that matter.</p>
+                      <a class="text-link" href="/surveillance/">Explore business security cameras</a>
+                    </div>
+                  </article>
+
+                  <article class="service-panel">
+                    <div class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default" role="img" aria-label="Business access-control image not yet produced">
+                      <span>Business image pending</span>
+                    </div>
+                    <div class="service-panel-body image-panel-copy image-surface-default">
+                      <span class="eyebrow">Access control</span>
+                      <h5>The right access for the right people.</h5>
+                      <p>Coordinate credentials, permissions, secure entry, and administrative control around staff and visitor movement.</p>
+                      <a class="text-link" href="/access-control/">Explore business access control</a>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="service-panel-group" aria-label="Residential services">
+                <div class="service-panels">
                 <article class="service-panel">
                   <div class="service-panel-media image-crop image-panel-fade image-surface-default">
                     <picture class="responsive-image">
@@ -697,9 +669,9 @@
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Networking</span>
-                    <h3>Reliable coverage, built into the home.</h3>
+                    <h5>Reliable coverage, built into the home.</h5>
                     <p>Plan connectivity around the property, its construction, and the systems it needs to support.</p>
-                    <a class="text-link" href="/residential/networking/">Explore reliable connectivity</a>
+                    <a class="text-link" href="/networking/">Explore residential networking</a>
                   </div>
                 </article>
 
@@ -721,10 +693,10 @@
                     </picture>
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
-                    <span class="eyebrow">Surveillance</span>
-                    <h3>Awareness where it matters.</h3>
+                    <span class="eyebrow">Security cameras</span>
+                    <h5>Awareness where it matters.</h5>
                     <p>Place cameras around useful views, appropriate coverage, and the way the property is actually used.</p>
-                    <a class="text-link" href="/residential/surveillance/">Explore smarter surveillance</a>
+                    <a class="text-link" href="/surveillance/">Explore residential security cameras</a>
                   </div>
                 </article>
 
@@ -738,9 +710,9 @@
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Automated entry &amp; access control</span>
-                    <h3>Easier entry, with secure control.</h3>
+                    <h5>Easier entry, with secure control.</h5>
                     <p>Coordinate automatic door operation with compatible credentials, permissions, and remote visitor access.</p>
-                    <a class="text-link" href="/residential/automated-entry/">Explore easier, secure entry</a>
+                    <a class="text-link" href="/access-control/">Explore automated entry</a>
                   </div>
                 </article>
 
@@ -754,21 +726,20 @@
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Home automation</span>
-                    <h3>Everyday control, thoughtfully coordinated.</h3>
+                    <h5>Everyday control, thoughtfully coordinated.</h5>
                     <p>Connect supported home systems around the routines and outcomes defined for the project.</p>
-                    <a class="text-link" href="/residential/home-automation/">Explore home automation</a>
+                    <a class="text-link" href="/#contact">Discuss home automation</a>
                   </div>
                 </article>
-              </div>
+                </div>
+              </section>
               <p class="usage">
-                <strong>Use:</strong> reserve this equal four-panel composition for
-                the residential hub service overview. Keep the technical renders coordinated,
-                constrain copy to a shared structure, use two columns from 48rem and
-                four from 80rem, and stack the panels below 48rem. The home-automation
-                placeholder is not a production asset; replace it only after service
-                scope and image direction are approved. Business cards reuse the component
-                structure with business-specific copy and destinations; their images remain
-                unproduced until separately approved.
+                <strong>Use:</strong> place the three-panel Business row before the
+                four-panel Residential row. Keep every panel on the same component
+                structure, use two columns from 48rem, distribute each audience across
+                one row from 80rem, and stack below 48rem. Pending media fields reserve
+                the approved image area; they are not production assets and must not be
+                replaced with imagery from the other audience.
               </p>
             </div>
           </article>

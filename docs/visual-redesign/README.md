@@ -4,16 +4,16 @@ Use this brief for redesign intent and constraints. Record detailed design decis
 
 ## Positioning
 
-**Central promise:** Dependable technology that keeps up with you.
+**Central promise:** Deploying technology to empower your life.
 
 Every page, image, interaction, and proof point must reinforce or substantiate this promise:
 
-- **Dependable:** appropriate design, reliable systems, careful installation, testing, and usable handoff.
-- **Keeps up with you:** planning, installation, and support follow the people, property, routines, operations, and needs—not a product catalog. Coherent planning, clean installation, required compatibility, and simple daily use substantiate that adaptability.
+- **Deploying technology:** Blyx designs and implements complete systems through appropriate planning, careful installation, testing, and usable handoff.
+- **Empower your life:** technology supports the people, property, routines, operations, and needs it serves rather than becoming the focus itself. Coherent planning, required compatibility, and simple daily use substantiate that outcome.
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 
-Organize services by audience. The residential hub gives Networking, Security cameras, Automated entry & access control, and Home automation equal card prominence. Automated entry leads the residential message while access control remains part of the combined service. The business hub uses audience-specific variants for its verified services and leads with Access control; Automation and controls appears only after its business scope is approved. Define the supported home-automation scope, boundaries, and proof requirements before publishing detailed service claims.
+Organize the homepage service directory into two audience rows. Business appears first with Networking, Security cameras, and Access control. Residential follows with Networking, Security cameras, Automated entry & access control, and Home automation. Automated entry leads the residential entry message while access control remains part of the combined service. Define the supported home-automation scope, boundaries, and proof requirements before publishing detailed service claims.
 
 ## Experience and visual direction
 
@@ -36,13 +36,12 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 - Create distinct desktop and mobile crops when needed.
 - Favor controlled natural light, realistic materials, clean surroundings, and restrained contrast.
 - Use polished photography or simplified realistic renders for marketing; use authentic Blyx photography for proof. Never portray generated, rendered, or staged imagery as completed Blyx work.
-- Audience-hub service panels use coordinated sets of monochromatic technical renders: translucent architectural cutaways, partially solid surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof. Residential and business sets use distinct subjects; business imagery remains pending until separately approved.
-- Root audience-gateway renders use graphite and off-white only, with no accent color. They use predominantly solid architectural forms and broader environmental context, reserving translucency and technical linework for small supporting details.
+- Homepage service panels use coordinated sets of monochromatic technical renders: translucent architectural cutaways, partially solid surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof. Residential and business sets use distinct subjects; business imagery remains pending until separately approved.
 - Avoid default full-bleed backgrounds. Reserve wide environmental images for project stories where the setting matters.
 
 ## Interface and content rules
 
-- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The root homepage uses one split audience gateway in which each panel has one bottom CTA link to its audience hub. Audience-hub service overviews are a named exception: each uses equal panels with a shared structure and one action per service. Do not mix both service-card sets on the root homepage.
+- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The homepage service directory uses two uninterrupted rows of equal panels with one action per service: Business first and Residential second. Identify the rows semantically for assistive technology without adding visible introductions before the panels.
 - Make navigation, controls, and forms precise, understated, accessible, and consistent. Forms require clear labels, visible focus, useful validation, and strong contrast.
 - Use motion only for state clarity or subtle polish. Exclude heavy parallax, scroll spectacle, and motion required for comprehension.
 - Use **we** without implying unsupported team size or capacity.

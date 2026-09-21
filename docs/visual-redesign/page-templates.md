@@ -1,6 +1,6 @@
 # Reusable service and case-study page templates
 
-_Milestone 03 source of truth for audience-specific service pages and project stories_
+_Milestone 03 source of truth for shared service pages and project stories_
 
 ---
 
@@ -15,7 +15,7 @@ These templates define content order, section responsibilities, and omission rul
 - Use one primary conversion action per content group. Route service inquiries through the audience-aware `/contact/` form.
 - Write the compact reading order in the document source. Use grid placement at wider breakpoints rather than CSS reordering.
 
-The actual networking, surveillance, and access-control service pages are audience-specific. Residential content lives under `/residential/`; business content lives under `/business/`. Each page uses audience-specific language, imagery, scope, proof, metadata, and inquiry context.
+Networking, surveillance, and access control each use one service route. Within a shared service page, Residential and Business content remains distinct in language, imagery, scope, proof, metadata, and inquiry context. Home automation remains Residential-only until a broader verified scope exists.
 
 ## 📚 Service-page model
 
@@ -180,8 +180,8 @@ Service-page actions identify the active context and initialize the canonical co
 
 | Location | Label pattern | Destination rule |
 | --- | --- | --- |
-| Residential service hero and close | `Discuss a home [service] project` | `/contact/?audience=residential&service={service}&source={route}` |
-| Business service hero and close | `Discuss a business [service] project` | `/contact/?audience=business&service={service}&source={route}` |
+| Residential service context | `Discuss a home [service] project` | `/contact/?audience=residential&service={service}&source={route}` |
+| Business service context | `Discuss a business [service] project` | `/contact/?audience=business&service={service}&source={route}` |
 | Case-study close | `Discuss a similar project` or a more precise service action | Carry the demonstrated audience and relevant service context into `/contact/` |
 | Related service | Outcome-led destination label | Link directly to the same-audience service route |
 
@@ -224,7 +224,7 @@ On wide layouts, story copy and primary evidence may share the `Project proof` c
 ## ✅ Acceptance checklist
 
 - [ ] Networking, surveillance, and residential automated entry fit the service model without empty or invented sections.
-- [ ] Residential and business variants preserve the same section responsibilities while using distinct language, imagery, boundaries, proof, metadata, and contact context.
+- [ ] Shared service pages preserve distinct Residential and Business language, imagery, boundaries, proof, and contact context without duplicating the complete route.
 - [ ] Every service page states fit, compatibility dependencies, exclusions, process, and handoff expectations in ordinary reading flow.
 - [ ] Conditional proof, FAQ, testimonial, and related-service sections disappear cleanly when their content is unavailable.
 - [ ] The available residential work is represented as one integrated project, never as multiple customers or business proof.

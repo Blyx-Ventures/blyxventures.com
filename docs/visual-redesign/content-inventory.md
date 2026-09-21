@@ -21,13 +21,13 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 ### Positioning and voice
 
 - **Preserve:** Blyx designs, installs, tests, supports, and hands off integrated technology systems for homes and light-commercial spaces.
-- **Preserve:** Residential and light-commercial services use audience-specific language, imagery, proof, qualification, and destinations within one Blyx brand.
-- **Preserve:** The residential hub gives Networking, Security cameras, Automated entry & access control, and Home automation equal service-card prominence. Automated entry leads the residential message while credentialing, permissions, locks, and remote access remain part of the combined service. Home automation's supported systems, project boundaries, and proof requirements must be defined before publishing detailed claims.
+- **Preserve:** Residential and light-commercial services use audience-specific language, imagery, proof, and qualification within one Blyx brand and one homepage service directory.
+- **Preserve:** The homepage service directory places Business first with Networking, Security cameras, and Access control, then Residential with Networking, Security cameras, Automated entry & access control, and Home automation. Automated entry leads the residential entry message while credentialing, permissions, locks, and remote access remain part of the combined service. Home automation's supported systems, project boundaries, and proof requirements must be defined before publishing detailed claims.
 - **Preserve:** Copy begins with customer needs and outcomes, then supports them with concrete service detail.
 - **Preserve:** The company voice uses “we” without implying unverified team size, capacity, credentials, authorizations, or experience.
 - **Preserve:** Pricing remains consultative; the site explains fit and inquiry steps without packages or starting prices.
 - **Preserve:** Blyx may state that it is fully insured.
-- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: dependable technology that keeps up with the customer.
+- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: deploying technology to empower the customer’s life.
 - **Replace:** Generic “smart space” positioning where it obscures specific customer outcomes or treats the services as products.
 - **Replace:** Enterprise-scale, high-volume, or otherwise unsupported commercial positioning.
 
@@ -35,10 +35,9 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** A skip link targets the main content on every route.
 - **Preserve:** The logo links to the homepage and has an accessible home label.
-- **Preserve:** Root primary navigation gives `Residential` and `Business` equal prominence. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
-- **Preserve:** Audience hubs keep a visible audience switch and expose only the services verified for that audience.
-- **Preserve:** The footer names both audience paths, shared contact methods, insured status, the privacy route, and Blyx Ventures LLC.
-- **Preserve:** Audience-specific service pages identify the active audience and service and cross-link only to relevant services.
+- **Preserve:** Root primary navigation includes `Services`, linking to the homepage service directory. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
+- **Preserve:** The footer links to the service directory and names the shared contact methods, insured status, the privacy route, and Blyx Ventures LLC.
+- **Preserve:** Service pages identify the service clearly and distinguish Residential from Business scope wherever both are offered.
 - **Reconsider:** Section-anchor navigation may be adapted to the final responsive page structures.
 
 ### Inquiry availability
@@ -60,13 +59,11 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 | Route | Purpose | Required content | Disposition |
 | --- | --- | --- | --- |
-| `/` | Establish the shared promise, route by audience, and capture inquiries | Brand hero, split audience gateway, audience-aware contact section, footer | Reconsider |
-| `/residential/` | Introduce the residential experience and its services | Residential hero, four equal service cards, integrated residential project proof, residential fit, contextual contact action | Preserve |
-| `/business/` | Introduce the light-commercial experience and its verified services | Business hero, business-specific service-card variants, business fit, proof only when verified, contextual contact action | Preserve |
-| `/residential/{service}/` | Explain residential needs, scope, boundaries, process, proof, and common questions | Audience-specific hero, situations, planning, boundaries, process, residential proof where relevant, FAQ, contact action, related residential services | Preserve |
-| `/residential/automated-entry/` | Explain residential automated entry with compatible access control | Independent entry, automatic operation, credentials, permissions, remote visitor access, compatibility boundaries, process, proof, FAQ, contact action | Preserve |
-| `/business/{service}/` | Explain light-commercial needs, scope, boundaries, process, proof, and common questions | Audience-specific hero, operational situations, planning, boundaries, process, verified business proof when available, FAQ, contact action, related business services | Preserve |
-| `/residential/home-automation/` | Explain the verified residential home-automation offering without overstating supported systems or proof | Hero, need states, supported scope, boundaries, process, FAQ, contact action, related services, and imagery requirements after service discovery | Reconsider |
+| `/` | Establish the shared promise, present the Business and Residential service directory, and capture inquiries | Brand hero, two-row service directory, audience-aware contact section, footer | Reconsider |
+| `/networking/` | Explain Residential and Business networking needs, scope, boundaries, process, proof, and common questions | Shared service hero, audience-specific situations and scope, boundaries, process, relevant proof, FAQ, contextual contact actions | Preserve |
+| `/surveillance/` | Explain Residential and Business security-camera needs, scope, boundaries, process, proof, and common questions | Shared service hero, audience-specific situations and scope, boundaries, process, relevant proof, FAQ, contextual contact actions | Preserve |
+| `/access-control/` | Explain Business access control and Residential automated entry with compatible access control | Shared service hero, distinct audience outcomes, credentials, permissions, automated operation where applicable, compatibility boundaries, process, proof, FAQ, contextual contact actions | Preserve |
+| `/home-automation/` | Explain the verified Residential home-automation offering without overstating supported systems or proof | Hero, need states, supported scope, boundaries, process, FAQ, contact action, related services, and imagery requirements after service discovery | Reconsider |
 | `/contact/` | Collect an audience-aware project inquiry | Audience selection first, conditional service and qualification fields, direct contact alternatives, privacy disclosure, delivery states | Preserve |
 | `/privacy.html` | Explain personal-information handling and contact choices | Policy date, collection, use, providers, choices, security, privacy contact | Preserve |
 | `/design-guide/` | Provide an internal browser-viewable visual reference | Tokens, typography, layout, components, imagery, compositions | Preserve outside public navigation |
@@ -81,25 +78,18 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The central promise is followed by one sentence that names networking, security cameras, access control, automated entry, and home automation while explaining that Blyx helps design and implement a system around day-to-day needs.
 - **Preserve:** Concise residential and light-commercial positioning when the surrounding service claims remain accurate and specific.
 
-#### Audience routing
-
-- **Preserve:** Residential and business choices occupy a dedicated split section immediately after the hero, with equal visual weight, distinct messages and authentic context, and direct links to their audience hubs.
-- **Preserve:** Each side is a non-interactive panel with one bottom CTA link. `Explore home services` routes to `/residential/`; `Explore business services` routes to `/business/`. The image, audience label, and statement remain outside the link hit area.
-- **Preserve:** Each audience render fills its complete panel and the copy sits above it in a contrast-protected safe area. Complementary slanted edges leave one narrow diagonal gap between the images. The gap exposes the background behind the component; it is not a colored overlay, keyline, or shadow. Compact layouts stack the panels with matching slanted edges and continue the same background gap.
-- **Preserve:** Audience imagery uses warm graphite and off-white only, without green or another accent color. Solid pale surfaces, precise graphite contours, and restrained architectural drawing detail define the shared treatment; do not introduce transparency, cutaways, or mixed-opacity wireframes. The residential panel depicts a familiar, well-kept home exterior; the business panel depicts a modest local-office interior. Both use separate desktop and compact compositions, avoid service-specific equipment, and feel approachable rather than aspirational or luxurious.
-- **Replace:** A mixed-audience service-card grid on the root homepage.
-
-#### Audience-hub service overviews
+#### Homepage service directory
 
 - **Preserve:** Service cards use the approved shared structure: coordinated media, service label, outcome-led heading, concise explanation, and bottom-aligned action.
-- **Preserve:** The residential hub uses four equally weighted cards, each with a customer problem, concise scope, handoff outcome, and link to its residential service page.
+- **Preserve:** Business appears first with three equally weighted panels: Networking, Security cameras, and Access control.
+- **Preserve:** Residential follows with four equally weighted panels: Networking, Security cameras, Automated entry & access control, and Home automation.
 - **Preserve:** Networking includes wired and wireless planning, coverage, dependable connections, useful network separation, focused upgrades, testing, and handoff.
 - **Preserve:** Security cameras include coverage planning, cabling, cameras, recording, retention, remote access, permissions, supported detection, testing, and handoff.
 - **Preserve:** Automated entry & access control leads with easier or independent entry and includes compatible credentials, buttons or controls, automatic opening, remote operation, permissions, testing, administrative-access transfer, and handoff.
-- **Preserve:** Residential Home automation uses a fourth equal panel and links to `/residential/home-automation/`; its concise statement must remain within the verified public scope and must not imply that existing project proof covers it.
-- **Preserve:** The business hub uses variants of the same component for Networking, Surveillance, and Access control. Its copy, service boundaries, destinations, and imagery requirements are business-specific.
+- **Preserve:** Residential Home automation uses a fourth equal panel and links to `/home-automation/`; its concise statement must remain within the verified public scope and must not imply that existing project proof covers it.
+- **Preserve:** Business uses variants of the same component for Networking, Security cameras, and Access control. Its copy, service boundaries, destinations, and imagery requirements are business-specific.
 - **Preserve:** Business imagery remains unproduced until its service boundaries and separate image brief are approved; residential renders and proof are not substitutes.
-- **Reconsider:** Long-form service copy should be shortened for the cards without losing the audience-specific facts above.
+- **Reconsider:** Long-form service copy should be shortened for the panels without losing the audience-specific facts above.
 
 #### Project proof and testimonial
 
@@ -159,7 +149,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** Home automation is viable as a Blyx service area.
 - **Reconsider:** Define the supported device and system categories, customer needs, compatibility rules, project minimums, exclusions, ongoing-support expectations, handoff process, and relationship to networking and access before writing public copy.
-- **Preserve:** Home automation uses `/residential/home-automation/` and a fourth equal residential-hub card position.
+- **Preserve:** Home automation uses `/home-automation/` and the fourth position in the Residential homepage row.
 - **Replace:** Luxury lifestyle, universal compatibility, effortless whole-home control, or completed-project claims without supporting evidence.
 - **Replace:** Use of the existing integrated residential project as home-automation proof unless verified project records establish that work.
 
@@ -175,15 +165,15 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 ### Per-page metadata
 
 - **Preserve:** Every public route has a unique title, description, canonical URL on `https://www.blyxventures.com`, index/follow directive, viewport declaration, and theme color.
-- **Preserve:** The homepage, audience hubs, and audience-specific service routes include matching Open Graph and X card title, description, URL, locale, site name, and image references.
+- **Preserve:** The homepage and service routes include matching Open Graph and X card title, description, URL, locale, site name, and image references.
 - **Preserve:** Favicons, Apple touch icon, and the web manifest remain linked.
-- **Preserve:** Titles and descriptions identify the specific audience and service.
+- **Preserve:** Titles and descriptions identify the service and accurately represent both audiences when the route serves both.
 - **Preserve:** The privacy route retains its own title, description, canonical URL, and icons; social-card fields are optional for this utility page.
 
 ### Structured data
 
 - **Preserve:** The homepage defines Blyx Ventures LLC as a `ProfessionalService` with the public URL, logo, image, email, phone number, and verified residential and business offerings.
-- **Preserve:** Each audience-specific service route defines one `Service` entity with a stable page-specific ID, audience-specific name, service type, URL, description, and provider reference.
+- **Preserve:** Each service route defines one `Service` entity with a stable page-specific ID, accurate audience coverage, service type, URL, description, and provider reference.
 - **Preserve:** Residential and light-commercial service types and descriptions remain distinct and accurate to their defined scopes.
 - **Preserve:** Add home automation to `makesOffer` and create service-level structured data when its public description and supported scope are approved.
 - **Reconsider:** `priceRange` remains only if it accurately communicates Blyx’s consultative positioning without functioning as a price claim.
@@ -191,7 +181,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 ### Crawling and install metadata
 
 - **Preserve:** `robots.txt` allows crawling and declares the absolute sitemap URL.
-- **Preserve:** `sitemap.xml` contains the homepage, audience hubs, contact and privacy pages, and all published audience-specific service routes with canonical `www` URLs.
+- **Preserve:** `sitemap.xml` contains the homepage, contact and privacy pages, and all published service routes with canonical `www` URLs.
 - **Preserve:** The web manifest names Blyx, supplies the 32-pixel and 512-pixel icons, and defines theme and background colors consistent with the implemented design tokens.
 - **Replace:** Prototype and design-guide routes must not be added to the public sitemap.
 
@@ -233,7 +223,7 @@ All proof images retain meaningful alternative text, intrinsic dimensions, respo
 
 - [ ] Public copy accurately addresses residential and light-commercial customers without implying enterprise-scale capabilities
 - [ ] Root navigation and hero give residential and business paths equal prominence
-- [ ] Residential and business hubs use the shared service-card component with audience-specific copy, destinations, imagery, and proof
+- [ ] The homepage uses Business and Residential rows of the shared service-panel component with audience-specific copy, imagery, and inquiry context
 - [ ] Business image requirements are documented without generating assets or repurposing residential renders
 - [ ] Home-automation scope, boundaries, proof requirements, page copy, and technical-render brief are explicitly defined before publication
 - [ ] Every preserved service fact is represented on the appropriate route

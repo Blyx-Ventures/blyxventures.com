@@ -46,7 +46,7 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 
 ### Residential home automation
 
-- **Status:** Required for the four-panel residential-hub composition but not approved for generation.
+- **Status:** Required for the four-panel Residential homepage row but not approved for generation.
 - **Dependency:** Define the supported systems, exclusions, compatibility boundaries, and customer outcome before writing the subject prompt.
 - **Avoid:** Unapproved device categories, floating interfaces, generic smart-home symbols, luxury lifestyle staging, universal-compatibility claims, and any completed-work implication.
 - **Guide outputs:** None.

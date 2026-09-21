@@ -68,8 +68,8 @@ if (contactForm) {
       valueMissing: 'Select an approximate project size.',
     }),
     field('cf-message', 'cf-message-error', {
-      valueMissing: 'Describe what you would like the space to do better.',
-      blank: 'Describe what you would like the space to do better.',
+      valueMissing: 'Tell us what you are trying to achieve.',
+      blank: 'Tell us what you are trying to achieve.',
       tooLong: 'Keep the description under 3,000 characters.',
     }),
   ];
