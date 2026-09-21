@@ -888,14 +888,6 @@ a {
   gap: var(--grid-gap);
 }
 
-.service-panel-group {
-  display: block;
-}
-
-.service-panel-group + .service-panel-group {
-  margin-top: var(--section-block-compact);
-}
-
 .service-panel {
   display: flex;
   min-width: 0;
@@ -1064,9 +1056,6 @@ a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .service-panels-three {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 79.99rem) {

@@ -126,14 +126,14 @@ Column ranges below use one-based grid lines and apply at the wide state. At com
 | Copy and supporting media | Copy 1–7; media 8–13 | Explanatory section with a clear gap between meaning and visual proof. |
 | Project proof | Media 1–6; story 7–13 | Gives authentic project material enough detail while keeping the story readable. DOM order remains story, then media when the compact order must put copy first. |
 | Contact split | Introduction 1–6; form 7–13 | Keeps inquiry context adjacent to the form. Stack before either region becomes narrower than 20rem. |
-| Service panel group | Wide: two panels per row at six columns each. Large: three Business panels at four columns each or four Residential panels at three columns each. | Equal-size panels with identical media, copy, and action regions within one homepage audience row; stack the panels at compact widths. |
+| Service panel group | Wide: two panels per row at six columns each. Large: four panels at three columns each. | Equal-size panels with identical media, copy, and action regions; stack the panels at compact widths. |
 | Reading page | Content 3–11 | Policy and long-form content remains no wider than `width-reading`; the outer columns preserve calm whitespace. |
 
 These are starting patterns, not templates that every section must use. A composition may omit a region and allow the remaining content to occupy fewer columns; it must not stretch copy beyond its defined measure simply to fill the grid.
 
 ### Service panel group
 
-The homepage service directory contains two equal-panel groups. The Business row appears first with Networking, Security cameras, and Access control. The Residential row follows with Networking, Security cameras, Automated entry & access control, and Home automation. All panels use the same internal grid:
+The homepage service directory contains one equal-panel group with Networking, Video surveillance, Access control, and Home automation. Each service appears once. All panels use the same internal grid:
 
 1. A technical-render media region occupying 40–45% of the panel block size
 2. A short service label or title
@@ -144,16 +144,14 @@ Use the same aspect ratio, compact minimum block size, padding, border, radius, 
 
 Use `service-panel-min-height` at 29rem, `service-panel-media-height` at 13rem, and `service-panel-copy-overlap` at 1rem. At the minimum panel height, the media occupies approximately 45% of the card. Remove the hard rule between media and copy. Fade the image's bottom edge into `surface`, overlap the copy field upward, and make that field fully opaque before the eyebrow begins. Content may increase the panel height when text reflows; never clip copy or reduce the action target to hold the minimum height.
 
-At the medium and wide states, use two equal panels per row. At the large state, four residential panels span three columns each; three business panels span four columns each. Below 48rem, stack the panels in source order and preserve equal dimensions. Do not use an orphaned row, horizontal carousel, or content reordering.
+At the medium and wide states, use two equal panels per row. At the large state, all four panels span three columns each. Below 48rem, stack the panels in source order and preserve equal dimensions. Do not use an orphaned row, horizontal carousel, or content reordering.
 
-Residential service actions are:
+Service actions are:
 
-- Networking: “Explore residential networking”
-- Security cameras: “Explore residential security cameras”
-- Automated entry & access control: “Explore automated entry”
+- Networking: “Explore networking”
+- Video surveillance: “Explore residential security cameras”
+- Access control: “Explore access control”
 - Home automation: “Discuss home automation”
-
-Business service actions are “Explore business networking,” “Explore business security cameras,” and “Explore business access control.” Their image requirements may be documented, but Business images remain unproduced until separately approved.
 
 The card set is reserved for the homepage service directory. Use spacing or surface changes for other repeated content unless a separate documented component requires a container.
 

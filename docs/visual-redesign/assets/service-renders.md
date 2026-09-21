@@ -2,7 +2,7 @@
 
 _Visual design guide concept assets · September 2026_
 
-These coordinated residential technical renders demonstrate the approved service-panel direction in the browser visual guide. They are conceptual marketing illustrations, not completed Blyx work or construction documents. Production use requires a separate asset review. Business card variants require a separate image brief and approval; no business images are generated in this milestone.
+These coordinated residential technical renders demonstrate the approved service-panel direction in the browser visual guide. They are conceptual marketing illustrations, not completed Blyx work or construction documents. Production use requires a separate asset review. Business-specific service-page variants require a separate image brief and approval; no business images are generated in this milestone.
 
 ## Style references
 
@@ -25,7 +25,7 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 - **Avoid:** More than two access points, orphan cable branches, furniture in the garage, stairs that obstruct the entry hallway, impossible circulation, a rack in an exposed circulation space, cloud symbols, floating consumer routers, server-room context, and office context.
 - **Guide outputs:** `networking-v3-768.webp` and `networking-v3-1448.webp`.
 
-### Surveillance
+### Video surveillance
 
 - **Subject prompt:** Residential exterior and entry cutaway with two purposefully placed security cameras and broad translucent fields of view approximating 110 degrees. The entry camera is aimed toward the full approach and steps; low planting borders an open, believable circulation path.
 - **Avoid:** Narrow spotlight cones, facial targeting, threat imagery, excessive scanning graphics, walls or planting that interrupt circulation, and office context.
@@ -36,22 +36,22 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 - **Subject prompt:** Residential entry detail with a slim modern keypad or credential reader, electric strike or smart lock, door contact, controller, and disciplined concealed routes visible only through partially translucent walls, frame, and ceiling.
 - **Avoid:** Bulky featureless readers, exterior surface-mounted cable, door operators, automatic-opening motion, accessibility automation, people, and office context.
 - **Guide outputs:** `access-control-v2-768.webp` and `access-control-v2-1448.webp`.
-- **Status:** Retained as provenance for the earlier access-control concept. It does not represent the residential service emphasis and is not the final Automated entry & access control card image.
+- **Status:** Retained as provenance for the earlier access-control concept. It is not the final Access control card image.
 
-### Residential automated entry & access control
+### Residential access control
 
 - **Status:** A revised card image is required but is not approved for generation in this milestone.
-- **Dependency:** Approve a brief showing compatible automatic door operation and access control together, with the entry outcome visually primary.
+- **Dependency:** Approve a brief showing credentialed access, secure locking, permissions, and the doorway relationship. Automated entry may appear in service-page imagery when the approved use case requires it.
 - **Guide outputs:** None.
 
 ### Residential home automation
 
-- **Status:** Required for the four-panel Residential homepage row but not approved for generation.
+- **Status:** Required for the four-panel homepage service group but not approved for generation.
 - **Dependency:** Define the supported systems, exclusions, compatibility boundaries, and customer outcome before writing the subject prompt.
 - **Avoid:** Unapproved device categories, floating interfaces, generic smart-home symbols, luxury lifestyle staging, universal-compatibility claims, and any completed-work implication.
 - **Guide outputs:** None.
 
-### Business service-card set
+### Business service-page set
 
 - **Status:** Image requirements may be defined, but asset generation is deferred.
 - **Dependency:** Approve business service boundaries, representative small-workplace subjects, and a separate image brief.

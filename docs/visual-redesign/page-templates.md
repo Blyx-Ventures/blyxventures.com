@@ -15,7 +15,7 @@ These templates define content order, section responsibilities, and omission rul
 - Use one primary conversion action per content group. Route service inquiries through the audience-aware `/contact/` form.
 - Write the compact reading order in the document source. Use grid placement at wider breakpoints rather than CSS reordering.
 
-Networking, surveillance, and access control each use one service route. Within a shared service page, Residential and Business content remains distinct in language, imagery, scope, proof, metadata, and inquiry context. Home automation remains Residential-only until a broader verified scope exists.
+Networking, Video surveillance, and access control each use one service route. Within a shared service page, Residential and Business content remains distinct in language, imagery, scope, proof, metadata, and inquiry context. Home automation remains Residential-only until a broader verified scope exists.
 
 ## 📚 Service-page model
 
@@ -68,7 +68,7 @@ Do not put a full feature list, FAQ, testimonial, multiple competing actions, or
 
 Need states describe circumstances a visitor can recognize. Each item contains one short heading and one concise explanation. Two strong items are sufficient; do not expand to four solely to fill a layout.
 
-Planning and scope explain the decisions that make the finished system dependable. Group related evaluation points into readable themes instead of presenting a product inventory. When a service has two distinct but compatible outcomes, as with automated entry and access control, introduce the relationship before describing the shared planning work.
+Planning and scope explain the decisions that make the finished system dependable. Group related evaluation points into readable themes instead of presenting a product inventory. Access control encompasses compatible automated entry; introduce the relevant distinction within the service page before describing their shared planning work.
 
 ### Fit and boundaries
 
@@ -98,7 +98,7 @@ When proof is unavailable, the page moves directly from process to common questi
 
 Use an FAQ when at least three recurring questions materially improve qualification or set expectations. Include questions about compatibility, dependencies, operation, project boundaries, or handoff. Avoid questions that repeat section headings or exist only to add search phrases.
 
-Networking, surveillance, and residential automated entry include the verified questions recorded in the [content inventory](./content-inventory.md). A future service page may omit the FAQ when its essential questions are already answered in the main flow and fewer than three distinct questions remain.
+Networking, Video surveillance, and residential automated entry include the verified questions recorded in the [content inventory](./content-inventory.md). A future service page may omit the FAQ when its essential questions are already answered in the main flow and fewer than three distinct questions remain.
 
 ### Related-service rules
 
@@ -117,8 +117,8 @@ The model accommodates the verified services without adding unsupported sections
 | Service | Need-state emphasis | Planning emphasis | Required boundary | Available proof | FAQ emphasis |
 | --- | --- | --- | --- | --- | --- |
 | Networking | Coverage gaps, wired devices, construction timing, defined upgrades | Floor plan, materials, access points, cable routes, separation, testing, handoff | Blyx distributes connectivity within the property and does not sell or coordinate internet service | Integrated residential project: attic cabling, improved coverage, organized equipment area | Provider boundary, finished-space cabling, wired versus wireless, compatible equipment, separated access |
-| Surveillance | Useful views, dependable recording, practical review, controlled access | Lighting, positions, angles, cabling, storage, retention, permissions, supported detection | Complete new systems; no takeover, repair, or expansion of systems installed by others; no prevention or identification guarantee | Same integrated residential project: new cabling, recording, remote viewing, organized equipment area | Phone viewing, retention, internet dependence, recording modes, existing-system boundary |
-| Residential automated entry and access control | Independent entry, remote visitor access, credentials, coordinated unlocking and opening | Door condition, swing, frame, hinges, lock, power, egress, permissions, controls | Feasibility depends on compatible door, hardware, operator, locking, power, and control sequence | Same integrated residential project: two powered entrances, fingerprint entry, wireless exit activation, remote visitor access | Existing-door feasibility, entry methods, coordinated systems, remote use, interruption behavior |
+| Video surveillance | Useful views, dependable recording, practical review, controlled access | Lighting, positions, angles, cabling, storage, retention, permissions, supported detection | Complete new systems; no takeover, repair, or expansion of systems installed by others; no prevention or identification guarantee | Same integrated residential project: new cabling, recording, remote viewing, organized equipment area | Phone viewing, retention, internet dependence, recording modes, existing-system boundary |
+| Residential access control | Credentials, permissions, remote visitor access, and compatible automated entry where applicable | Door condition, frame, hinges, lock, power, egress, permissions, controls, and operator requirements when automatic opening applies | Automated-entry feasibility depends on compatible door, hardware, operator, locking, power, and control sequence | Same integrated residential project: fingerprint entry, two powered entrances, wireless exit activation, remote visitor access | Entry methods, permissions, automated-entry applicability, existing-door feasibility, coordinated systems, remote use, interruption behavior |
 
 Business variants use the same section responsibilities with operational need states, business-specific boundaries, and business proof only when verified. They do not inherit residential examples or media.
 
@@ -154,7 +154,7 @@ flowchart TB
 
 ### Integrated-project rule
 
-The available networking, surveillance, and automated-entry material belongs to one private residential project. Present it as one integrated project story with service chapters or evidence groups. Service pages may quote a relevant excerpt, but every excerpt identifies the same project context.
+The available networking, video-surveillance, and automated-entry material belongs to one private residential project. Present it as one integrated project story with service chapters or evidence groups. Service pages may quote a relevant excerpt, but every excerpt identifies the same project context.
 
 The story may organize evidence under these verified outcomes:
 
@@ -223,7 +223,7 @@ On wide layouts, story copy and primary evidence may share the `Project proof` c
 
 ## ✅ Acceptance checklist
 
-- [ ] Networking, surveillance, and residential automated entry fit the service model without empty or invented sections.
+- [ ] Networking, Video surveillance, and residential automated entry fit the service model without empty or invented sections.
 - [ ] Shared service pages preserve distinct Residential and Business language, imagery, boundaries, proof, and contact context without duplicating the complete route.
 - [ ] Every service page states fit, compatibility dependencies, exclusions, process, and handoff expectations in ordinary reading flow.
 - [ ] Conditional proof, FAQ, testimonial, and related-service sections disappear cleanly when their content is unavailable.

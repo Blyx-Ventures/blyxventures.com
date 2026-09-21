@@ -9,17 +9,17 @@ _Milestone 03 information architecture for the Blyx homepage and audience paths_
 The root homepage establishes one Blyx brand, presents the complete verified service directory, and moves from proposition to inquiry in three sections:
 
 1. Understand the shared Blyx promise and access the direct inquiry path.
-2. Review Business services, then Residential services.
+2. Review each service once in a shared directory.
 3. Confirm basic fit and start an audience-aware inquiry.
 
-The two homepage service rows share one component system while retaining distinct audience language, imagery, scope, and inquiry context.
+The homepage service directory presents shared service paths without duplicating cards by audience. Service pages retain distinct audience language, imagery, scope, and inquiry context where needed.
 
 ## 📚 Ordered homepage outline
 
 | Order | Section | Purpose | Primary message | Primary action | Proof requirement | Visual role |
 | ---: | --- | --- | --- | --- | --- | --- |
 | 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Deploying technology to empower your life | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
-| 2 | Services | Present every verified service without separate audience-hub pages | Business: Networking, Security cameras, Access control. Residential: Networking, Security cameras, Automated entry & access control, Home automation. | One service-specific action per panel | Audience-specific scope and imagery; unproduced imagery uses a reserved media field rather than a substitute | Two uninterrupted rows using the shared equal-panel component; Business first, Residential second; no visible section or row introductions |
+| 2 | Services | Present every verified service without separate audience-hub pages or duplicate audience cards | Networking, Video surveillance, Access control, Home automation | One service-specific action per panel | Service-specific imagery; unproduced imagery uses a reserved media field rather than a substitute | One four-panel group using the shared equal-panel component; no visible section introduction |
 | 3 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
 
 The global header exposes `Services`, linking to the homepage service directory. `Tell us about your project` begins in the hero and appears in its reserved header position only after the hero action scrolls above the header. The footer links to the service directory and repeats the shared contact methods, fully insured status, legal name, and privacy link.
@@ -40,17 +40,16 @@ Use customer-facing `Business` language in the homepage directory. Treat `light 
 
 ### Homepage service directory
 
-- Present Business first with Networking, Security cameras, and Access control.
-- Present Residential second with Networking, Security cameras, Automated entry & access control, and Home automation.
+- Present Networking, Video surveillance, Access control, and Home automation once each.
 - Use the approved service-panel structure throughout: coordinated media, service label, outcome-led heading, concise explanation, and one bottom-aligned action.
-- Preserve component geometry, typography, spacing, interaction states, and image treatment across both rows.
-- Keep the language, image subject, and service boundary audience-specific. A Business panel is not a Residential panel with one noun replaced.
-- Keep every panel equal within its row. The Business row uses three panels at the large state; the Residential row uses four.
-- Use an image-free reserved media field when the approved image does not exist. Do not substitute another audience’s render.
+- Preserve component geometry, typography, spacing, interaction states, and image treatment across the group.
+- Keep each panel service-specific. Audience distinctions belong on the shared service page rather than in duplicate homepage cards.
+- Keep all four panels equal at the large state.
+- Use an image-free reserved media field when the approved image does not exist. Do not substitute another service’s render.
 
 ### Service routes
 
-- Publish one route per service. Networking and Security cameras explain their distinct Business and Residential applications within the same service page. Access control covers Business access control and Residential automated entry & access control without flattening their different outcomes. Home automation remains Residential-only.
+- Publish one route per service. Networking and Video surveillance explain their distinct Business and Residential applications within the same service page. Access control encompasses compatible automated entry and explains the relevant distinctions within the shared service page. Home automation remains Residential-only.
 - Link every homepage service panel, related-service link, search result, and contextual navigation item directly to the corresponding service route.
 - Preserve the originating audience in the panel copy and inquiry context even when two panels share one destination.
 
@@ -80,13 +79,12 @@ Use customer-facing `Business` language in the homepage directory. Treat `light 
 ### Services
 
 - Place the section between the hero and contact.
-- Begin directly with the Business panels, followed by the Residential panels. Do not add a visible section eyebrow, section title, audience eyebrow, or audience-row title.
-- Keep semantic `Services`, `Business services`, and `Residential services` labels for assistive technology.
-- Business includes Networking, Security cameras, and Access control in that order.
-- Residential includes Networking, Security cameras, Automated entry & access control, and Home automation in that order.
-- At the large state, keep each audience on one row: three equal Business panels, then four equal Residential panels. At medium widths, use two columns; at compact widths, stack in source order.
-- Use approved residential networking and security-camera renders. Reserve image fields without imagery for Business services, Residential automated entry, and Residential home automation until approved assets exist.
-- Keep each action specific to its service and audience. Do not link an entire panel.
+- Begin directly with the four service panels. Do not add a visible section eyebrow or section title.
+- Keep the semantic `Services` label for assistive technology.
+- Keep the directory order: Networking, Video surveillance, Access control, then Home automation.
+- At the large state, keep all four equal panels on one row. At medium widths, use two columns; at compact widths, stack in source order.
+- Use the existing networking and video-surveillance renders without modification. Reserve image fields without imagery for Access control and Home automation until approved assets exist.
+- Keep each action specific to its service. Do not link an entire panel.
 
 ### Contact
 
@@ -135,11 +133,11 @@ Both contexts use the same brand identity, design tokens, interaction patterns, 
 ## 🔍 Discovery and canonical rules
 
 - Give every published service page a self-referencing canonical URL.
-- Treat residential and business pages as distinct content; never canonicalize one audience version to the other.
+- Keep shared service-route metadata accurate to the full service scope without implying unsupported audience coverage.
 - Include the homepage, published service pages, `/contact/`, and `/privacy/` in the sitemap.
 - Exclude parameterized contact URLs from the sitemap and canonicalize them to `/contact/`.
 - Use breadcrumbs on service pages to preserve the service context.
-- Keep page titles, descriptions, structured data, and social metadata audience-specific.
+- Keep page titles, descriptions, structured data, and social metadata service-specific.
 
 ## ✅ Approval dependencies
 

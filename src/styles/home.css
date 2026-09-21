@@ -90,14 +90,6 @@
   background: var(--color-background);
 }
 
-.home-page .home-service-group {
-  display: block;
-}
-
-.home-page .home-service-group + .home-service-group {
-  margin-top: var(--section-block-compact);
-}
-
 .home-page .home-service-panels {
   display: grid;
   gap: var(--grid-gap);
@@ -298,9 +290,6 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .home-page .home-service-panels-three {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 29.99rem) {

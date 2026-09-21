@@ -203,7 +203,7 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 
 ### Technical service visualizations
 
-Use separate coordinated technical-render sets for the Residential and Business rows in the homepage service directory. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery. The residential set is represented in the browser guide. Business image production is deferred until its service scope and image brief are approved.
+Use one coordinated technical-render set for the four cards in the homepage service directory. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery. The existing networking and video-surveillance renders remain represented in the browser guide without modification. Business-specific imagery may support the corresponding service pages after its scope and image brief are approved.
 
 The shared treatment combines:
 
@@ -221,13 +221,13 @@ The residential subjects are:
 | Service | Required visual focus | Exclude |
 | --- | --- | --- |
 | Networking | Architecturally plausible residential cutaway with the network rack in a believable central utility or low-voltage room, concealed structured-cabling paths, and clearly legible ceiling access points; translucent architecture reveals system relationships without compromising rooms or circulation | Rack in a foyer, hallway, living area, or other exposed circulation space; stairs or equipment that obstruct an entry path; implausible room layouts; generic cloud symbols, floating consumer routers, server-room or office context |
-| Surveillance | Residential exterior or entry cutaway with purposeful camera placement and approximately 110-degree coverage fields; the entry camera covers the approach and steps without implausible landscaping or circulation barriers | Narrow spotlight cones, intrusive facial targeting, dramatic threat imagery, excessive scanning graphics, walls or planting that interrupt the entry path |
-| Automated entry & access control | Residential entrance showing a compatible automatic swing-door operator working with a credential reader or activation control, secure locking, and concealed coordination between the systems; the entry outcome remains visually primary | Access-reader-only scenes, exposed surface-mounted cable, implausible door geometry, unsafe egress, generic smart-lock product arrays, or imagery that omits automatic operation |
+| Video surveillance | Residential exterior or entry cutaway with purposeful camera placement and approximately 110-degree coverage fields; the entry camera covers the approach and steps without implausible landscaping or circulation barriers | Narrow spotlight cones, intrusive facial targeting, dramatic threat imagery, excessive scanning graphics, walls or planting that interrupt the entry path |
+| Access control | Residential entrance showing credentialed access, secure locking, permissions, and concealed system coordination; compatible automatic operation may appear in service-page imagery when relevant | Operator-only scenes, exposed surface-mounted cable, implausible door geometry, unsafe egress, generic smart-lock product arrays, or imagery that makes automated entry appear to be a separate homepage service |
 | Home automation | Scope-approved home setting that makes the supported systems and their relationship to a daily routine legible without becoming a product array; concealed infrastructure and physical context remain credible | Unapproved device categories, floating app screens, generic smart-home symbols, luxury lifestyle staging, universal-compatibility claims, or scenes that imply completed Blyx work |
 
-The technical render occupies its own media region and fades into the copy-facing bottom seam. The solid copy field may overlap that transition, but it reaches full opacity before the eyebrow and all essential text. All outputs in an audience set use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced. Do not produce the residential home-automation render until its service scope and image brief are approved.
+The technical render occupies its own media region and fades into the copy-facing bottom seam. The solid copy field may overlap that transition, but it reaches full opacity before the eyebrow and all essential text. All outputs in the homepage set use the same aspect ratio and safe-area placement so their panels remain equal and visually balanced. Do not produce the home-automation render until its service scope and image brief are approved.
 
-Business card variants require distinct subjects for small-workplace networking, surveillance, and access control. Document the intended operational outcome, space type, installed equipment, and exclusions for each card before production. Do not generate these images, reuse residential renders, or present residential proof as business proof until the business image set is separately approved.
+Business-specific service-page variants require distinct subjects for small-workplace networking, video surveillance, and access control. Document the intended operational outcome, space type, installed equipment, and exclusions for each image before production. Do not present residential proof as business proof.
 
 Record the source references, generation method, prompts, output files, intended role, and approval state in the [service-render provenance notes](./assets/service-renders.md).
 
@@ -322,6 +322,6 @@ Create separate crops when one source cannot preserve the subject and context in
 - Remove each image and verify that its section still communicates the promise, scope, and action.
 - Compare every fade edge against its surface token at multiple display brightness levels; reject visible bands, haze, and vignette effects.
 - Verify authentic, commissioned, licensed, rendered, and generated assets have correct provenance and are never presented as one another.
-- Review the approved residential technical service renders together; confirm matching perspective, crop density, tonal range, line weight, lighting, and subject scale, and verify that the automated-entry card depicts both automatic operation and compatible access control.
+- Review the approved residential technical service renders together; confirm matching perspective, crop density, tonal range, line weight, lighting, and subject scale, and verify that the access-control card keeps credentialed access primary.
 - Confirm responsive sources have intrinsic dimensions, accurate `sizes`, appropriate loading priority, and no material layout shift.
 - Check alt text, captions, and visible proof labels with images unavailable and with a screen reader.

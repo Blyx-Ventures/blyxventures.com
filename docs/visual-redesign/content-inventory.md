@@ -21,8 +21,8 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 ### Positioning and voice
 
 - **Preserve:** Blyx designs, installs, tests, supports, and hands off integrated technology systems for homes and light-commercial spaces.
-- **Preserve:** Residential and light-commercial services use audience-specific language, imagery, proof, and qualification within one Blyx brand and one homepage service directory.
-- **Preserve:** The homepage service directory places Business first with Networking, Security cameras, and Access control, then Residential with Networking, Security cameras, Automated entry & access control, and Home automation. Automated entry leads the residential entry message while credentialing, permissions, locks, and remote access remain part of the combined service. Home automation's supported systems, project boundaries, and proof requirements must be defined before publishing detailed claims.
+- **Preserve:** Residential and light-commercial services use audience-specific language, imagery, proof, and qualification within one Blyx brand and shared service pages.
+- **Preserve:** The homepage service directory presents Networking, Video surveillance, Access control, and Home automation once each. Access control encompasses compatible automated entry; the service page explains where their scope, outcomes, and requirements differ. Home automation's supported systems, project boundaries, and proof requirements must be defined before publishing detailed claims.
 - **Preserve:** Copy begins with customer needs and outcomes, then supports them with concrete service detail.
 - **Preserve:** The company voice uses “we” without implying unverified team size, capacity, credentials, authorizations, or experience.
 - **Preserve:** Pricing remains consultative; the site explains fit and inquiry steps without packages or starting prices.
@@ -50,7 +50,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** System compatibility is evaluated before a solution is promised.
 - **Preserve:** Installation includes an agreed scope, clean work, testing, administrative-access transfer where applicable, user guidance, and cleanup.
-- **Preserve:** Security cameras improve visibility and recording but do not guarantee prevention, identification, or complete coverage.
+- **Preserve:** Video surveillance improves visibility and recording but does not guarantee prevention, identification, or complete coverage.
 - **Preserve:** Blyx focuses on complete new camera systems rather than taking over, repairing, troubleshooting, or expanding systems installed by others.
 - **Preserve:** Blyx works on the network within the property and does not sell internet service or coordinate service with internet providers.
 - **Replace:** Any unsupported certification, manufacturer relationship, performance guarantee, or portfolio claim.
@@ -59,10 +59,10 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 | Route | Purpose | Required content | Disposition |
 | --- | --- | --- | --- |
-| `/` | Establish the shared promise, present the Business and Residential service directory, and capture inquiries | Brand hero, two-row service directory, audience-aware contact section, footer | Reconsider |
+| `/` | Establish the shared promise, present the service directory, and capture inquiries | Brand hero, four-panel service directory, audience-aware contact section, footer | Reconsider |
 | `/networking/` | Explain Residential and Business networking needs, scope, boundaries, process, proof, and common questions | Shared service hero, audience-specific situations and scope, boundaries, process, relevant proof, FAQ, contextual contact actions | Preserve |
-| `/surveillance/` | Explain Residential and Business security-camera needs, scope, boundaries, process, proof, and common questions | Shared service hero, audience-specific situations and scope, boundaries, process, relevant proof, FAQ, contextual contact actions | Preserve |
-| `/access-control/` | Explain Business access control and Residential automated entry with compatible access control | Shared service hero, distinct audience outcomes, credentials, permissions, automated operation where applicable, compatibility boundaries, process, proof, FAQ, contextual contact actions | Preserve |
+| `/surveillance/` | Explain Residential and Business video-surveillance needs, scope, boundaries, process, proof, and common questions | Shared service hero, audience-specific situations and scope, boundaries, process, relevant proof, FAQ, contextual contact actions | Preserve |
+| `/access-control/` | Explain access control for Residential and Business needs, including compatible automated entry where applicable | Shared service hero, distinct audience outcomes, credentials, permissions, automated operation where applicable, compatibility boundaries, process, proof, FAQ, contextual contact actions | Preserve |
 | `/home-automation/` | Explain the verified Residential home-automation offering without overstating supported systems or proof | Hero, need states, supported scope, boundaries, process, FAQ, contact action, related services, and imagery requirements after service discovery | Reconsider |
 | `/contact/` | Collect an audience-aware project inquiry | Audience selection first, conditional service and qualification fields, direct contact alternatives, privacy disclosure, delivery states | Preserve |
 | `/privacy.html` | Explain personal-information handling and contact choices | Policy date, collection, use, providers, choices, security, privacy contact | Preserve |
@@ -81,19 +81,18 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 #### Homepage service directory
 
 - **Preserve:** Service cards use the approved shared structure: coordinated media, service label, outcome-led heading, concise explanation, and bottom-aligned action.
-- **Preserve:** Business appears first with three equally weighted panels: Networking, Security cameras, and Access control.
-- **Preserve:** Residential follows with four equally weighted panels: Networking, Security cameras, Automated entry & access control, and Home automation.
+- **Preserve:** Networking, Video surveillance, Access control, and Home automation each use one equally weighted panel.
 - **Preserve:** Networking includes wired and wireless planning, coverage, dependable connections, useful network separation, focused upgrades, testing, and handoff.
-- **Preserve:** Security cameras include coverage planning, cabling, cameras, recording, retention, remote access, permissions, supported detection, testing, and handoff.
-- **Preserve:** Automated entry & access control leads with easier or independent entry and includes compatible credentials, buttons or controls, automatic opening, remote operation, permissions, testing, administrative-access transfer, and handoff.
-- **Preserve:** Residential Home automation uses a fourth equal panel and links to `/home-automation/`; its concise statement must remain within the verified public scope and must not imply that existing project proof covers it.
-- **Preserve:** Business uses variants of the same component for Networking, Security cameras, and Access control. Its copy, service boundaries, destinations, and imagery requirements are business-specific.
-- **Preserve:** Business imagery remains unproduced until its service boundaries and separate image brief are approved; residential renders and proof are not substitutes.
-- **Reconsider:** Long-form service copy should be shortened for the panels without losing the audience-specific facts above.
+- **Preserve:** Video surveillance includes coverage planning, cabling, cameras, recording, retention, remote access, permissions, supported detection, testing, and handoff.
+- **Preserve:** Access control leads with secure, manageable access and includes compatible credentials, permissions, testing, administrative-access transfer, and handoff. Compatible automated entry is explained within the service page when automatic opening, activation controls, or remote operation apply.
+- **Preserve:** Home automation uses the fourth equal panel and links to `/home-automation/`; its concise statement must remain within the verified public scope and must not imply that existing project proof covers it.
+- **Preserve:** Shared service pages distinguish Business and Residential copy, boundaries, and imagery where required.
+- **Preserve:** Business service-page imagery remains unproduced until its service boundaries and separate image brief are approved; residential proof is not a substitute.
+- **Reconsider:** Long-form service copy should be shortened for the panels without losing the service facts above.
 
 #### Project proof and testimonial
 
-- **Preserve:** All authentic project media and facts belong to one private residential project spanning networking, security cameras, and automated entry.
+- **Preserve:** All authentic project media and facts belong to one private residential project spanning networking, video surveillance, and automated entry.
 - **Preserve:** Networking and camera work includes attic cabling, Wi-Fi coverage improvement, camera installation, dependable recording, remote viewing, and an organized central equipment area.
 - **Preserve:** Automated-entry work includes powered swing-door operators at two entrances, fingerprint entry, wireless activation, remote visitor access, independent entry, and independent exit.
 - **Preserve:** Customer privacy requires omitting the residence address, camera views, and coverage details.
@@ -108,7 +107,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** Basic project-fit guidance and fully insured status appear as concise support beside the form rather than as a separate homepage section.
 - **Preserve:** Contact paths include the form, `contact@blyxventures.com`, and `(502) 500-0105`.
 - **Preserve:** The form collects name, email, optional phone, project city or ZIP, project size, areas of need, and a project description.
-- **Preserve:** Residential areas of need are Networking, Security cameras, Automated entry & access control, Home automation, and Not sure yet. Business areas of need include Access control as its own operational service. “Not sure yet” is mutually exclusive.
+- **Preserve:** Residential areas of need include Access control and Automated entry as distinct inquiry choices within the Access control service, alongside Networking, Security cameras, Home automation, and Not sure yet. Business areas of need include Access control. “Not sure yet” is mutually exclusive.
 - **Preserve:** The form provides visible labels, keyboard access, inline validation, focus on the first invalid field, pending status, confirmed success, retry guidance, and an email fallback.
 - **Preserve:** A hidden honeypot, normalized server-side validation, duplicate-request protection, short-lived anonymous delivery status, and bounded input lengths protect the submission workflow.
 - **Preserve:** Service-page contact links preselect relevant areas and attach a recognized source, then remove the temporary query parameters from the visible URL.
@@ -126,7 +125,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The FAQ answers internet-service boundaries, finished-space cabling, wired versus wireless use, reuse of compatible equipment, and separate device access.
 - **Preserve:** Accurate small-workplace and light-commercial references in body copy, metadata, and structured data.
 
-### Security-camera page
+### Video-surveillance page
 
 - **Preserve:** The page leads with useful views, dependable recording, practical footage review, and controlled access.
 - **Preserve:** Planning covers goals, lighting, mounting positions, viewing angles, cabling, network needs, storage, retention, remote viewing, user permissions, alerts, and supported detection.
@@ -135,9 +134,9 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The FAQ answers phone viewing, retention factors, internet dependence, continuous versus activity-based recording, and the boundary against takeover or repair work.
 - **Preserve:** Accurate small-workplace and light-commercial references in body copy, metadata, and structured data.
 
-### Residential automated-entry and access-control page
+### Access-control page
 
-- **Preserve:** Automated entry is the primary residential message. Access control remains part of the service and may operate separately or together with automatic door operation when the door and equipment are compatible.
+- **Preserve:** Access control is the primary residential message. Automated entry remains part of the service and may operate together with access control when the door and equipment are compatible.
 - **Preserve:** Credential options may include buttons, key fobs, PIN codes, RFID cards, supported biometric credentials, and remote approval or operation.
 - **Preserve:** Planning covers the people using the entrance, door condition and swing, frame, hinges, lock, power, wiring paths, safe egress, permissions, control placement, and coordinated unlocking and opening.
 - **Preserve:** Good-fit work includes independent residential entry, remote visitor access, credential-based entry for a home or small workplace, and compatible access control with an automatic swing-door operator.
@@ -212,7 +211,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 | Network and cameras | Attic-cabling and network-rack photographs in source JPEG and responsive WebP sizes | Authentic proof of cabling, network improvement, camera-system support, and organized equipment |
 | Automated entry | Door-operator and entry-reader photographs in source JPEG and responsive WebP sizes | Authentic proof of installed entry equipment |
 | Automated entry video | Independent ingress and egress MP4 files with poster images and text descriptions | Authentic proof of independent entry and exit; retain controls, captions, and descriptive text |
-| Residential service renders | Coordinated networking, surveillance, and access-control WebP renders in the design-guide asset set | Conceptual residential service-card illustration only; never label as completed Blyx work |
+| Residential service renders | Coordinated networking, video-surveillance, and access-control WebP renders in the design-guide asset set | Conceptual residential service-card illustration only; never label as completed Blyx work |
 | Business service renders | No assets produced | Keep image requirements separate from residential and defer generation until explicit approval |
 | Home automation | No approved proof or conceptual render is recorded | Define the service scope and image brief before sourcing or generating an asset; never repurpose the existing project proof |
 | Brand assets | Supplied logo, symbol, favicon, touch icon, manifest icon, and existing social image | Preserve brand identity; do not redesign the logo |
@@ -222,9 +221,9 @@ All proof images retain meaningful alternative text, intrinsic dimensions, respo
 ## ✅ Downstream acceptance checklist
 
 - [ ] Public copy accurately addresses residential and light-commercial customers without implying enterprise-scale capabilities
-- [ ] Root navigation and hero give residential and business paths equal prominence
-- [ ] The homepage uses Business and Residential rows of the shared service-panel component with audience-specific copy, imagery, and inquiry context
-- [ ] Business image requirements are documented without generating assets or repurposing residential renders
+- [ ] Root navigation and hero give residential and business inquiries equal access
+- [ ] The homepage uses one shared service-panel instance for each service
+- [ ] Shared service pages distinguish residential and Business scope, imagery, and proof where required
 - [ ] Home-automation scope, boundaries, proof requirements, page copy, and technical-render brief are explicitly defined before publication
 - [ ] Every preserved service fact is represented on the appropriate route
 - [ ] Authentic proof is presented as one integrated private residential project
