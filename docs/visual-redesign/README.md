@@ -4,17 +4,16 @@ Use this brief for redesign intent and constraints. Record detailed design decis
 
 ## Positioning
 
-**Central promise:** Dependable technology, thoughtfully integrated into your space.
+**Central promise:** Deploying technology to empower your life.
 
 Every page, image, interaction, and proof point must reinforce or substantiate this promise:
 
-- **Dependable:** appropriate design, reliable systems, careful installation, testing, and usable handoff.
-- **Thoughtfully integrated:** coherent planning, clean installation, required compatibility, and simple daily use.
-- **Into your space:** decisions follow the people, property, routines, operations, and need—not a product catalog.
+- **Deploying technology:** Blyx designs and implements complete systems through appropriate planning, careful installation, testing, and usable handoff.
+- **Empower your life:** technology supports the people, property, routines, operations, and needs it serves rather than becoming the focus itself. Coherent planning, required compatibility, and simple daily use substantiate that outcome.
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 
-Organize services by audience. The residential hub gives Networking, Security cameras, Automated entry & access control, and Home automation equal card prominence. Automated entry leads the residential message while access control remains part of the combined service. The business hub uses audience-specific variants for its verified services and leads with Access control; Automation and controls appears only after its business scope is approved. Define the supported home-automation scope, boundaries, and proof requirements before publishing detailed service claims.
+Organize the homepage service directory by service rather than audience. Networking, Video surveillance, Access control, and Home automation each appear once. Access control encompasses compatible automated entry, with distinctions explained on the service page. Shared service pages distinguish residential and Business applications where their needs, scope, or proof differ. Define the supported home-automation scope, boundaries, and proof requirements before publishing detailed service claims.
 
 ## Experience and visual direction
 
@@ -37,13 +36,12 @@ Copy carries the promise and action; imagery reinforces one adjacent idea; authe
 - Create distinct desktop and mobile crops when needed.
 - Favor controlled natural light, realistic materials, clean surroundings, and restrained contrast.
 - Use polished photography or simplified realistic renders for marketing; use authentic Blyx photography for proof. Never portray generated, rendered, or staged imagery as completed Blyx work.
-- Audience-hub service panels use coordinated sets of monochromatic technical renders: translucent architectural cutaways, partially solid surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof. Residential and business sets use distinct subjects; business imagery remains pending until separately approved.
-- Root audience-gateway renders use graphite and off-white only, with no accent color. They use predominantly solid architectural forms and broader environmental context, reserving translucency and technical linework for small supporting details.
+- Homepage service panels use one coordinated set of monochromatic technical renders: translucent architectural cutaways, partially solid surfaces, and restrained blueprint linework. Treat them as conceptual illustrations, never completed-project proof. Audience-specific service-page imagery uses distinct subjects where the contexts differ.
 - Avoid default full-bleed backgrounds. Reserve wide environmental images for project stories where the setting matters.
 
 ## Interface and content rules
 
-- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The root homepage uses one split audience gateway in which each complete side links to its audience hub. Audience-hub service overviews are a named exception: each uses equal panels with a shared structure and one action per service. Do not mix both service-card sets on the root homepage.
+- Let typography lead; use color and spacing for hierarchy. Avoid dense, repeated card grids and unnecessary containers. The homepage service directory uses four equal panels with one action per service and no visible introduction before the panels.
 - Make navigation, controls, and forms precise, understated, accessible, and consistent. Forms require clear labels, visible focus, useful validation, and strong contrast.
 - Use motion only for state clarity or subtle polish. Exclude heavy parallax, scroll spectacle, and motion required for comprehension.
 - Use **we** without implying unsupported team size or capacity.
@@ -68,10 +66,10 @@ Milestone 02 defines fonts, colors, scales, tokens, form aesthetics, image masks
 - [Reusable service and case-study page templates](./page-templates.md)
 - [Page image matrix and production backlog](./image-matrix.md)
 
-## Service area and proof
+## Inquiry availability and proof
 
-- Service area: Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky. Keep it secondary but clear near contact forms and in the footer. Collect project city or ZIP without blocking outside submissions.
-- Available proof: photography and one testimonial from one completed residential project covering networking, security cameras, and automated entry. Present it as one integrated project; do not imply multiple customers, a larger portfolio, light-commercial work, or home-automation work.
+- Accept inquiries without publishing a geographic service boundary. A project ZIP may be collected for project planning, but it never determines whether a visitor can submit an inquiry.
+- Available proof: photography and one testimonial from one completed residential project covering networking, video surveillance, and automated entry. Present it as one integrated project; do not imply multiple customers, a larger portfolio, light-commercial work, or home-automation work.
 - Attribute the testimonial with the client's first name and last initial; keep the residence private.
 - Blyx may state that it is fully insured. Do not imply unverified certifications, manufacturer authorizations, claims, or experience.
 

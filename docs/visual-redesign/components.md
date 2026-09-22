@@ -64,7 +64,7 @@ At the large grid state, use three regions:
 - Primary navigation centered or start-aligned in the available middle region.
 - A reserved action region at the end. It contains “Tell us about your project” only after the matching hero action has scrolled above the header.
 
-Root primary navigation exposes `Residential`, `Business`, and `How we work`. The two audience links receive equal prominence. Audience hubs may replace `How we work` with concise contextual service links when they fit, but must retain a visible switch to the other audience. Do not place mixed residential and business services in one dropdown.
+Root primary navigation exposes `Services`, linking to the homepage service directory. Individual service pages may add concise contextual service links when they fit. Do not place the complete Business and Residential service sets in a dropdown.
 
 On the root homepage, the primary inquiry action begins in the hero. Use `IntersectionObserver` to activate the matching reserved header action only after the hero action crosses above the sticky header. Use two stable links rather than reparenting one link between containers. Both share the same label, `/contact/` destination, and analytics identity; only one is interactive at a time. Preserve the hero link as the no-JavaScript path.
 
@@ -84,21 +84,13 @@ The closed panel uses the native `hidden` state so it and its descendants are ab
 
 - Sits immediately below the header on `surface`, separated by `border` and `shadow-raised`.
 - Uses the standard inline gutter and `space-5` block padding.
-- Lists Residential, Business, and How we work as full-width links with a minimum 48px target on the root page. Audience hubs may list their contextual services after the audience switch.
+- Lists Services as a full-width link with a minimum 48px target on the root page. Individual service pages may list concise related-service links after it.
 - Keeps “Tell us about your project” visible beside the compact header or immediately after the navigation links once the hero action has crossed above the header. Use the arrangement that preserves the 44px targets at 320px and 200% text zoom; do not shorten the visible label into an ambiguous phrase.
 - Allows content to determine its height and remains usable at 200% text zoom.
 
 Opening the panel leaves focus on the expanded Menu button; the next Tab moves to the first link. Escape closes the panel and returns focus to the Menu button. Activating a link closes the panel. Closing through a pointer action outside the panel is allowed but is never the only closing method. Do not trap focus because the panel is a disclosure, not a modal dialog.
 
 The panel may appear without animation. If animated, transition only opacity and a short vertical offset for `transition-state`; skip the transition under reduced motion. The expanded button label changes to “Close,” while the accessible name continues to describe the action.
-
-## Audience gateway links
-
-The root audience gateway contains two large linked panels. Each side uses one block-level anchor as its outermost element and complete hit area. Residential links to `/residential/`; business links to `/business/`. Text, decorative imagery, and the visible action cue remain inside the anchor without nested links or buttons.
-
-The default state preserves clear panel boundaries and readable text without relying on hover. Hover may adjust the image treatment and action cue together. Focus uses the shared two-pixel outline around the full panel and remains visible above the image layers. Active applies the standard one-pixel press to the content treatment without moving the panel boundary.
-
-The two links use complementary clipped shapes separated by one narrow diagonal gap. Build the gap into the clip paths so it exposes the background behind the component; do not draw a colored overlay, keyline, pseudo-element, or shadow over the seam. The gap is intentionally non-interactive and never overlaps the text or focus treatment. Use an inset or shape-following focus treatment so clipping does not hide the focused panel boundary.
 
 ## Buttons
 
