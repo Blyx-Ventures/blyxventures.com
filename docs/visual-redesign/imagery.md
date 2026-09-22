@@ -203,7 +203,7 @@ The available Blyx network-rack, attic-cabling, entry-reader, and door-operator 
 
 ### Technical service visualizations
 
-Use one coordinated technical-render set for the four cards in the homepage service directory. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery. The existing networking and video-surveillance renders remain represented in the browser guide without modification. Business-specific imagery may support the corresponding service pages after its scope and image brief are approved.
+Use one coordinated technical-render set for the four cards in the homepage service directory. These are conceptual marketing illustrations and follow the disclosure and provenance rules for rendered or generated imagery. The approved networking, video-surveillance, and access-control renders remain represented in the browser guide without modification. Business-specific imagery may support the corresponding service pages after its scope and image brief are approved.
 
 The shared treatment combines:
 

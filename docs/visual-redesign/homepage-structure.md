@@ -83,7 +83,7 @@ Use customer-facing `Business` language in the homepage directory. Treat `light 
 - Keep the semantic `Services` label for assistive technology.
 - Keep the directory order: Networking, Video surveillance, Access control, then Home automation.
 - At the large state, keep all four equal panels on one row. At medium widths, use two columns; at compact widths, stack in source order.
-- Use the existing networking and video-surveillance renders without modification. Reserve image fields without imagery for Access control and Home automation until approved assets exist.
+- Use the approved networking, video-surveillance, and access-control renders without modification. Reserve an image field without imagery for Home automation until an approved asset exists.
 - Keep each action specific to its service. Do not link an entire panel.
 
 ### Contact

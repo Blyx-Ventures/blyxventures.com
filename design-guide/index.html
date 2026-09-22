@@ -660,12 +660,21 @@
                 </article>
 
                 <article class="service-panel">
-                  <div
-                    class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default"
-                    role="img"
-                    aria-label="Access-control technical render pending an approved image brief"
-                  >
-                    <span>Access-control render required</span>
+                  <div class="service-panel-media image-crop image-panel-fade image-surface-default">
+                    <picture class="responsive-image">
+                      <source
+                        type="image/webp"
+                        srcset="/design-guide/service-renders/access-control-v3-768.webp 768w, /design-guide/service-renders/access-control-v3-1448.webp 1448w"
+                        sizes="(min-width: 80rem) 22vw, (min-width: 48rem) 45vw, calc(100vw - 2.5rem)"
+                      />
+                      <img
+                        src="/design-guide/service-renders/access-control-v3-768.webp"
+                        alt="Modern access-control keypad with card and fingerprint readers beside a closed entry door"
+                        width="768"
+                        height="576"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Access control</span>
@@ -695,8 +704,8 @@
                 <strong>Use:</strong> represent each service once. Keep every panel on
                 the same component structure, use two columns from 48rem, distribute
                 the four services across one row from 80rem, and stack below 48rem.
-                Pending media fields reserve the approved image area; they are not
-                production assets.
+                A pending media field reserves the approved image area; it is not a
+                production asset.
               </p>
             </div>
           </article>

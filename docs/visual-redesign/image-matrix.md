@@ -26,7 +26,7 @@ The asset ID remains stable across the page matrix, production backlog, filename
 | `HR-N01` | Audience-neutral compact network rack in a restrained technical-render treatment | Generated hero-support render | Production transparent PNG exists | Approved for root hero trial; validate final responsive composition |
 | `RS-N01` | Residential network cutaway with central rack, concealed cabling, and ceiling access points | Technical service render | Existing design-guide sources | Validate for production use |
 | `RS-S01` | Residential exterior and entry with purposeful camera placement and broad coverage fields | Technical service render | Existing design-guide sources | Validate for production use |
-| `RS-E01` | Residential automatic swing-door operation coordinated with credentialed access | Technical service render | Not produced | Brief required before production |
+| `RS-E01` | Keypad, card, and fingerprint access reader beside a closed swinging door | Technical service render | Responsive WebP sources exist | Approved for the homepage service panel |
 | `RS-H01` | Supported home-automation outcome in a credible daily-use setting | Technical service render | Not produced | Blocked by service-scope approval |
 | `BS-N01` | Small-office network foundation with organized equipment, wired work areas, and credible wireless coverage | Technical service render | Not produced | Deferred pending business image-brief approval |
 | `BS-S01` | Small-office entrance or shared area with purposeful camera placement and credible viewing context | Technical service render | Not produced | Deferred pending business image-brief approval |
@@ -79,7 +79,7 @@ This matrix assigns each asset to a page section and one communication purpose. 
 | `HR-N01` | Tight portrait source with the complete rack isolated on transparency | Solid copy field on the left; media fills the hero vertically on the right and never contains essential text | Transparent generated warm-graphite technical render, audience-neutral and never labeled as project proof | Preserve the complete rack at a legible height; stack below copy when the two-column relationship cannot remain clear |
 | `RS-N01` | Landscape `4:3`; rack and access points remain legible | Solid copy field below the media with a shallow bottom seam | `surface`; residential cutaway with restrained technical detail | Use an art-directed `4:3` crop that keeps the rack and at least one access point readable |
 | `RS-S01` | Landscape `4:3`; cameras and broad coverage fields remain intact | Solid copy field below the media with a shallow bottom seam | `surface`; residential exterior or entry cutaway | Use an art-directed `4:3` crop that preserves the entry approach and camera placement |
-| `RS-E01` | Landscape `4:3`; reader, secure locking, and doorway share one coherent view | Solid copy field below the media with a shallow bottom seam | `surface`; ordinary residential entrance | Use an art-directed `4:3` crop that keeps access-control components primary; an operator may appear only when the approved brief calls for automated entry |
+| `RS-E01` | Landscape `4:3`; reader, handle, and closed doorway share one coherent view | Solid copy field below the media with a shallow bottom seam | `surface`; audience-neutral modern entrance | Keep the reader, aligned handle, closed swinging-door relationship, and internal green fingerprint glow legible |
 | `RS-H01` | Landscape `4:3`; supported outcome remains legible at card size | Solid copy field below the media with a shallow bottom seam | `surface`; attainable residential setting defined by the approved brief | Define the compact focal point only after service scope and subject are approved |
 | `BS-N01` | Landscape `4:3` base with card and hero-safe variants | Card copy below; hero copy on a separate solid field | `surface`; modest office equipment or back-of-house space | Supply a tighter card crop and a compact hero crop; keep staff-scale context without enterprise cues |
 | `BS-S01` | Landscape `4:3` base with card and hero-safe variants | Card copy below; hero copy on a separate solid field | `surface`; modest office entrance or shared area | Supply a tighter card crop and a compact hero crop; retain the camera and one operational sight line |
@@ -119,17 +119,16 @@ Do not begin the next batch until both assets are tested in their intended respo
 
 | Priority | Asset ID | Work | Dependency |
 | ---: | --- | --- | --- |
-| 3 | `RS-E01` | Approve the access-control brief, then produce card and service-page crops | Confirm reader, lock, permissions, doorway, power, and egress relationships; document automated-entry requirements separately within the service-page brief |
-| 4 | `RS-N01`, `RS-S01` | Validate the existing guide renders for production and export approved responsive derivatives | Batch 1 establishes crop, detail, tonal, and performance thresholds |
-| 5 | `PR-N02`, `PR-E01`, `PR-E02`, `PR-E03`, `PR-E04` | Validate existing proof derivatives, posters, captions, controls, and privacy-safe use | Verified source, permission, and project attribution remain available |
+| 3 | `RS-N01`, `RS-S01` | Validate the existing guide renders for production and export approved responsive derivatives | Batch 1 establishes crop, detail, tonal, and performance thresholds |
+| 4 | `PR-N02`, `PR-E01`, `PR-E02`, `PR-E03`, `PR-E04` | Validate existing proof derivatives, posters, captions, controls, and privacy-safe use | Verified source, permission, and project attribution remain available |
 
 ### Batch 3 — Business set
 
 | Priority | Asset ID | Work | Dependency |
 | ---: | --- | --- | --- |
-| 6 | `BS-N01` | Produce the small-office networking base and responsive crops | Business networking scope and separate image brief approved |
-| 7 | `BS-S01` | Produce the small-office video-surveillance base and responsive crops | Business video-surveillance scope and separate image brief approved |
-| 8 | `BS-A01` | Produce the staff-entry access-control base and responsive crops | Business access-control scope and separate image brief approved |
+| 5 | `BS-N01` | Produce the small-office networking base and responsive crops | Business networking scope and separate image brief approved |
+| 6 | `BS-S01` | Produce the small-office video-surveillance base and responsive crops | Business video-surveillance scope and separate image brief approved |
+| 7 | `BS-A01` | Produce the staff-entry access-control base and responsive crops | Business access-control scope and separate image brief approved |
 
 Review all three business assets as one set for consistent perspective, crop density, line weight, tonal range, lighting, and small-workplace scale. Do not substitute residential renders while this batch is deferred.
 

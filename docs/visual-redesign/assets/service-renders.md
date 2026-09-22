@@ -40,9 +40,9 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 
 ### Residential access control
 
-- **Status:** A revised card image is required but is not approved for generation in this milestone.
-- **Dependency:** Approve a brief showing credentialed access, secure locking, permissions, and the doorway relationship. Automated entry may appear in service-page imagery when the approved use case requires it.
-- **Guide outputs:** None.
+- **Subject prompt:** Close architectural view of a modern wall-mounted access-control unit combining keypad, card, and fingerprint credentials beside a closed, flush, single-leaf swinging door. The handle aligns horizontally with the reader. A restrained muted-green glow remains inside the fingerprint recess as the only color accent. The adjacent glass and lobby context remain continuous and architecturally plausible.
+- **Avoid:** Vignettes or all-edge fades, a green ring around the fingerprint reader, sliding-door seams, divided door panels, misplaced frames or mullions, freestanding lobby blocks, exposed cable, people, labels, interfaces, and additional green accents.
+- **Guide outputs:** `access-control-v3-768.webp` and `access-control-v3-1448.webp`.
 
 ### Residential home automation
 
@@ -61,4 +61,4 @@ Generated with the built-in image-generation tool. Each asset uses this shared d
 ## Output handling
 
 - The guide derivatives are WebP files at 768×576 and 1448×1086.
-- The render set is approved for design-guide evaluation only. Do not present it as project proof or publish it as final website imagery without explicit approval.
+- The networking, video-surveillance, and access-control renders are approved for their homepage service panels and the visual guide. Do not present them as project proof.
