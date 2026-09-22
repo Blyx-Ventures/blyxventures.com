@@ -746,12 +746,21 @@
                 </article>
 
                 <article class="service-panel">
-                  <div
-                    class="service-panel-media service-panel-media-pending image-panel-fade image-surface-default"
-                    role="img"
-                    aria-label="Home automation technical render pending an approved service scope"
-                  >
-                    <span>Scope-backed render required</span>
+                  <div class="service-panel-media image-crop image-panel-fade image-surface-default">
+                    <picture class="responsive-image">
+                      <source
+                        type="image/webp"
+                        srcset="/design-guide/service-renders/home-automation-768.webp 768w"
+                        sizes="(min-width: 80rem) 22vw, (min-width: 48rem) 45vw, calc(100vw - 2.5rem)"
+                      />
+                      <img
+                        src="/design-guide/service-renders/home-automation-768.webp"
+                        alt="Architectural cutaway showing a wall-mounted home automation control panel in a modern residence"
+                        width="768"
+                        height="576"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                   <div class="service-panel-body image-panel-copy image-surface-default">
                     <span class="eyebrow">Home automation</span>
@@ -766,8 +775,7 @@
                 the residential hub service overview. Keep the technical renders coordinated,
                 constrain copy to a shared structure, use two columns from 48rem and
                 four from 80rem, and stack the panels below 48rem. The home-automation
-                placeholder is not a production asset; replace it only after service
-                scope and image direction are approved. Business cards reuse the component
+                card uses the approved coordinated technical render. Business cards reuse the component
                 structure with business-specific copy and destinations; their images remain
                 unproduced until separately approved.
               </p>
