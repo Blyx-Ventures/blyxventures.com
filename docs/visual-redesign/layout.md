@@ -126,45 +126,34 @@ Column ranges below use one-based grid lines and apply at the wide state. At com
 | Copy and supporting media | Copy 1–7; media 8–13 | Explanatory section with a clear gap between meaning and visual proof. |
 | Project proof | Media 1–6; story 7–13 | Gives authentic project material enough detail while keeping the story readable. DOM order remains story, then media when the compact order must put copy first. |
 | Contact split | Introduction 1–6; form 7–13 | Keeps inquiry context adjacent to the form. Stack before either region becomes narrower than 20rem. |
-| Audience gateway | Residential 1–7; business 7–13 | Two equally weighted block-level links with distinct copy and imagery. A narrow diagonal gap between the clipped panels exposes the background behind the component. Stack residential before business at compact widths. |
-| Service panel group | Wide: two panels per row at six columns each. Large: distribute three or four equal panels across 12 columns. | Equal-size panels with identical media, copy, and action regions within one audience hub; stack the panels at compact widths. |
+| Service panel group | Wide: two panels per row at six columns each. Large: four panels at three columns each. | Equal-size panels with identical media, copy, and action regions; stack the panels at compact widths. |
 | Reading page | Content 3–11 | Policy and long-form content remains no wider than `width-reading`; the outer columns preserve calm whitespace. |
 
 These are starting patterns, not templates that every section must use. A composition may omit a region and allow the remaining content to occupy fewer columns; it must not stretch copy beyond its defined measure simply to fill the grid.
 
-### Audience gateway
-
-Each half is one anchor occupying its complete grid region. Keep text and imagery inside that anchor; do not use an absolutely positioned stretched-link overlay or nest another interactive control. Give the anchor a visible focus outline around the full panel boundary.
-
-At wide widths, the two anchors share one block size and follow a common diagonal. Clip the residential and business sides to complementary shapes with one narrow gap between them. Each audience image fills its complete anchor, with copy layered over a quiet, contrast-protected region. The gap exposes the background behind the component; do not simulate it with a colored overlay, keyline, pseudo-element, shadow, or accent color.
-
-At compact widths, stack the anchors in residential-then-business source order. Use complementary slanted bottom and top edges with the same background gap between them. Do not preserve a steep desktop diagonal by clipping text or focus treatment.
-
 ### Service panel group
 
-An audience service overview contains equal-size panels. The residential hub contains four in this order: Networking, Surveillance, Automated entry & access control, and Home automation. The business hub contains Networking, Surveillance, and Access control; add Automation and controls only after its scope is approved. All panels within a hub use the same internal grid:
+The homepage service directory contains one equal-panel group with Networking, Video surveillance, Access control, and Home automation. Each service appears once. All panels use the same internal grid:
 
 1. A technical-render media region occupying 40–45% of the panel block size
 2. A short service label or title
 3. One outcome-led heading and a concise explanation
 4. One service-page action pinned to the bottom of the content region, with `space-2` internal top padding and a minimum target height of `control-height-compact`
 
-Use the same aspect ratio, compact minimum block size, padding, border, radius, and content tracks across all panels in a hub. Pin every action to the bottom edge so the actions align. Constrain copy so one panel does not gain height from a longer title or description. Do not resize one panel to feature a preferred service.
+Use the same aspect ratio, compact minimum block size, padding, border, radius, and content tracks across every panel. Pin every action to the bottom edge so the actions align within each row. Constrain copy so one panel does not gain height from a longer title or description. Do not resize one panel to feature a preferred service.
 
 Use `service-panel-min-height` at 29rem, `service-panel-media-height` at 13rem, and `service-panel-copy-overlap` at 1rem. At the minimum panel height, the media occupies approximately 45% of the card. Remove the hard rule between media and copy. Fade the image's bottom edge into `surface`, overlap the copy field upward, and make that field fully opaque before the eyebrow begins. Content may increase the panel height when text reflows; never clip copy or reduce the action target to hold the minimum height.
 
-At the medium and wide states, use two equal panels per row. At the large state, four residential panels span three columns each; three business panels span four columns each. Below 48rem, stack the panels in source order and preserve equal dimensions. Do not use an orphaned row, horizontal carousel, or content reordering.
+At the medium and wide states, use two equal panels per row. At the large state, all four panels span three columns each. Below 48rem, stack the panels in source order and preserve equal dimensions. Do not use an orphaned row, horizontal carousel, or content reordering.
 
-Residential service actions are:
+Service actions are:
 
-- Networking: “Explore reliable connectivity”
-- Surveillance: “Explore smarter surveillance”
-- Automated entry & access control: “Explore easier, secure entry”
-- Home automation: “Explore home automation”
+- Networking: “Explore networking”
+- Video surveillance: “Explore residential security cameras”
+- Access control: “Explore access control”
+- Home automation: “Discuss home automation”
 
-Business variants use outcome-led operational language and link to the corresponding `/business/` service route. Their image requirements may be documented, but business images remain unproduced until separately approved.
-
-The card set is a named audience-hub composition, not permission to convert the root homepage or other content sections into card grids. Use spacing or surface changes for other repeated content unless a separate documented component requires a container.
+The card set is reserved for the homepage service directory. Use spacing or surface changes for other repeated content unless a separate documented component requires a container.
 
 ## Section rhythm
 

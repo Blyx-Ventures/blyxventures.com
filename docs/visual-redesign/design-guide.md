@@ -46,7 +46,7 @@ When a shared decision changes, update the specification, token definition, and 
 3. Apply type roles and measures before introducing surface changes.
 4. Add only the controls and states required by the page task.
 5. Select imagery that provides credible proof and supports the intended crop. If an asset looks below high-resolution quality at its intended size, recommend upscaling and obtain explicit approval before creating or using an enhanced derivative.
-6. Use the documented equal-panel composition on audience hubs; keep its technical renders conceptual, its text on solid fields, and its residential and business content distinct.
+6. Use the documented equal-panel composition for the homepage service directory; keep its technical renders conceptual, its text on solid fields, and each service represented once.
 
 ### Review a page
 
@@ -66,7 +66,7 @@ Review in this order:
 - Use semantic HTML and native controls as the baseline. Styling does not replace labels, state language, heading order, or accessible names.
 - Keep single-line form controls compact at a 2.75rem minimum height with `space-2` block and `space-4` inline padding. Checkbox marks are 1.125rem inside a clickable row at least 2.75rem high. Preserve 16px control text and the shared Blyx border, radius, and focus treatment.
 - Keep responsive behavior mobile-first. The shared grid changes at 48rem and 64rem; 80rem is a large-canvas refinement.
-- Build the residential hub service overview as four equal, compact panels in Networking, Surveillance, Automated entry & access control, and Home automation order. Automated entry leads the third card while access control remains within its scope. Build the business hub with the same component structure and business-specific copy, destinations, and imagery requirements; do not generate business images until approved. Each panel uses the same 40–45% technical-render region, a surface-matched bottom fade into an overlapping solid copy field, constrained copy structure, and bottom-aligned action. Use two columns from 48rem, distribute three or four panels evenly from 80rem, and use a single stack below 48rem.
+- Build the homepage service directory with one equal panel each for Networking, Video surveillance, Access control, and Home automation. Begin directly with the panels; do not add a visible section introduction. Each panel uses the same 40–45% technical-render region, a surface-matched bottom fade into an overlapping solid copy field, constrained copy structure, and bottom-aligned action. Use two columns from 48rem, distribute all four panels evenly from 80rem, and use a single stack below 48rem.
 - Keep essential content usable when fonts, images, animation, or JavaScript are unavailable.
 - Preserve original image assets. Upscaled derivatives require explicit approval, a documented method and intended use, and verification that no proof-bearing detail was invented or materially changed.
 - Treat the browser examples as representative combinations, not copy-and-paste page templates.
