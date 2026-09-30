@@ -18,7 +18,7 @@ The homepage service directory presents shared service paths without duplicating
 
 | Order | Section | Purpose | Primary message | Primary action | Proof requirement | Visual role |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Deploying technology to empower your life | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
+| 1 | Brand hero | Establish the shared promise and offer a direct inquiry path | Deploying technology to empower your day | Tell us about your project | No portfolio or scale claim | Typography remains primary; one audience-neutral generated network-rack render provides subordinate technical context on the right |
 | 2 | Services | Present every verified service without separate audience-hub pages or duplicate audience cards | Networking, Video surveillance, Access control, Home automation | One service-specific action per panel | Service-specific imagery; unproduced imagery uses a reserved media field rather than a substitute | One four-panel group using the shared equal-panel component; no visible section introduction |
 | 3 | Contact and fit | Let visitors confirm basic fit and begin an audience-aware inquiry without creating a hard gate | A rough description is enough to begin; Blyx works with residential and light-commercial spaces | Send project details | Fully insured status, functional form, direct contact alternatives, privacy disclosure, validation, confirmed delivery, and analytics behavior | Form and concise fit guidance on solid fields; no imagery or separate qualification panel |
 
@@ -66,7 +66,7 @@ Use customer-facing `Business` language in the homepage directory. Treat `light 
 
 - Use the central promise as the only dominant headline.
 - Begin with the central promise. Do not place an eyebrow or audience label above it.
-- Set “your life.” in `brand-strong`; keep the rest of the central promise in the primary text color.
+- Set “your day.” in `brand-strong`; keep the rest of the central promise in the primary text color.
 - Use this supporting copy: “Be it reliable networking, security cameras, access control, automated entry, or home automation, we help you design and implement a system that supports your day-to-day needs.”
 - Place `Tell us about your project` in the hero as the direct inquiry action.
 - Retain direct phone access as a quiet utility action.

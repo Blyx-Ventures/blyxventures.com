@@ -4,12 +4,12 @@ Use this brief for redesign intent and constraints. Record detailed design decis
 
 ## Positioning
 
-**Central promise:** Deploying technology to empower your life.
+**Central promise:** Deploying technology to empower your day.
 
 Every page, image, interaction, and proof point must reinforce or substantiate this promise:
 
 - **Deploying technology:** Blyx designs and implements complete systems through appropriate planning, careful installation, testing, and usable handoff.
-- **Empower your life:** technology supports the people, property, routines, operations, and needs it serves rather than becoming the focus itself. Coherent planning, required compatibility, and simple daily use substantiate that outcome.
+- **Empower your day:** technology supports the people, property, routines, operations, and needs it serves rather than becoming the focus itself. Coherent planning, required compatibility, and simple daily use substantiate that outcome.
 
 Present Blyx as a residential and light-commercial service company with product-brand clarity, restraint, and precision. Target quality-conscious homeowners and small organizations willing to invest in professional integration: above price-led or do-it-yourself options without claiming ultra-luxury or enterprise-scale experience.
 

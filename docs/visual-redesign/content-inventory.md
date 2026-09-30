@@ -27,7 +27,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 - **Preserve:** The company voice uses “we” without implying unverified team size, capacity, credentials, authorizations, or experience.
 - **Preserve:** Pricing remains consultative; the site explains fit and inquiry steps without packages or starting prices.
 - **Preserve:** Blyx may state that it is fully insured.
-- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: deploying technology to empower the customer’s life.
+- **Reconsider:** “Smarter Spaces” may remain in supplied logo artwork, but page-level positioning must lead with the central promise: deploying technology to empower the customer’s day.
 - **Replace:** Generic “smart space” positioning where it obscures specific customer outcomes or treats the services as products.
 - **Replace:** Enterprise-scale, high-volume, or otherwise unsupported commercial positioning.
 
