@@ -35,7 +35,7 @@ The redesign serves residential and light-commercial customers. Keep the light-c
 
 - **Preserve:** A skip link targets the main content on every route.
 - **Preserve:** The logo links to the homepage and has an accessible home label.
-- **Preserve:** Root primary navigation includes `Services`, linking to the homepage service directory. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
+- **Preserve:** Root primary navigation includes `Services`, linking to the homepage service directory, and `Contact`, linking to the homepage contact section. `Tell us about your project` begins in the hero and appears in the reserved header action region after the hero action scrolls above the header.
 - **Preserve:** The footer links to the service directory and names the shared contact methods, insured status, the privacy route, and Blyx Ventures LLC.
 - **Preserve:** Service pages identify the service clearly and distinguish Residential from Business scope wherever both are offered.
 - **Reconsider:** Section-anchor navigation may be adapted to the final responsive page structures.

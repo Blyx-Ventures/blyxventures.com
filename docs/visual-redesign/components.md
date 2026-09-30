@@ -64,7 +64,7 @@ At the large grid state, use three regions:
 - Primary navigation centered or start-aligned in the available middle region.
 - A reserved action region at the end. It contains “Tell us about your project” only after the matching hero action has scrolled above the header.
 
-Root primary navigation exposes `Services`, linking to the homepage service directory. Individual service pages may add concise contextual service links when they fit. Do not place the complete Business and Residential service sets in a dropdown.
+Root primary navigation exposes `Services`, linking to the homepage service directory, and `Contact`, linking to the homepage contact section. Individual service pages may add concise contextual service links when they fit. Do not place the complete Business and Residential service sets in a dropdown.
 
 On the root homepage, the primary inquiry action begins in the hero. Use `IntersectionObserver` to activate the matching reserved header action only after the hero action crosses above the sticky header. Use two stable links rather than reparenting one link between containers. Both share the same label, `/contact/` destination, and analytics identity; only one is interactive at a time. Preserve the hero link as the no-JavaScript path.
 
@@ -84,7 +84,7 @@ The closed panel uses the native `hidden` state so it and its descendants are ab
 
 - Sits immediately below the header on `surface`, separated by `border` and `shadow-raised`.
 - Uses the standard inline gutter and `space-5` block padding.
-- Lists Services as a full-width link with a minimum 48px target on the root page. Individual service pages may list concise related-service links after it.
+- Lists Services and Contact as full-width links with minimum 48px targets on the root page. Individual service pages may list concise related-service links after them.
 - Keeps “Tell us about your project” visible beside the compact header or immediately after the navigation links once the hero action has crossed above the header. Use the arrangement that preserves the 44px targets at 320px and 200% text zoom; do not shorten the visible label into an ambiguous phrase.
 - Allows content to determine its height and remains usable at 200% text zoom.
 
