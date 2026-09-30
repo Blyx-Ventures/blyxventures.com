@@ -40,7 +40,7 @@
 - The image contains no embedded text, logo, fake interface, people, or identifiable property.
 - The render is marketing context, not authentic Blyx project evidence.
 - The website keeps essential copy and actions outside the image.
-- Wide hero layouts enlarge the rack uniformly without changing its perspective, keep both left-side corners inset from the vertical section boundaries, and intentionally clip the right-side continuation. Compact stacked layouts preserve the complete rack and readable cable organization.
+- Compact hero layouts hide the rack. Medium and wide layouts show it without changing its perspective; wide layouts enlarge it uniformly, keep both left-side corners inset from the vertical section boundaries, and intentionally clip the right-side continuation.
 
 ## Comparison variants
 

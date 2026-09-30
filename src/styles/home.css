@@ -69,6 +69,7 @@
 }
 
 .home-page .home-hero-media {
+  display: none;
   position: relative;
   z-index: 0;
   min-width: 0;
@@ -238,6 +239,7 @@
   }
 
   .home-page .home-hero-media {
+    display: block;
     grid-column: 1 / -1;
     height: 32rem;
   }

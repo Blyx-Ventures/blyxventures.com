@@ -73,7 +73,7 @@ Use customer-facing `Business` language in the homepage directory. Treat `light 
 - State residential and light-commercial availability without duplicating the service directory.
 - Do not place audience-specific imagery or service cards in the hero.
 - Use `HR-N01` as the only hero-support image. Keep the generated rack audience-neutral, subordinate to the copy, visually separate from proof, and positioned on the right with a calm copy field on the left.
-- At wide viewports, enlarge `HR-N01` uniformly without changing its perspective, position both left-side rack corners clearly inside the composition, and clip the right-side continuation at the hero boundary. Keep the complete rack visible in the stacked compact layout.
+- Hide `HR-N01` at compact viewports. At medium and wide viewports, show the rack without changing its perspective; at wide viewports, enlarge it uniformly, position both left-side rack corners clearly inside the composition, and clip the right-side continuation at the hero boundary.
 - Keep the hero concise enough that the contact section remains apparent as the next step.
 
 ### Services
