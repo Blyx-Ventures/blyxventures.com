@@ -1,0 +1,153 @@
+/* Surveillance reference composition: audience-specific hero and benefits. */
+.surveillance-page [hidden] { display: none !important; }
+.surveillance-page .surveillance-hero {
+  min-height: calc(100svh - var(--header-height) - var(--border-width));
+  background: var(--color-background);
+}
+.surveillance-page .surveillance-hero::after { content: none; }
+.surveillance-page .service-hero-inner { padding-block: var(--space-5); }
+.surveillance-context {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+.surveillance-context .eyebrow { margin: 0; }
+.surveillance-hero-layout { position: relative; }
+.audience-switch {
+  display: inline-flex;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: var(--space-1);
+  margin: 0 0 var(--space-4);
+  min-width: 0;
+}
+.audience-switch label { position: relative; cursor: pointer; }
+.audience-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.audience-switch span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--control-height-compact);
+  padding-inline: var(--space-5);
+  border-radius: var(--radius-pill);
+  font-size: var(--type-action);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+}
+.audience-switch input:checked + span { background: var(--color-text); color: var(--color-text-inverse); }
+.audience-switch input:focus-visible + span { outline: var(--border-width-focus) solid var(--color-focus); outline-offset: 3px; }
+.surveillance-page .surveillance-hero h1 {
+  max-width: 16ch;
+  font-size: var(--type-display-xl);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  margin-bottom: var(--space-6);
+}
+.surveillance-hero h1 span { color: var(--color-brand-strong); }
+.surveillance-page .service-hero-copy {
+  max-width: 48ch;
+  min-height: 4.65em;
+  font-size: var(--type-body-lg);
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+.surveillance-hero-media {
+  position: relative;
+  width: min(100%, 34rem);
+  margin: var(--space-8) 0 0;
+  aspect-ratio: 2 / 1;
+}
+.surveillance-hero-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  transform: scaleX(-1);
+}
+.surveillance-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to right, var(--color-background), transparent 30%, transparent 92%, var(--color-background)),
+    linear-gradient(to bottom, var(--color-background), transparent 12%, transparent 86%, var(--color-background));
+}
+@media (min-width: 64rem) {
+  .surveillance-hero-layout .audience-switch {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    z-index: 2;
+    margin: 0;
+    background: var(--color-background);
+  }
+  .surveillance-hero-layout:has(.surveillance-hero-media:not([hidden])) {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-4);
+    align-items: start;
+  }
+  .surveillance-hero-layout:has(.surveillance-hero-media:not([hidden])) h1 {
+    font-size: var(--type-display-lg);
+  }
+  .surveillance-hero-media { width: 100%; max-width: calc(100svh - 13rem); margin: 0; aspect-ratio: 1; justify-self: end; }
+  .surveillance-hero-media img { object-position: center; }
+}
+.surveillance-benefits { background: var(--color-surface); }
+.surveillance-benefits-layout { display: grid; gap: var(--content-gap); }
+.surveillance-benefits h2 { font-size: var(--type-heading-2); }
+.surveillance-benefit-list article { padding-block: var(--space-6); border-top: var(--border-width) solid var(--color-border); }
+.surveillance-benefit-list h3 { font-size: var(--type-heading-3); margin-bottom: var(--space-3); }
+.surveillance-benefit-list p { max-width: 52ch; margin: 0; color: var(--color-text-muted); }
+@media (min-width: 48rem) {
+  .surveillance-benefits-layout { grid-template-columns: 1fr 1fr; }
+}
+
+.audience-switch-legend { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.surveillance-related { background: var(--color-surface); }
+.surveillance-related .related-services { padding-top: 0; }
+
+/* Commercial service content uses the website's shared type and spacing tokens. */
+.surveillance-planning-layout,
+.surveillance-questions-layout { display: grid; gap: var(--content-gap); }
+.surveillance-planning h2,
+.surveillance-questions h2 { font-size: var(--type-heading-2); }
+.surveillance-planning-copy > p,
+.surveillance-scope p,
+.surveillance-answers p { color: var(--color-text-muted); max-width: var(--width-reading); }
+.surveillance-scope { margin-top: var(--space-7); padding-top: var(--space-5); border-top: var(--border-width) solid var(--color-border); }
+.surveillance-scope h3 { font-size: var(--type-heading-3); }
+.surveillance-scope p { font-size: var(--type-body-sm); }
+.surveillance-image-placeholder { margin: 0; align-self: start; }
+.surveillance-placeholder-frame {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-6);
+  border: var(--border-width) dashed var(--color-border-strong);
+  background: var(--color-surface-subtle);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+.surveillance-placeholder-frame span { font-size: var(--type-label); text-transform: uppercase; letter-spacing: 0.1em; }
+.surveillance-placeholder-frame p { margin: var(--space-3) 0 0; font-size: var(--type-body-lg); }
+.surveillance-image-placeholder figcaption { margin-top: var(--space-3); color: var(--color-text-muted); font-size: var(--type-caption); }
+.surveillance-questions { background: var(--color-surface); }
+.surveillance-answers details { border-top: var(--border-width) solid var(--color-border); }
+.surveillance-answers details:last-child { border-bottom: var(--border-width) solid var(--color-border); }
+.surveillance-answers summary { cursor: pointer; padding-block: var(--space-5); font-size: var(--type-body-lg); font-weight: var(--weight-semibold); }
+.surveillance-answers p { margin: 0 0 var(--space-5); }
+.surveillance-closing-action { margin-top: var(--space-7); }
+@media (min-width: 48rem) {
+  .surveillance-planning-layout,
+  .surveillance-questions-layout { grid-template-columns: 1fr 1fr; }
+}

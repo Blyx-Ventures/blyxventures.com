@@ -39,112 +39,157 @@
   }
   </script>
 </head>
-<body class="service-page">
+<body class="service-page surveillance-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="/" aria-label="Blyx home"><img src="/blyx-logo.png" alt="Blyx — Smarter Spaces"></a>
-      <nav class="site-nav" aria-label="Primary navigation"><a href="/residential/">Residential</a><a href="/business/">Business</a><a href="/#approach">How we work</a></nav>
-      <div class="header-action-slot"><a class="button button-primary header-action" data-contact="project-form" data-header-action href="/contact/" tabindex="-1" aria-hidden="true">Tell us about your project</a></div>
-      <button class="button button-secondary menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span><span data-menu-label>Menu</span></button>
+      <a class="brand" href="/" aria-label="Blyx home">
+        <img src="/blyx-logo.png" alt="Blyx — Smarter Spaces">
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/#services">Services</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="header-action-slot">
+        <a class="button button-primary header-action" data-contact="project-form" data-header-action data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact" tabindex="-1" aria-hidden="true">Tell us about your project</a>
+      </div>
+      <button class="button button-secondary menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-menu-label>Menu</span>
+      </button>
     </div>
-    <nav class="mobile-navigation" id="site-menu" aria-label="Mobile navigation" hidden><a href="/residential/">Residential</a><a href="/business/">Business</a><a href="/#approach">How we work</a><a class="button button-primary header-action mobile-header-action" data-contact="project-form" data-header-action href="/contact/" tabindex="-1" aria-hidden="true">Tell us about your project</a></nav>
+    <nav class="mobile-navigation" id="site-menu" aria-label="Mobile navigation" hidden>
+      <a href="/#services">Services</a>
+      <a href="/#contact">Contact</a>
+      <a class="button button-primary header-action mobile-header-action" data-contact="project-form" data-header-action data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact" tabindex="-1" aria-hidden="true">Tell us about your project</a>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="service-hero">
+    <section class="service-hero surveillance-hero" data-header-action-source aria-labelledby="surveillance-title">
       <div class="container service-hero-inner">
-        <p class="eyebrow">Surveillance</p>
-        <h1>Security cameras designed around what you need to see.</h1>
-        <p class="service-hero-copy">A useful camera system starts with the views and events that matter to you. We plan the cameras, wiring, recording, and access together so you can find footage and use the system with confidence.</p>
-        <a class="button button-primary" href="/?area=Security%20cameras&amp;source=surveillance#contact">Discuss a security-camera project</a>
-      </div>
-    </section>
-
-    <section class="service-content section" aria-labelledby="camera-situations-title">
-      <div class="container">
-        <div class="service-section-heading"><p class="eyebrow">What the system should solve</p><h2 id="camera-situations-title">Useful visibility, not just more cameras.</h2></div>
-        <div class="situation-grid">
-          <article class="situation-card"><h3>Important areas are difficult to see</h3><p>Camera placement should begin with the entrances, approaches, or activity you need to understand—not a preset device count.</p></article>
-          <article class="situation-card"><h3>Recordings need to be dependable</h3><p>The cameras, network, storage, and recording settings must work together when footage is needed.</p></article>
-          <article class="situation-card"><h3>Footage should be easy to review</h3><p>A well-configured system makes it practical to find recordings without searching through hours of unclear video.</p></article>
-          <article class="situation-card"><h3>Access needs to be controlled</h3><p>Remote viewing and user permissions should give the right people access without sharing one administrative account.</p></article>
+        <div class="surveillance-context">
+          <p class="eyebrow">Video surveillance</p>
+        </div>
+        <div class="surveillance-hero-layout">
+          <fieldset class="audience-switch" hidden>
+            <legend class="audience-switch-legend">Choose your project setting</legend>
+            <label><input type="radio" name="service-audience" value="residential" checked><span>Residential</span></label>
+            <label><input type="radio" name="service-audience" value="commercial"><span>Commercial</span></label>
+          </fieldset>
+          <div class="surveillance-hero-text">
+            <h1 id="surveillance-title">Protect what<br><span>matters most.</span></h1>
+            <div data-audience="residential">
+              <p class="service-hero-copy">Keep an eye on your home and everything around it, whether you’re inside or a thousand miles away. Visible cameras can help discourage unwanted activity—and provide a clearer picture of what happened when you need it.</p>
+              <a class="button button-primary" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact">Tell us about your project</a>
+            </div>
+            <div data-audience="commercial" hidden>
+              <p class="service-hero-copy">You’ve worked hard to build your business. Keep it in sight, wherever you are. Know what’s happening at all times—and look back when you need answers.</p>
+              <a class="button button-primary" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=commercial#contact">Tell us about your project</a>
+            </div>
+          </div>
+          <figure class="surveillance-hero-media" data-audience="residential">
+            <img src="/images/surveillance/sv-h01-architectural-poc-640.jpg" alt="Conceptual view of a mounted home security camera beside an eave that transitions into architectural linework" width="640" height="640" fetchpriority="high" decoding="async">
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="service-detail section" aria-labelledby="camera-detail-title">
-      <div class="container service-detail-grid">
-        <div><p class="eyebrow">Planning the system</p><h2 id="camera-detail-title">What we evaluate.</h2></div>
-        <div class="service-detail-copy">
-          <p>We discuss what you want to see, when recordings matter, who needs access, and how the system should be used. We then evaluate lighting, practical mounting positions, cabling routes, network needs, and storage.</p>
-          <ul class="service-feature-list">
-            <li>Coverage goals, available light, and useful viewing angles</li>
-            <li>Camera locations and Ethernet cabling routes</li>
-            <li>Recording method and expected footage-retention needs</li>
-            <li>Remote viewing and separate user permissions</li>
-            <li>Supported activity alerts and detection features</li>
-          </ul>
+    <section class="surveillance-benefits section" data-audience="residential" aria-labelledby="residential-benefits-title">
+      <div class="container surveillance-benefits-layout">
+        <div><p class="eyebrow">Peace of mind, made practical</p><h2 id="residential-benefits-title">A clearer view of home.</h2></div>
+        <div class="surveillance-benefit-list">
+          <article><h3>Check in from anywhere.</h3><p>See the front door, driveway, or other areas that matter to you, whether you’re upstairs or out of town.</p></article>
+          <article><h3>Know what happened.</h3><p>Look back at a delivery or unexpected activity without searching through hours of footage.</p></article>
+          <article><h3>Make your home less inviting to intruders.</h3><p>Visible cameras can help discourage unwanted activity while recording useful views of your property.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="service-boundary section" aria-labelledby="camera-fit-title">
-      <div class="container service-boundary-grid">
-        <div><p class="eyebrow">Project fit</p><h2 id="camera-fit-title">New systems with a complete plan.</h2></div>
-        <div class="service-boundary-copy">
-          <p>Blyx plans and installs complete new security camera systems for homes and small workplaces, including projects connected to renovations or new construction.</p>
-          <p>We do not take over, repair, troubleshoot, or expand camera systems installed by others. A camera system can improve visibility and preserve useful footage, but it cannot guarantee that an incident will be prevented, every person will be identified, or every possible area will be visible.</p>
+    <section class="surveillance-planning section" data-audience="residential" aria-labelledby="residential-planning-title">
+      <div class="container surveillance-planning-layout">
+        <div class="surveillance-planning-copy">
+          <p class="eyebrow">Planned for your home</p>
+          <h2 id="residential-planning-title">Cameras where they count.</h2>
+          <p>Tell us what you want to see and when you might need to review it. We plan camera positions, cabling, recording, and storage around your home and your priorities.</p>
+          <p>We install and test the complete system, set up access for the people you choose, and show you how to check in and find recordings.</p>
+          <div class="surveillance-scope"><h3>A complete new system.</h3><p>We install new camera systems for homes, including renovations and new construction. We don’t take over, repair, or expand systems installed by others.</p><p>Cameras cannot guarantee that an incident will be prevented, a person will be identified, or every area will be visible.</p></div>
+        </div>
+        <figure class="surveillance-image-placeholder" aria-label="Planned image: residential camera mounted at an eave">
+          <div class="surveillance-placeholder-frame" aria-hidden="true"><span>Image placeholder</span><p>Camera at a residential eave</p></div>
+          <figcaption>Planned image · A close view of a camera, its mount, and the part of the home it overlooks.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="surveillance-questions section" data-audience="residential" aria-labelledby="residential-questions-title">
+      <div class="container surveillance-questions-layout">
+        <div><p class="eyebrow">A few practical details</p><h2 id="residential-questions-title">Questions before you begin.</h2></div>
+        <div>
+          <div class="surveillance-answers">
+            <details><summary>Can I check cameras from my phone?</summary><p>Supported systems let you view live video and recordings remotely. We set up access and show you how to use it.</p></details>
+            <details><summary>How long are recordings kept?</summary><p>That depends on the number of cameras, recording settings, image quality, and storage. We plan retention around how far back you want to look.</p></details>
+            <details><summary>Will the cameras record if the internet goes down?</summary><p>A properly designed system can continue recording locally while power and the local network remain available. Remote viewing and online alerts need an internet connection.</p></details>
+            <details><summary>Can I see what happens at night?</summary><p>We evaluate available light and camera placement before choosing equipment. The detail you can see depends on lighting, distance, and movement; some areas may need additional lighting.</p></details>
+          </div>
+          <a class="button button-primary surveillance-closing-action" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact">Tell us about your project</a>
         </div>
       </div>
     </section>
 
-    <section class="service-process section" aria-labelledby="camera-process-title">
-      <div class="container">
-        <div class="service-section-heading"><p class="eyebrow">How the work moves</p><h2 id="camera-process-title">From coverage goals to usable recordings.</h2></div>
-        <ol class="service-process-list">
-          <li><span>01</span><h3>Define what matters</h3><p>We discuss the activity and areas you want to see, recording expectations, and who needs access.</p></li>
-          <li><span>02</span><h3>Plan the system</h3><p>We select practical camera positions, cabling routes, storage, and supported features around those goals.</p></li>
-          <li><span>03</span><h3>Install and hand off</h3><p>We install and configure the system, verify recording and remote access, and show you how to use it.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="service-proof section" aria-labelledby="camera-proof-title">
-      <div class="container service-proof-grid">
-        <div class="service-proof-copy">
-          <p class="eyebrow">From the field</p>
-          <h2 id="camera-proof-title">Cameras supported by the network behind them.</h2>
-          <p>This residential project combined new camera cabling, recording, remote viewing, and network improvements. The equipment was brought together in one organized location without publishing the customer’s camera views or coverage details.</p>
-        </div>
-        <div class="service-proof-media">
-          <figure class="project-figure"><picture class="responsive-image"><source type="image/webp" srcset="/projects/network-surveillance/attic-cabling-480.webp 480w, /projects/network-surveillance/attic-cabling-768.webp 768w, /projects/network-surveillance/attic-cabling-1024.webp 1024w" sizes="(max-width: 620px) 100vw, 36vw"><img src="/projects/network-surveillance/attic-cabling.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Blue and black low-voltage cables routed across wooden roof framing in an insulated residential attic."></picture><figcaption>New cabling routed to support the network and camera system.</figcaption></figure>
-          <figure class="project-figure"><picture class="responsive-image"><source type="image/webp" srcset="/projects/network-surveillance/network-rack-480.webp 480w, /projects/network-surveillance/network-rack-768.webp 768w, /projects/network-surveillance/network-rack-1024.webp 1024w" sizes="(max-width: 620px) 100vw, 36vw"><img src="/projects/network-surveillance/network-rack.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Wall-mounted equipment rack containing patch panels, network equipment, and organized colored patch cables."></picture><figcaption>The completed equipment area keeps system connections organized.</figcaption></figure>
+    <section class="surveillance-benefits section" data-audience="commercial" hidden aria-labelledby="commercial-benefits-title">
+      <div class="container surveillance-benefits-layout">
+        <div><p class="eyebrow">Stay in the picture</p><h2 id="commercial-benefits-title">See what’s happening.<br>Know what happened.</h2></div>
+        <div class="surveillance-benefit-list">
+          <article><h3>Check in without heading back.</h3><p>Wondering what’s happening after closing? View your entrances, workspaces, and outdoor areas from your phone, wherever the evening takes you.</p></article>
+          <article><h3>Find answers in the footage.</h3><p>A delivery goes missing. Equipment turns up damaged. Review the footage to understand what happened and decide what to do next.</p></article>
+          <article><h3>Make unwanted activity less inviting.</h3><p>Visible cameras can help deter theft and tampering. Plan coverage around the inventory, tools, and equipment your business depends on.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="service-faq section" aria-labelledby="camera-faq-title">
-      <div class="container">
-        <div class="service-section-heading"><p class="eyebrow">Common questions</p><h2 id="camera-faq-title">Planning a security-camera project.</h2></div>
-        <div class="faq-grid">
-          <article class="faq-item"><h3>Can I view cameras from my phone?</h3><p>Supported systems can provide secure remote viewing. We configure access and show authorized users how to view live video and recordings.</p></article>
-          <article class="faq-item"><h3>How long can recordings be kept?</h3><p>Retention depends on storage capacity, camera count, image quality, and recording settings. We plan those factors around the project’s needs.</p></article>
-          <article class="faq-item"><h3>Does the system need internet access?</h3><p>Local recording can continue without internet on a properly designed system, but remote viewing and online alerts require a working connection.</p></article>
-          <article class="faq-item"><h3>How do continuous and activity-based recording differ?</h3><p>Continuous recording captures video throughout the selected schedule. Activity-based recording saves footage when supported detection rules are triggered. The right approach depends on the space and retention goals.</p></article>
-          <article class="faq-item"><h3>Does Blyx take over or repair existing camera systems?</h3><p>No. Blyx focuses on planning and installing complete new systems that can be tested and handed off as one defined project.</p></article>
+    <section class="surveillance-planning section" data-audience="commercial" hidden aria-labelledby="commercial-planning-title">
+      <div class="container surveillance-planning-layout">
+        <div class="surveillance-planning-copy">
+          <p class="eyebrow">Planned. Installed. Ready to use.</p>
+          <h2 id="commercial-planning-title">Built around your business.</h2>
+          <p>Tell us where you need visibility and how far back you need to review footage. We plan camera placement, available light, and storage around those needs, then install and configure the complete system.</p>
+          <p>You’ll know how to check in, find a recording, and give a trusted manager access. We test the system and walk you through everyday use before handing it over.</p>
+          <div class="surveillance-scope"><h3>A complete new system.</h3><p>We design and install new camera systems for small workplaces. We don’t take over, repair, or expand systems installed by others.</p><p>Cameras can help discourage unwanted activity, but cannot guarantee prevention or identification.</p></div>
         </div>
+        <figure class="surveillance-image-placeholder" aria-label="Planned image: camera installed at a small-business entrance">
+          <div class="surveillance-placeholder-frame" aria-hidden="true"><span>Image placeholder</span><p>Camera at a business entrance</p></div>
+          <figcaption>Planned image · A close view of a camera, its mounting, and the entrance it serves.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="service-cta section">
-      <div class="container">
-        <div class="service-cta-grid"><div class="service-cta-copy"><p class="eyebrow">Start a conversation</p><h2>Tell us what you want to see and record.</h2><p>A rough description of the property and the areas that matter is enough to begin.</p></div><div class="service-cta-actions"><a class="button button-primary" href="/?area=Security%20cameras&amp;source=surveillance#contact">Discuss a security-camera project</a><a class="service-area-link" href="/#service-area">Check the service area</a></div></div>
-        <nav class="related-services" aria-label="Other services"><h2>Other ways Blyx can help</h2><div class="related-grid"><a class="related-card" href="/networking/"><h3>Networking and Wi-Fi</h3><p>Build reliable wired and wireless connections around how the space is used.</p></a><a class="related-card" href="/access-control/"><h3>Access control and automated entry</h3><p>Coordinate secure credentials, door control, and easier entry around the people using the space.</p></a></div></nav>
+    <section class="surveillance-questions section" data-audience="commercial" hidden aria-labelledby="commercial-questions-title">
+      <div class="container surveillance-questions-layout">
+        <div><p class="eyebrow">A few practical details</p><h2 id="commercial-questions-title">Questions before you begin.</h2></div>
+        <div>
+          <div class="surveillance-answers">
+            <details><summary>Can I check cameras from my phone?</summary><p>Yes. Supported systems let authorized users view live video and recordings remotely. We configure access and show you how to use it.</p></details>
+            <details><summary>How long is footage kept?</summary><p>Retention depends on camera count, recording settings, image quality, and storage capacity. We plan these around how far back you need to look.</p></details>
+            <details><summary>What happens if the internet goes down?</summary><p>A properly designed system can keep recording locally while power and the local network remain available. Remote viewing and online alerts need a working internet connection.</p></details>
+            <details><summary>Can cameras capture useful footage at night?</summary><p>Yes, with the right camera and placement. We evaluate available light and the areas you need to see, then choose cameras suited to those conditions. Image detail depends on lighting, distance, and movement; some areas may need additional lighting.</p></details>
+          </div>
+          <a class="button button-primary surveillance-closing-action" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=commercial#contact">Tell us about your project</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><a class="footer-brand" href="/" aria-label="Blyx home">Blyx</a><div class="footer-details"><nav class="footer-links" aria-label="Footer navigation"><a href="/residential/">Residential</a><a href="/business/">Business</a></nav><p class="footer-contact"><a data-contact="project-email" href="mailto:contact@blyxventures.com">contact@blyxventures.com</a><span aria-hidden="true"> · </span><a data-contact="phone" href="tel:+15025000105">(502) 500-0105</a></p><p class="footer-location">Serving Louisville Metro and Bullitt, Oldham, Shelby, and Spencer counties, Kentucky · Fully insured</p></div><div class="footer-meta"><p>&copy; 2026 Blyx Ventures LLC</p><a href="/privacy.html">Privacy</a></div></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="footer-brand" href="/" aria-label="Blyx home">Blyx</a>
+      <div class="footer-details">
+        <nav class="footer-links" aria-label="Footer navigation"><a href="/#services">Services</a></nav>
+        <p class="footer-contact"><a data-contact="project-email" href="mailto:contact@blyxventures.com">contact@blyxventures.com</a><span aria-hidden="true"> · </span><a data-contact="phone" href="tel:+15025000105">(502) 500-0105</a></p>
+        <p class="footer-location">Fully insured</p>
+      </div>
+      <div class="footer-meta"><p>&copy; 2026 Blyx Ventures LLC</p><a href="/privacy.html">Privacy</a></div>
+    </div>
+  </footer>
 </body>
 </html>
