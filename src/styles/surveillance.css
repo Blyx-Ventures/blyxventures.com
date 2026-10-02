@@ -75,7 +75,7 @@
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(to right, var(--color-background), transparent 30%, transparent 92%, var(--color-background)),
+    linear-gradient(to right, var(--color-background), transparent 30%),
     linear-gradient(to bottom, var(--color-background), transparent 12%, transparent 86%, var(--color-background));
 }
 @media (min-width: 64rem) {
@@ -96,8 +96,24 @@
   .surveillance-hero-layout:has(.surveillance-hero-media:not([hidden])) h1 {
     font-size: var(--type-display-lg);
   }
-  .surveillance-hero-media { width: 100%; max-width: calc(100svh - 13rem); margin: 0; aspect-ratio: 1; justify-self: end; }
-  .surveillance-hero-media img { object-position: center; }
+  .surveillance-hero-media {
+    --image-extension: clamp(6rem, 15vw, 12rem);
+    width: 100%;
+    max-width: calc(100svh - 13rem);
+    margin: 0;
+    aspect-ratio: 1;
+    justify-self: end;
+  }
+  .surveillance-hero-media img,
+  .surveillance-hero-media::after {
+    position: absolute;
+    inset: auto auto auto 0;
+    top: calc(-1 * var(--space-8));
+    width: calc(100% + var(--image-extension));
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .surveillance-hero-media img { max-width: none; object-position: center; }
 }
 .surveillance-benefits { background: var(--color-surface); }
 .surveillance-benefits-layout { display: grid; gap: var(--content-gap); }
