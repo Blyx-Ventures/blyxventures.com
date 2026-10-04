@@ -1,5 +1,6 @@
 @import url("./foundation.css");
 @import url("./media.css");
+@import url("./service-panels.css");
 
 *,
 *::before,
@@ -883,77 +884,6 @@ a {
   inset: 0;
 }
 
-.service-panels {
-  display: grid;
-  gap: var(--grid-gap);
-}
-
-.service-panel {
-  display: flex;
-  min-width: 0;
-  min-height: var(--service-panel-min-height);
-  flex-direction: column;
-  overflow: hidden;
-  border: var(--border-width) solid var(--color-border);
-  border-radius: var(--radius-surface);
-  background: var(--color-surface);
-}
-
-.service-panel-media {
-  position: relative;
-  display: flex;
-  flex: 0 0 var(--service-panel-media-height);
-  flex-direction: column;
-  min-height: 0;
-  background: var(--color-surface-subtle);
-}
-
-.service-panel-media picture {
-  display: block;
-  min-height: 0;
-  flex: 1;
-}
-
-.service-panel-media-pending {
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-5);
-  color: var(--color-text-muted);
-  font-size: var(--type-label);
-  font-weight: var(--weight-semibold);
-  text-align: center;
-}
-
-.service-panel-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: var(--space-4) var(--space-5) var(--space-5);
-}
-
-.service-panel h5 {
-  min-height: 2.4em;
-  margin: var(--space-3) 0 var(--space-3);
-  font-size: var(--type-heading-3);
-  font-weight: var(--weight-semibold);
-  letter-spacing: -0.015em;
-  line-height: 1.2;
-}
-
-.service-panel p {
-  margin: 0;
-  color: var(--color-text-muted);
-}
-
-.service-panel .text-link {
-  display: inline-flex;
-  min-height: var(--control-height-compact);
-  align-items: center;
-  margin-top: auto;
-  padding-top: var(--space-2);
-}
-
 .do-dont {
   display: grid;
   gap: var(--grid-gap);
@@ -1025,9 +955,6 @@ a {
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   }
 
-  .service-panels {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 64rem) {
@@ -1047,13 +974,6 @@ a {
 
   .component-grid.is-uneven {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  }
-
-}
-
-@media (min-width: 80rem) {
-  .service-panels {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
 }

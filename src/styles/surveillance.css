@@ -126,6 +126,11 @@
   .surveillance-benefits-layout { grid-template-columns: 1fr 1fr; }
 }
 
+.surveillance-commercial-benefits { background: var(--color-surface-subtle); }
+.surveillance-benefits-heading { margin-bottom: var(--content-gap); }
+.surveillance-benefits-heading h2 { margin-bottom: 0; }
+.surveillance-commercial-benefits > .container-canvas { max-width: var(--width-canvas); }
+
 .audience-switch-legend { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .surveillance-related { background: var(--color-surface); }
