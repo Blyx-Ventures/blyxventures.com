@@ -1,5 +1,6 @@
 @import url("./foundation.css");
 @import url("./media.css");
+@import url("./service-panels.css");
 
 :root {
   --ink: #1d211f;

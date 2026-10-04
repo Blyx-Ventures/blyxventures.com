@@ -1,6 +1,8 @@
 import './styles/site.css';
 import './styles/components.css';
 import './styles/home.css';
+import './styles/surveillance.css';
+import { initializeServiceAudience } from './service-audience.js';
 import { initializeAnalytics, trackContactIntent } from './analytics.js';
 
 const APPROVED_AREAS = new Set(['Networking', 'Security cameras', 'Access control', 'Automated entry']);
@@ -15,6 +17,7 @@ const inquiryContext = readInquiryContext();
 initializeAnalytics();
 initializeNavigation();
 initializeHeaderActions();
+initializeServiceAudience();
 
 document.querySelectorAll('[data-contact]').forEach((link) => {
   link.addEventListener('click', () => {
@@ -77,6 +80,9 @@ if (contactForm) {
   let pendingRequestId = null;
 
   applyInquiryAreas(areaInputs, notSureInput, inquiryContext.areas);
+  if (inquiryContext.audience) {
+    document.getElementById('cf-property').value = inquiryContext.audience === 'commercial' ? 'Light commercial' : 'Residential';
+  }
 
   controls.forEach(({ control, error, messages }) => {
     const updateValidation = () => {
@@ -388,6 +394,8 @@ function setFailureStatus() {
 function readInquiryContext() {
   const url = new URL(window.location.href);
   const requestedSource = url.searchParams.get('source') || '';
+  const requestedAudience = url.searchParams.get('audience');
+  const audience = ['residential', 'commercial'].includes(requestedAudience) ? requestedAudience : '';
   const source = APPROVED_SOURCES.has(requestedSource) ? requestedSource : (SOURCE_BY_PATH[url.pathname] || '');
   const areas = [...new Set(url.searchParams.getAll('area').filter((area) => APPROVED_AREAS.has(area)))];
 
@@ -395,7 +403,7 @@ function readInquiryContext() {
     history.replaceState({}, '', `${url.pathname}${url.hash || '#contact'}`);
   }
 
-  return { source, areas };
+  return { source, areas, audience };
 }
 
 function applyInquiryAreas(areaInputs, notSureInput, areas) {
