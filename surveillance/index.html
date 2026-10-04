@@ -66,7 +66,7 @@
   </header>
 
   <main id="main">
-    <section class="service-hero surveillance-hero" data-header-action-source aria-labelledby="surveillance-title">
+    <section class="service-hero surveillance-hero" aria-labelledby="surveillance-title">
       <div class="container service-hero-inner">
         <div class="surveillance-context">
           <p class="eyebrow">Video surveillance</p>
@@ -78,15 +78,14 @@
             <label><input type="radio" name="service-audience" value="commercial"><span>Commercial</span></label>
           </fieldset>
           <div class="surveillance-hero-text">
-            <h1 id="surveillance-title">Protect what<br><span>matters most.</span></h1>
+            <h1 id="surveillance-title"><span data-audience="residential">Protect your<br><span>Home</span></span><span data-audience="commercial" hidden>Protect your<br><span>Business.</span></span></h1>
             <div data-audience="residential">
               <p class="service-hero-copy">Keep an eye on your home and everything around it, whether you’re inside or a thousand miles away. Visible cameras can help discourage unwanted activity—and provide a clearer picture of what happened when you need it.</p>
-              <a class="button button-primary" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact">Tell us about your project</a>
             </div>
             <div data-audience="commercial" hidden>
               <p class="service-hero-copy">You’ve worked hard to build your business. Keep it in sight, wherever you are. Know what’s happening at all times—and look back when you need answers.</p>
-              <a class="button button-primary" data-contact="project-form" data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=commercial#contact">Tell us about your project</a>
             </div>
+            <a class="button button-primary" data-contact="project-form" data-header-action-source data-surveillance-inquiry href="/?area=Security%20cameras&amp;source=surveillance&amp;audience=residential#contact">Tell us about your project</a>
           </div>
           <figure class="surveillance-hero-media" data-audience="residential">
             <img src="/images/surveillance/sv-h01-architectural-poc-640.jpg" alt="Conceptual view of a mounted home security camera beside an eave that transitions into architectural linework" width="640" height="640" fetchpriority="high" decoding="async">

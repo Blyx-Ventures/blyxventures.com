@@ -47,6 +47,7 @@
   margin-bottom: var(--space-6);
 }
 .surveillance-hero h1 span { color: var(--color-brand-strong); }
+.surveillance-hero h1 > span[data-audience] { color: inherit; }
 .surveillance-page .service-hero-copy {
   max-width: 48ch;
   min-height: 4.65em;
